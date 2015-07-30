@@ -1,0 +1,10 @@
+$headings-color:    #FF8333;
+
+$alert-yellow:      #ebe16f;
+$alert-red:         #fbe3e4;
+$alert-green:       #e6efc2;
+$alert-blue:        #d5edf8;
+
+$link-color:        $headings-color;
+$link-hover:        darken($link-color, 9%);
+$link-visited:      $link-hover;
