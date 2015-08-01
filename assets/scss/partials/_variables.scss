@@ -10,10 +10,15 @@ $font-size: 13px;
 $line-height: 20px;
 
 //colors
-$background-color:  #FFFFFF;
+$background-color:  #F2F2F2;
 $body-color:        #757575;
+
+$content-bg:        #FFFFFF;
+$content-border:    #FFFFFF;
+$content-shadow:    rgba(0,0,0,0.2);
+
 $color-white:       #FFFFFF;
-$h1toh6-color:      #FF8333;
+$h1toh6-color:      #ED6D62;
 
 $alert-yellow:      #EBE16F;
 $alert-red:         #FBE3E4;
@@ -22,7 +27,7 @@ $alert-blue:        #D5EDF8;
 
 $link-color:        $h1toh6-color;
 $link-hover:        darken($link-color, 9%);
-$link-visited:      $link-hover;
+$link-visited:      $link-color;
 
 $footer-widget-bg:  #2F2F2F;
 $copyright-bg:      #202020;

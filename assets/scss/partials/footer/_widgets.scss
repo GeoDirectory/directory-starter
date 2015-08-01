@@ -1,0 +1,19 @@
+.footer-widgets {
+  background-color: $footer-widget-bg;
+  .container {
+    overflow: hidden;
+  }
+  h4 {
+    text-transform: uppercase;
+    margin-bottom: 7px;
+  }
+  a {
+    color: #bbb;
+  }
+  ul {
+    margin-left: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+}

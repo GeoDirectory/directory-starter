@@ -1,0 +1,15 @@
+.site-header {
+  overflow: hidden;
+  height: $header-height;
+  background-color: $header-bg-color;
+  &:after {
+    clear: both;
+  }
+}
+.fixed-header {
+  position: fixed;
+  z-index: 200;
+  top: $header-fixed-top;
+}
+@import "header/logo";
+@import "header/nav";

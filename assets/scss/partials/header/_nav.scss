@@ -1,0 +1,23 @@
+/**
+ * 5.0 - Navigation
+ */
+#primary-nav {
+  float: right;
+  ul {
+    margin: 0;
+    li {
+      padding-right: $p-nav-padding-right;
+      float: left;
+      list-style-type: none;
+      a {
+        height: $p-nav-height;
+        line-height: $p-nav-line-height;
+        color: #333333;
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+}

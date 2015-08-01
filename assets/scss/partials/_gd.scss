@@ -1,0 +1,31 @@
+/**
+ * 18.0 - GeoDirectory Compatibility
+ */
+#geodir_content {
+  width: 67%;
+  overflow: hidden;
+  float: left;
+  @extend .mixin-box;
+}
+#gd-sidebar-wrapper {
+  width: 30%;
+  margin-left: 3%;
+  overflow: visible;
+  float: left;
+}
+.sidebar .widget,
+.geodir-content-right .geodir-company_info {
+  @extend .mixin-box;
+}
+.geodir-common {
+  @extend .container;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.geodir-breadcrumb {
+  @extend .container;
+}
+ul.geodir-loginbox-list,
+ul#breadcrumbs {
+  margin: 0;
+}

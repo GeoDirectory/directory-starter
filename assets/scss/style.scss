@@ -31,12 +31,20 @@
  *    15.6 - Desktop Large
  *    15.7 - Desktop X-Large
  * 16.0 - Print
+ * 17.0 - WordPress Core Styles
+ * 18.0 - GeoDirectory Compatibility
  */
 @import "partials/variables";
+@import "partials/mixins";
 @import "partials/reset";
+@import "partials/grids";
 @import "partials/container";
 @import "partials/typography";
+@import "partials/links";
+@import "partials/elements";
 @import "partials/alignments";
 @import "partials/header";
 @import "partials/footer";
 @import "partials/print";
+@import "partials/wp";
+@import "partials/gd";

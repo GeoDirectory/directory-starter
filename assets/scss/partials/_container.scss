@@ -1,0 +1,10 @@
+.container {
+  width: $container-width;
+  padding-right: $container-padding-right;
+  padding-left: $container-padding-left;
+  margin-right: $container-margin-right;
+  margin-left: $container-margin-left;
+  &:after {
+    clear: both;
+  }
+}
