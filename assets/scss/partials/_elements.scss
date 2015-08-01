@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 20px;
+}
+ul, ol {
+  margin: 0 0 20px 20px;
+  padding: 0;
+}
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: decimal;
+}
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0;
+}
+figure {
+  margin: 0;
+}
+table {
+  margin: 0 0 20px;
+  width: 100%;
+}
+th {
+  font-weight: bold;
+}

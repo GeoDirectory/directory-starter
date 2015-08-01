@@ -1,0 +1,9 @@
+/**
+ * 17.0 - WordPress Core Styles
+ */
+h1.entry-title {
+  margin-top: 0;
+}
+.content .entry {
+  @extend .mixin-box;
+}
