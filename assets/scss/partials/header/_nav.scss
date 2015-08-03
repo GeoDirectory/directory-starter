@@ -9,6 +9,7 @@
       padding-right: $p-nav-padding-right;
       float: left;
       list-style-type: none;
+      position: relative;
       a {
         height: $p-nav-height;
         line-height: $p-nav-line-height;
@@ -17,6 +18,23 @@
         font-size: 14px;
         text-transform: uppercase;
         text-decoration: none;
+      }
+    }
+    ul {
+      //display: none;
+      float: left;
+      left: 0;
+      position: absolute;
+      top: 79px;
+      z-index: 99999;
+      li {
+        float: none;
+      }
+      li a {
+        width: 200px;
+        display: block;
+        height: 30px;
+        line-height: 30px;
       }
     }
   }

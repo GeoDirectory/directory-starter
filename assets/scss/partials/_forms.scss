@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+Forms
+--------------------------------------------------------------*/
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+select {
+  display: block;
+  float: left;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px 3px 3px 3px;
+  background: #fff;
+  padding: 5px;
+  margin-right: 7px;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+}

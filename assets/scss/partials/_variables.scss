@@ -4,6 +4,11 @@ $container-padding-right: 15px;
 $container-padding-left: 15px;
 $container-margin-right: auto;
 $container-margin-left: auto;
+//logo
+$logo-margin-right: 0;
+$logo-margin-left: 0;
+$logo-margin-top: 15px;
+$logo-margin-bottom: 15px;
 //typography
 $font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 $font-size: 13px;
@@ -46,3 +51,9 @@ $p-nav-padding-right: 45px;
 //copyright
 $copyright-padding-top: 20px;
 $copyright-padding-bottom: 20px;
+
+//buttons
+$btn-text-color:    #FFFFFF;
+$btn-bg-color:      $link-color;
+$btn-hover-color:   darken($btn-bg-color, 9%);
+$btn-border-color:  lighten($btn-bg-color, 9%);
