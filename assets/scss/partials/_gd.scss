@@ -1,11 +1,16 @@
 /**
  * 18.0 - GeoDirectory Compatibility
  */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 5px;
+  margin-left: 5px;
+}
 #geodir_content {
   width: 67%;
   overflow: hidden;
   float: left;
-  @extend .mixin-box;
+  @extend .content-box;
 }
 #gd-sidebar-wrapper {
   width: 30%;
@@ -15,17 +20,49 @@
 }
 .sidebar .widget,
 .geodir-content-right .geodir-company_info {
-  @extend .mixin-box;
+  @extend .content-box;
 }
 .geodir-common {
   @extend .container;
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .geodir-breadcrumb {
   @extend .container;
+  margin-bottom: -20px;
 }
 ul.geodir-loginbox-list,
 ul#breadcrumbs {
   margin: 0;
+}
+.geodir_full_page .widget {
+  @extend .container;
+}
+.geodir_full_page .geodir-category-list-in {
+  @extend .content-box;
+  ul li {
+    list-style-type: none;
+    &:first-child {
+      padding-left: 0;
+    }
+    img {
+      margin-right: 5px;
+    }
+  }
+}
+.geodir_full_page .geodir-loc-bar {
+  @extend .content-box;
+}
+.near-compass .fa {
+  font-size: 30px;
+}
+.geodir_full_page .geodir-search {
+  width: 100%;
+  input[type="text"] {
+    width: 30%;
+    border: 1px solid #e6e6e6;
+  }
+  select {
+    border: 1px solid #e6e6e6;
+  }
 }

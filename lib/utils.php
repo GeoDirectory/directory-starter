@@ -18,3 +18,26 @@ function directory_theme_paginate() {
 	) );
 	echo '</nav>';
 }
+
+function darken_color($hex, $percent) {
+	preg_match('/^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i', $hex, $primary_colors);
+	str_replace('%', '', $percent);
+	$color = "#";
+	for($i = 1; $i <= 3; $i++) {
+		$primary_colors[$i] = hexdec($primary_colors[$i]);
+		$primary_colors[$i] = round($primary_colors[$i] * (100-($percent*2))/100);
+		$color .= str_pad(dechex($primary_colors[$i]), 2, '0', STR_PAD_LEFT);
+	}
+	return $color;
+}
+function lighten_color($hex, $percent) {
+	preg_match('/^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i', $hex, $primary_colors);
+	str_replace('%', '', $percent);
+	$color = "#";
+	for($i = 1; $i <= 3; $i++) {
+		$primary_colors[$i] = hexdec($primary_colors[$i]);
+		$primary_colors[$i] = round($primary_colors[$i] * (100+($percent*2))/100);
+		$color .= str_pad(dechex($primary_colors[$i]), 2, '0', STR_PAD_LEFT);
+	}
+	return $color;
+}
