@@ -17,4 +17,5 @@ require_once get_template_directory() . '/lib/sidebars.php';          // Registe
 require_once get_template_directory() . '/lib/widgets.php';           // Widget functions goes here
 require_once get_template_directory() . '/lib/comments.php';          // Comments functions goes here
 require_once get_template_directory() . '/lib/custom.php';            // Any custom functions goes here
+require_once get_template_directory() . '/lib/gd.php';                // GeoDirectory functions goes here
 require_once get_template_directory() . '/lib/admin/customizer.php';

@@ -1,11 +1,25 @@
 .footer-widgets {
   background-color: $footer-widget-bg;
+  border-top: 1px solid $fw-border-top-color;
+  border-bottom: 1px solid $fw-border-bottom-color;
+  -webkit-box-shadow: 0 -1px 1px $fw-box-shadow-color;
+  -moz-box-shadow: 0 -1px 1px $fw-box-shadow-color;
+  box-shadow: 0 -1px 1px $fw-box-shadow-color;
   .container {
     overflow: hidden;
   }
+  .menu li {
+    margin-bottom: 6px;
+  }
   h4 {
+    color: #bbb;
     text-transform: uppercase;
-    margin-bottom: 7px;
+    margin-bottom: 15px;
+    padding-bottom: 7px;
+    -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.05);
+    -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   }
   a {
     color: #bbb;
@@ -15,5 +29,22 @@
     li {
       list-style-type: none;
     }
+  }
+  input[type="text"],
+  select {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background-color: #515151;
+    color: #ccc;
+    height: 30px;
+    line-height: 30px;
+  }
+  button, input[type=button], input[type=reset], input[type=submit] {
+    padding: 5px 12px;
+  }
+  .col-lg-3 {
+    padding: 0 15px;
+  }
+  .geodir-loginbox-list li {
+    border-bottom: none;
   }
 }
