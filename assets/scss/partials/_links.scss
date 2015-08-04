@@ -1,15 +1,12 @@
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
-a {
+a,a:visited {
   color: $link-color;
   text-decoration: none;
-}
-a:visited {
-  color: $link-color;
-}
-a:hover,
-a:focus,
-a:active {
-  color: $link-hover;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $link-hover;
+  }
 }

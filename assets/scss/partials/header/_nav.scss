@@ -13,29 +13,56 @@
       a {
         height: $p-nav-height;
         line-height: $p-nav-line-height;
-        color: #333333;
         font-weight: 400;
         font-size: 14px;
         text-transform: uppercase;
         text-decoration: none;
       }
     }
-    ul {
-      //display: none;
-      float: left;
-      left: 0;
+    .sub-menu {
       position: absolute;
-      top: 79px;
-      z-index: 99999;
+      left: 0;
+      display: none;
+      opacity: 0;
+      z-index: 1;
+      border: 1px solid $header-border-color;
+      border-top: none;
+      -webkit-box-shadow: 0 1px 1px $header-shadow-color;
+      -moz-box-shadow: 0 1px 1px $header-shadow-color;
+      box-shadow: 0 1px 1px $header-shadow-color;
+      ul {
+        top: 0;
+      }
       li {
         float: none;
+        margin: 0;
+        padding: 0;
       }
-      li a {
+      a {
         width: 200px;
+        background: $p-nav-submenu-bg-color;
+        border: 0;
+        padding: 7px 20px;
+        line-height: 20px;
+        text-indent: 0;
+        height: auto;
         display: block;
-        height: 30px;
-        line-height: 30px;
+        &:hover {
+          background: $p-nav-submenu-bg-hover;
+        }
       }
+    }
+    li:last-child {
+      padding-right: 0;
+    }
+    li:hover > .sub-menu {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+    }
+    li:last-child:hover > .sub-menu {
+      left: auto;
+      right: 0;
     }
   }
 }
