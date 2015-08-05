@@ -190,6 +190,9 @@ dl.geodir-tab-head dd:last-child, dl.geodir-tab-head dd:last-child a {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-#geodir_carousel li {
-  border: none;
+#geodir_carousel {
+  margin-top: 10px;
+  li {
+    border: none;
+  }
 }
