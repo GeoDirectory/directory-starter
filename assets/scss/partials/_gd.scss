@@ -41,6 +41,9 @@ ul#breadcrumbs {
 .geodir_full_page section.widget {
   @extend .container;
 }
+.geodir_full_page .geodir_map_container {
+  margin: 0 auto;
+}
 .geodir_full_page .geodir-category-list-in {
   @extend .content-box;
   ul li {
