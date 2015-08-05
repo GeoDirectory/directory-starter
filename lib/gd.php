@@ -22,3 +22,16 @@ function directory_theme_set_default_multi_rating_icon() {
 		update_option('geodir_reviewrating_overall_color', '#ed695d');
 	}
 }
+
+// Change some GD settings
+add_action( 'after_switch_theme', 'directory_theme_geodirectory_settings' );
+function directory_theme_geodirectory_settings() {
+	update_option('geodir_set_as_home', '1');
+	update_option('geodir_width_home_contant_section', '67');
+	update_option('geodir_width_listing_contant_section', '67');
+	update_option('geodir_width_search_contant_section', '67');
+	update_option('geodir_width_author_contant_section', '67');
+	update_option('geodir_listing_view', 'listview');
+	update_option('geodir_search_view', 'listview');
+	update_option('geodir_author_view', 'listview');
+}

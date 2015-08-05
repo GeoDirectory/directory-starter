@@ -17,6 +17,9 @@ input[type="radio"] {
   margin-left: 3%;
   overflow: visible;
   float: left;
+  .top_banner_section {
+    margin-bottom: 0;
+  }
 }
 .sidebar .widget,
 .geodir-content-right .geodir-company_info {
@@ -35,8 +38,11 @@ ul.geodir-loginbox-list,
 ul#breadcrumbs {
   margin: 0;
 }
-.geodir_full_page .widget {
+.geodir_full_page section.widget {
   @extend .container;
+}
+.geodir_full_page .geodir_map_container {
+  margin: 0 auto;
 }
 .geodir_full_page .geodir-category-list-in {
   @extend .content-box;
@@ -58,11 +64,202 @@ ul#breadcrumbs {
 }
 .geodir_full_page .geodir-search {
   width: 100%;
+  margin: 0;
   input[type="text"] {
-    width: 30%;
+    width: 28%;
     border: 1px solid #e6e6e6;
   }
   select {
     border: 1px solid #e6e6e6;
   }
+}
+#geodir-add-listing-submit {
+  text-align: left;
+  width: 70%;
+  float: right;
+}
+.geodir-loginbox-list li {
+  border-bottom: none;
+}
+//border less grids
+.geodir_category_list_view li.geodir-gridview {
+  border: none;
+}
+.geodir-search .snear.near-country, .gd-small-country {
+  opacity: 0.6;
+}
+#primary-nav .sub-menu {
+  .geodir_location_tab_container {
+    background: $p-nav-submenu-bg-color;
+  }
+  .geodir-chosen-container a {
+    background: #FFFFFF;
+    &:hover {
+      background: #FFFFFF;
+    }
+  }
+}
+#menu-item-gd-location-switcher .geodir_location_tab_container dd.geodir_location_tabs a {
+  border: none;
+  border-left: 1px solid #ccc;
+  &:hover {
+    background: #FFFFFF;
+  }
+}
+ul.geodir-tabs-content {
+  border: none;
+}
+dl.geodir-tab-head {
+  border-bottom: none;
+}
+dl.geodir-tab-head dd a {
+  border: none;
+  border-right: 1px solid #eee;
+}
+dl.geodir-tab-head dd.geodir-tab-active a {
+  border: none;
+  border-right: 1px solid #eee;
+}
+dl.geodir-tab-head dd:last-child, dl.geodir-tab-head dd:last-child a {
+  border-right: none;
+}
+.geodir_category_list_view li {
+  border-bottom: 1px solid #eee;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.bestof-tabs-on-left {
+  .geo-bestof-contentwrap {
+    border: none;
+  }
+  dl.geodir-tab-head dd a {
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+  dl.geodir-tab-head dd.geodir-tab-active a {
+    border-top: none !important;
+    border-left: none !important;
+  }
+}
+.geo-bestof-contentwrap {
+  border: none;
+}
+.Navi {
+  border-top: 1px #eee solid;
+  padding-top: 20px;
+  overflow: hidden;
+  a, strong.on {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-right: none;
+  }
+  a:first-child, strong.on:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  a:last-child, strong.on:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-right: 1px solid #eee;
+  }
+}
+//slider
+.geodir_flexslider {
+  background: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.geodir_flex-container {
+  background-color: #f3f2f0;
+  padding: 20px;
+  border: 1px solid #d4d2d0;
+  border-radius: 4px;
+}
+.geodir_flex-loader, .geodir-listing-flex-loader {
+  background: transparent;
+  margin: -20px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#geodir_carousel {
+  margin-top: 10px;
+  li {
+    border: none;
+  }
+}
+//comments
+#comments {
+  ul.rate-area-list {
+    margin: 0;
+  }
+  &.comments-area {
+    border-top: none;
+  }
+  h3#reply-title {
+    font-size: 2em;
+  }
+  .logged-in-as {
+    margin: 0;
+  }
+  #rating_frm {
+    margin-top: 0 !important;
+  }
+  .gd-rate-category {
+    margin: 15px 0;
+    .gd-ratehead {
+      margin-bottom: 10px;
+    }
+  }
+  .gd-rate-cat-in {
+    border: 1px solid #eee;
+    border-top: none;
+    padding: 10px;
+    &:first-child {
+      border-top: 1px solid #eee;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+    &:last-child {
+      border-bottom-right-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+    span.lable {
+      min-width: 100px;
+      width: 47% !important;
+      float: left;
+      padding: 0;
+      line-height: 30px;
+    }
+    select {
+      width: 50%;
+      float: left;
+    }
+  }
+  .gd-rate-area {
+    .gd-ratehead {
+      padding: 0;
+      width: 47%;
+      float: left;
+    }
+    border: 1px solid #eee;
+    padding: 10px;
+  }
+}
+#comment_sorting_form {
+  overflow: hidden;
+}
+.gd-rate-area span.gd-ratehead,
+.gd-rating-box-in-right span.gd-ratehead,
+.gd-rate-category span.gd-ratehead {
+  font: inherit;
+  font-weight: normal;
 }

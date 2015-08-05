@@ -33,3 +33,14 @@ select {
     box-shadow: none;
   }
 }
+textarea {
+  border: 1px solid #CCCCCC;
+  border-radius: 3px 3px 3px 3px;
+  background: #fff;
+  &:focus {
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+}

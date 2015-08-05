@@ -26,5 +26,6 @@ input[type=submit] {
   border: 1px solid $btn-border-color;
   &:hover, &:focus {
     background-color: $btn-hover-color;
+    outline: 0;
   }
 }
