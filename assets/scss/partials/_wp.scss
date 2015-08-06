@@ -17,7 +17,62 @@ h1.entry-title {
 .comment-form input[type="email"],
 .comment-form input[type="url"] {
   width: 100%;
+  margin-bottom: 10px;
 }
 .widget input {
   margin-bottom: 10px;
+}
+//extras
+.content-single {
+  margin-top: 20px;
+}
+#comments {
+  p.comment-notes {
+    margin: 0;
+  }
+  p.comment-form-author {
+    margin-top: 0;
+  }
+  .commentlist {
+    .single-comment {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+      overflow: hidden;
+    }
+    div.avatar-wrap {
+      float: left;
+      margin-right: 15px;
+      img {
+        display: block;
+      }
+    }
+    li:first-child {
+      margin-top: 15px;
+    }
+  }
+  .dt-comment-header {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  .comment-text {
+    margin-left: 75px;
+    *:last-child {
+      margin-bottom: 0;
+    }
+    *:first-child {
+      margin-top: 0;
+    }
+  }
+  .gd_comment_replaylink {
+    display: inline-block;
+  }
+  #reply-title {
+    margin-bottom: 0;
+    small {
+      font-size: 13px;
+    }
+  }
 }

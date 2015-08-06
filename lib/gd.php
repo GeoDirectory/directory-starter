@@ -35,3 +35,9 @@ function directory_theme_geodirectory_settings() {
 	update_option('geodir_search_view', 'listview');
 	update_option('geodir_author_view', 'listview');
 }
+
+// Change avatar size
+function dt_comment_avatar_size() {
+	return 60;
+}
+add_action('geodir_comment_avatar_size', 'dt_comment_avatar_size');
