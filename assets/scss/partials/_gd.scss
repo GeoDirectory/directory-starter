@@ -127,17 +127,37 @@ ul.geodir-tabs-content {
   border: none;
 }
 dl.geodir-tab-head {
-  border-bottom: none;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+dl.geodir-tab-head dd {
+  margin-bottom: -1px;
+  height: auto;
+}
+dl.geodir-tab-head:before,
+dl.geodir-tab-head:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+dl.geodir-tab-head:after {
+  clear: both;
+}
+dl.geodir-tab-head dt {
+  display: none;
 }
 dl.geodir-tab-head dd a {
   border: none;
-  border-right: 1px solid #eee;
+  height: auto;
+  line-height: inherit;
+  padding: 10px 15px;
 }
 dl.geodir-tab-head dd.geodir-tab-active a {
-  border: none;
-  border-right: 1px solid #eee;
+  border: 1px solid #eee;
+  border-bottom-color: transparent;
+  border-radius: 4px 4px 0 0;
 }
-dl.geodir-tab-head dd:last-child, dl.geodir-tab-head dd:last-child a {
+dl.geodir-tab-head dd:last-child {
   border-right: none;
 }
 .geodir_category_list_view li {
@@ -147,16 +167,32 @@ dl.geodir-tab-head dd:last-child, dl.geodir-tab-head dd:last-child a {
   }
 }
 .bestof-tabs-on-left {
+  dl.geodir-tab-head {
+    border-right: 1px solid #eee;
+    margin-right: 20px;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  dl.geodir-tab-head dd {
+    margin-right: -1px;
+    height: auto;
+  }
   .geo-bestof-contentwrap {
     border: none;
   }
   dl.geodir-tab-head dd a {
     border: none;
-    border-bottom: 1px solid #eee;
+    height: auto;
+    line-height: inherit;
+    padding: 10px 15px;
   }
   dl.geodir-tab-head dd.geodir-tab-active a {
-    border-top: none !important;
-    border-left: none !important;
+    border: 1px solid #eee;
+    border-right-color: transparent;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+    border-left: 1px solid #eee !important;
   }
 }
 .geo-bestof-contentwrap {
@@ -218,6 +254,11 @@ dl.geodir-tab-head dd:last-child, dl.geodir-tab-head dd:last-child a {
   ul.rate-area-list {
     margin: 0;
   }
+  .gd-rate-category {
+    ul.rate-area-list {
+      margin: 0;
+    }
+  }
   &.comments-area {
     border-top: none;
   }
@@ -266,7 +307,12 @@ dl.geodir-tab-head dd:last-child, dl.geodir-tab-head dd:last-child a {
       padding: 0;
       width: 47%;
       float: left;
+      line-height: 30px;
+
     }
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     border: 1px solid #eee;
     padding: 10px;
   }
@@ -282,6 +328,12 @@ dl.geodir-tab-head dd:last-child, dl.geodir-tab-head dd:last-child a {
 }
 // comment list
 #comments {
+  .overall-more-rating {
+    margin: 0;
+  }
+  .reply {
+    margin-left: 75px;
+  }
   ol.commentlist {
     margin: 0;
     .avatar {
@@ -293,20 +345,127 @@ dl.geodir-tab-head dd:last-child, dl.geodir-tab-head dd:last-child a {
   .gdreview_section {
     background: transparent;
   }
+  .comments_review_likeunlike {
+    span img {
+      display: block;
+    }
+    [id*="unlike-"] img {
+      position: relative;
+      top:5px;
+    }
+  }
 }
 //reviews
 #reviewsTab {
   ol.commentlist {
+    .comment-meta {
+      .item {
+        display: none;
+      }
+    }
     li {
+      list-style-type: none;
       border-bottom: 1px solid #eee;
+      &:last-child {
+        border-bottom: none;
+      }
     }
   }
-  .comments-area .bypostauthor cite span {
-    color: $body-color;
-    background-color: #f3f2f0;
-    border: 1px solid #d4d2d0;
+  .comments-area {
+    article {
+      header {
+        cite,
+        time,
+        span.item {
+          margin: 0;
+          margin-right: 20px;
+          display: inline-block;
+          float: left;
+        }
+        cite {
+          b, span {
+            display: inline-block;
+            float: left;
+          }
+        }
+      }
+    }
+    .bypostauthor cite span {
+      color: $body-color;
+      background-color: #f3f2f0;
+      border: 1px solid #d4d2d0;
+    }
+    .reply p.edit-link {
+      margin-top: 0;
+      margin-bottom: 0;
+      float: left;
+    }
+    .comment-content {
+      width: auto;
+      margin-left: 75px;
+      .comment_more_ratings {
+        padding: 0;
+        margin: 0;
+        border-top: none;
+        .gd_ratings_module_box,
+        .place-gallery {
+          width: 100%;
+          float: none;
+          border: none;
+        }
+        .place-gallery {
+          overflow: hidden;
+          border: 1px solid #eee;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+          a {
+            width: 100px;
+            margin: 20px;
+          }
+        }
+      }
+      .commenttext {
+        text-align: justify;
+      }
+    }
+    .gdreview_section {
+      .like_count {
+        padding: 0;
+      }
+      .comments_likeunlike {
+        padding: 0;
+        margin: 0;
+        margin-right: 5px;
+      }
+      padding: 0;
+      .gd_rating_show {
+        margin-bottom: 0;
+      }
+      span.showcommentimages {
+        margin: 0;
+        margin-left: 22px;
+      }
+    }
+    .gdreview_section > .clearfix {
+      display: table;
+      width: 100%;
+    }
+    .gdreview_section > .clearfix:first-child > div {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 0;
+      width: 25%;
+    }
+    .gdreview_section > .clearfix:first-child > div.comments_likeunlike {
+      width: 40%;
+    }
+    .gdreview_section > .clearfix:first-child > div.overall-more-rating {
+      width: 10%;
+      float: right;
+    }
   }
-  .comments-area .comment-content p.edit-link {
-    margin-bottom: 0;
-  }
+}
+.geodir-bestof-cat-list a span {
+  line-height: 30px;
 }
