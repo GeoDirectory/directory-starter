@@ -160,6 +160,7 @@ dl.geodir-tab-head dd.geodir-tab-active a {
 dl.geodir-tab-head dd:last-child {
   border-right: none;
 }
+#geodir_content.gdbp-listings-page .geodir_category_list_view li,
 .geodir_category_list_view li {
   border-bottom: 1px solid #eee;
   &:last-child {
@@ -448,8 +449,10 @@ dl.geodir-tab-head dd:last-child {
       }
     }
     .gdreview_section > .clearfix {
-      display: table;
       width: 100%;
+    }
+    .gdreview_section > .clearfix:first-child {
+      display: table;
     }
     .gdreview_section > .clearfix:first-child > div {
       display: table-cell;
@@ -468,4 +471,268 @@ dl.geodir-tab-head dd:last-child {
 }
 .geodir-bestof-cat-list a span {
   line-height: 30px;
+}
+.Chartjs-figure {
+  overflow: hidden;
+}
+
+//buddypress
+a.bp-title-button {
+  @extend .dt-input;
+}
+#buddypress {
+  div.activity-comments {
+    div.acomment-avatar img {
+      height: auto;
+      width: auto;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+    }
+    form .ac-textarea {
+      background: transparent;
+      border: none;
+      margin-bottom: 10px;
+      padding: 0;
+      textarea {
+        @extend .dt-textarea;
+        padding: 6px;
+      }
+    }
+  }
+  .activity-list li.mini {
+    font-size: 100%;
+    .activity-avatar img.avatar {
+      height: auto;
+      margin-left: 0;
+      width: auto;
+    }
+  }
+  #activity-stream {
+    .activity-header {
+      margin-bottom: 3px;
+      p {
+        margin: 0;
+      }
+    }
+    .activity-inner {
+      margin: 0;
+      margin-top: -10px;
+    }
+    .activity-meta {
+      margin: 0;
+      a.button {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+      }
+    }
+  }
+  #item-body form#whats-new-form {
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  form#whats-new-form #whats-new-content {
+    padding-bottom: 0;
+  }
+  div .item-list-tabs ul {
+    border-bottom: 1px solid #ddd;
+    > li {
+      float: left;
+      // Make the list-items overlay the bottom border
+      margin-bottom: -1px;
+
+      // Actual tabs (as links)
+      > a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        margin-right: 2px;
+        line-height: 1.42857143;
+        border: 1px solid transparent;
+        border-radius: 4px 4px 0 0;
+        &:hover {
+          border-color: #eee #eee #ddd;
+        }
+      }
+
+      // Active state, and its :hover to override normal :hover
+      &.selected > a {
+        &,
+        &:hover,
+        &:focus {
+          color: #555;
+          cursor: default;
+          background-color: #fff;
+          border: 1px solid #ddd;
+          border-bottom-color: transparent;
+          opacity: 1;
+          font-weight: normal;
+        }
+      }
+    }
+    &:before,
+    &:after {
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+  div#item-header img.avatar,
+  #whats-new-avatar img {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  div.item-list-tabs#subnav {
+    margin-top: 25px;
+  }
+  div.item-list-tabs#subnav ul li.last {
+    margin-top: 0;
+  }
+  div.item-list-tabs#subnav ul li#activity-filter-select label,
+  div.item-list-tabs#subnav ul li#members-order-select label {
+    display: none;
+  }
+  .activity-list .activity-avatar img {
+    border-radius: 4px;
+  }
+  form#whats-new-form {
+    textarea {
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+    }
+    input[type=submit] {
+      @extend .dt-btn;
+      margin-right: 7px;
+    }
+  }
+  #whats-new:focus {
+    outline: 0;
+    border-color: #CCCCCC !important;
+  }
+  ul.item-list {
+    border-top: none;
+    li:last-child {
+      border-bottom: none;
+    }
+  }
+  .standard-form {
+    input[type=color],
+    input[type=date],
+    input[type=datetime-local],
+    input[type=datetime],
+    input[type=email],
+    input[type=month],
+    input[type=number],
+    input[type=password],
+    input[type=range],
+    input[type=search],
+    input[type=tel],
+    input[type=text],
+    input[type=time],
+    input[type=url],
+    input[type=week] {
+      @extend .dt-input;
+    }
+    textarea,
+    textarea:focus {
+      @extend .dt-textarea;
+      width: 100%;
+    }
+    div.submit input {
+      @extend .dt-btn;
+    }
+  }
+  .dir-search {
+    input[type=search],
+    input[type=text] {
+      @extend .dt-input;
+    }
+  }
+  .groups-members-search {
+    input[type=search],
+    input[type=text] {
+      @extend .dt-input;
+    }
+  }
+  .comment-reply-link,
+  button,
+  div.generic-button a,
+  input[type=button],
+  input[type=reset],
+  input[type=submit],
+  ul.button-nav li a {
+    @extend .dt-btn;
+    width: auto;
+    height: auto;
+    line-height: 16px;
+  }
+  #bp-browse-button {
+    display: inline-block;
+    float: none;
+  }
+  input[type=submit]#notification-bulk-manage {
+    @extend .dt-btn;
+  }
+  .acomment-options,
+  div.activity-comments div.acomment-content {
+    margin: 0 0 0 60px;
+  }
+  div.activity-comments div.acomment-meta,
+  div.activity-comments div.acomment-content {
+    font-size: 100%;
+  }
+  div.activity-comments {
+    margin-top: 20px;
+  }
+  div.activity-comments>ul>li:first-child {
+    border-top: 1px solid #eee;
+  }
+
+}
+.just-me #buddypress ul.item-list {
+  border-top: 1px solid #eaeaea;
+}
+//buddypress integration addon
+#item-body {
+  overflow: hidden;
+}
+.gdbp-wrapper-content {
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+#geodir_content.gdbp-listings-page .geodir_category_list_view li,
+.geodir_category_list_view li {
+  border: none;
+}
+.geodir_category_list_view li .geodir-post-img {
+  border: 1px #e1e1e1 solid;
+}
+.geodir_category_list_view li .geodir-post-img .geodir_thumbnail {
+  min-width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+.geodir_category_list_view li.geodir-gridview .geodir-post-img .geodir_thumbnail {
+  border: 1px #e1e1e1 solid;
+}
+.gdbp-listings-page .geodir_category_list_view h3.geodir-entry-title {
+  margin-top: 5px !important;
+}
+.gdbp-listings-page .geodir_category_list_view li .geodir-addinfo span.geodir-authorlink {
+  margin-left: 2px;
+}
+.geodir_category_list_view li.geodir-gridview .geodir-addinfo i,
+.gdbp-listings-page .geodir_category_list_view li.geodir-listview .geodir-addinfo i {
+  margin-right: 5px;
+}
+.gdbp-listings-page .geodir_category_list_view li .geodir-addinfo a.geodir-pcomments,
+.gdbp-listings-page .geodir_category_list_view li .geodir-addinfo span {
+  line-height: 22px !important;
 }

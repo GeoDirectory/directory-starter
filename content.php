@@ -15,7 +15,13 @@
 		</h1>
 	</header>
 	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+		<?php
+		if (is_singular()) {
+			the_content();
+		} else {
+			the_excerpt();
+		}
+		?>
 		<?php
 		wp_link_pages( array(
 			'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', DIRECTORY_THEME ) . '</span>',
