@@ -329,11 +329,23 @@ dl.geodir-tab-head dd:last-child {
 }
 // comment list
 #comments {
+  clear: both;
+  .comments-title {
+    span {
+      display: none;
+    }
+  }
   .overall-more-rating {
     margin: 0;
   }
-  .reply {
+  .comment-links {
+    overflow: hidden;
+    width: auto;
     margin-left: 75px;
+    .reply {
+      margin-left: auto;
+      float: right;
+    }
   }
   ol.commentlist {
     margin: 0;
@@ -344,9 +356,10 @@ dl.geodir-tab-head dd:last-child {
     }
   }
   .gdreview_section {
-    background: transparent;
+    background: transparent !important;
   }
   .comments_review_likeunlike {
+    float: none;
     span img {
       display: block;
     }
@@ -356,8 +369,26 @@ dl.geodir-tab-head dd:last-child {
     }
   }
 }
+#reviewsTab #comments {
+  p.edit-link {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    a {
+      color: #777;
+    }
+  }
+}
 //reviews
 #reviewsTab {
+  .gdbp-wrapper-reviews .comments-area {
+    border-top: none;
+    li {
+      margin-left: 0;
+    }
+  }
   ol.commentlist {
     .comment-meta {
       .item {
@@ -395,11 +426,7 @@ dl.geodir-tab-head dd:last-child {
       color: $body-color;
       background-color: #f3f2f0;
       border: 1px solid #d4d2d0;
-    }
-    .reply p.edit-link {
-      margin-top: 0;
-      margin-bottom: 0;
-      float: left;
+      position: relative;
     }
     .comment-content {
       width: auto;
@@ -464,8 +491,8 @@ dl.geodir-tab-head dd:last-child {
       width: 40%;
     }
     .gdreview_section > .clearfix:first-child > div.overall-more-rating {
-      width: 10%;
       float: right;
+      text-align: right;
     }
   }
 }
@@ -735,4 +762,102 @@ a.bp-title-button {
 .gdbp-listings-page .geodir_category_list_view li .geodir-addinfo a.geodir-pcomments,
 .gdbp-listings-page .geodir_category_list_view li .geodir-addinfo span {
   line-height: 22px !important;
+}
+
+#post_mapTab {
+  img.adp-marker {
+    height: 30px;
+    padding: 5px;
+  }
+  .adp-placemark {
+    background: #f3f2f0;
+    border: 1px solid #d4d2d0;
+    border-radius: 4px;
+    border-collapse: inherit;
+  }
+  .adp, .adp table {
+    font-family: $font-family;
+  }
+  .adp-step, .adp-substep {
+    padding: 8px 3px;
+  }
+  .geodir_map_container {
+    input[type="text"] {
+      margin-top: 10px;
+      width: 82%;
+    }
+    input[type="button"] {
+      margin-top: 10px;
+      float: right;
+    }
+    #directions-options {
+      margin-bottom: 10px;
+      overflow: hidden;
+      clear: both;
+      select {
+        margin-top: 10px;
+        float: left;
+        margin-right: 1%;
+      }
+      select:last-child {
+        margin-right: 0;
+        width: 40%;
+      }
+    }
+  }
+}
+#reviewsTab {
+  #comments .comments-title {
+    margin-top: 0;
+  }
+  #respond {
+    margin-top: 50px;
+  }
+  .gd-rating-overall-rating,
+  .gd_ratings_module_box {
+    display: block;
+    width: 50%;
+    float: left;
+  }
+  .gd_ratings_module_box {
+    h4 {
+      font-size: 16px;
+      font-weight: normal;
+      color: $body-color;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    span.lable {
+      float: left;
+    }
+  }
+  .gd-rating-overall-rating {
+    .gd-rating-overall-rating-title {
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      display: block;
+    }
+  }
+  .comments-area article header {
+    font-size: 15px;
+    margin-bottom: 10px;
+    cite {
+      margin-right: 10px;
+    }
+    time {
+      color: $body-color;
+    }
+  }
+  ol.children li {
+    margin-right: 0;
+  }
+  ol.children li:first-child {
+    border-top: 1px solid #eee;
+  }
+}
+#comments .comment_more_ratings .gd_ratings_module_box h4 {
+  font-size: 15px;
+  font-weight: normal;
+  margin-top: 10px;
 }
