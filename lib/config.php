@@ -8,20 +8,20 @@ if (!defined('DT_COPYRIGHT_TEXT')) define('DT_COPYRIGHT_TEXT', __('Copyright &co
 
 //styles
 //container
-if (!defined('DT_CONTAINER_WIDTH')) define('DT_CONTAINER_WIDTH', 1170);
-if (!defined('DT_CONTAINER_PADDING_RIGHT')) define('DT_CONTAINER_PADDING_RIGHT', 15);
-if (!defined('DT_CONTAINER_PADDING_LEFT')) define('DT_CONTAINER_PADDING_LEFT', 15);
+if (!defined('DT_CONTAINER_WIDTH')) define('DT_CONTAINER_WIDTH', '1170px');
+if (!defined('DT_CONTAINER_PADDING_RIGHT')) define('DT_CONTAINER_PADDING_RIGHT', '15px');
+if (!defined('DT_CONTAINER_PADDING_LEFT')) define('DT_CONTAINER_PADDING_LEFT', '15px');
 if (!defined('DT_CONTAINER_MARGIN_RIGHT')) define('DT_CONTAINER_MARGIN_RIGHT', "auto");
 if (!defined('DT_CONTAINER_MARGIN_LEFT')) define('DT_CONTAINER_MARGIN_LEFT', "auto");
 //logo
-if (!defined('DT_LOGO_MARGIN_RIGHT')) define('DT_LOGO_MARGIN_RIGHT', 0);
-if (!defined('DT_LOGO_MARGIN_LEFT')) define('DT_LOGO_MARGIN_LEFT', 0);
-if (!defined('DT_LOGO_MARGIN_TOP')) define('DT_LOGO_MARGIN_TOP', 15);
-if (!defined('DT_LOGO_MARGIN_BOTTOM')) define('DT_LOGO_MARGIN_BOTTOM', 15);
+if (!defined('DT_LOGO_MARGIN_RIGHT')) define('DT_LOGO_MARGIN_RIGHT', '0px');
+if (!defined('DT_LOGO_MARGIN_LEFT')) define('DT_LOGO_MARGIN_LEFT', '0px');
+if (!defined('DT_LOGO_MARGIN_TOP')) define('DT_LOGO_MARGIN_TOP', '15px');
+if (!defined('DT_LOGO_MARGIN_BOTTOM')) define('DT_LOGO_MARGIN_BOTTOM', '15px');
 //typography
 if (!defined('DT_FONT_FAMILY')) define('DT_FONT_FAMILY', "'Lato','Helvetica Neue',Helvetica,Arial,sans-serif");
-if (!defined('DT_FONT_SIZE')) define('DT_FONT_SIZE', 13);
-if (!defined('DT_LINE_HEIGHT')) define('DT_LINE_HEIGHT', 20);
+if (!defined('DT_FONT_SIZE')) define('DT_FONT_SIZE', '13px');
+if (!defined('DT_LINE_HEIGHT')) define('DT_LINE_HEIGHT', '20px');
 
 //colors
 if (!defined('DT_BACKGROUND_COLOR')) define('DT_BACKGROUND_COLOR', "#F2F2F2");
@@ -43,8 +43,8 @@ if (!defined('DT_LINK_COLOR')) define('DT_LINK_COLOR', DT_H1TOH6_COLOR);
 if (!defined('DT_LINK_HOVER')) define('DT_LINK_HOVER', darken_color(DT_LINK_COLOR, 9));
 if (!defined('DT_LINK_VISITED')) define('DT_LINK_VISITED', DT_LINK_COLOR);
 //header
-if (!defined('DT_HEADER_HEIGHT')) define('DT_HEADER_HEIGHT', 85);
-if (!defined('DT_HEADER_FIXED_TOP')) define('DT_HEADER_FIXED_TOP', 32);
+if (!defined('DT_HEADER_HEIGHT')) define('DT_HEADER_HEIGHT', '85px');
+if (!defined('DT_HEADER_FIXED_TOP')) define('DT_HEADER_FIXED_TOP', '32px');
 if (!defined('DT_HEADER_BG_COLOR')) define('DT_HEADER_BG_COLOR', "#2F2F2F");
 if (!defined('DT_HEADER_LINK_COLOR')) define('DT_HEADER_LINK_COLOR', "#FFFFFF");
 if (!defined('DT_HEADER_TEXT_COLOR')) define('DT_HEADER_TEXT_COLOR', "#FFFFFF");
@@ -52,9 +52,9 @@ if (!defined('DT_HEADER_LINK_HOVER')) define('DT_HEADER_LINK_HOVER', darken_colo
 if (!defined('DT_HEADER_BORDER_COLOR')) define('DT_HEADER_BORDER_COLOR', "#FFFFFF");
 if (!defined('DT_HEADER_SHADOW_COLOR')) define('DT_HEADER_SHADOW_COLOR', "rgba(0,0,0,0.2)");
 //primary nav
-if (!defined('DT_P_NAV_HEIGHT')) define('DT_P_NAV_HEIGHT', 84);
+if (!defined('DT_P_NAV_HEIGHT')) define('DT_P_NAV_HEIGHT', '84px');
 if (!defined('DT_P_NAV_LINE_HEIGHT')) define('DT_P_NAV_LINE_HEIGHT', DT_P_NAV_HEIGHT);
-if (!defined('DT_P_NAV_PADDING_RIGHT')) define('DT_P_NAV_PADDING_RIGHT', 45);
+if (!defined('DT_P_NAV_PADDING_RIGHT')) define('DT_P_NAV_PADDING_RIGHT', '45px');
 //primary nav submenu
 if (!defined('DT_P_NAV_SUBMENU_BG_COLOR')) define('DT_P_NAV_SUBMENU_BG_COLOR', DT_HEADER_BG_COLOR);
 if (!defined('DT_P_NAV_SUBMENU_BG_HOVER')) define('DT_P_NAV_SUBMENU_BG_HOVER', lighten_color(DT_P_NAV_SUBMENU_BG_COLOR, 9));
@@ -65,8 +65,8 @@ if (!defined('DT_FW_BORDER_BOTTOM_COLOR')) define('DT_FW_BORDER_BOTTOM_COLOR', "
 if (!defined('DT_FW_BOX_SHADOW_COLOR')) define('DT_FW_BOX_SHADOW_COLOR', "rgba(0,0,0,0.2)");
 //copyright
 if (!defined('DT_COPYRIGHT_BG')) define('DT_COPYRIGHT_BG', "#202020");
-if (!defined('DT_COPYRIGHT_PADDING_TOP')) define('DT_COPYRIGHT_PADDING_TOP', 20);
-if (!defined('DT_COPYRIGHT_PADDING_BOTTOM')) define('DT_COPYRIGHT_PADDING_BOTTOM', 20);
+if (!defined('DT_COPYRIGHT_PADDING_TOP')) define('DT_COPYRIGHT_PADDING_TOP', '20px');
+if (!defined('DT_COPYRIGHT_PADDING_BOTTOM')) define('DT_COPYRIGHT_PADDING_BOTTOM', '20px');
 if (!defined('DT_COPYRIGHT_BORDER_COLOR')) define('DT_COPYRIGHT_BORDER_COLOR', "#151515");
 //buttons
 if (!defined('DT_BTN_TEXT_COLOR')) define('DT_BTN_TEXT_COLOR', "#FFFFFF");

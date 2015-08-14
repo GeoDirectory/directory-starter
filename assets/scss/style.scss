@@ -38,7 +38,6 @@
 @import "partials/mixins";
 @import "partials/reset";
 @import "partials/grids";
-@import "partials/container";
 @import "partials/typography";
 @import "partials/links";
 @import "partials/elements";
@@ -51,3 +50,5 @@
 @import "partials/buttons";
 @import "partials/wp";
 @import "partials/gd";
+@import "responsive/768down";
+@import "responsive/660down";
