@@ -13,9 +13,9 @@
 <header id="site-header" class="site-header" role="banner">
 	<div class="container">
 		<div class="site-logo-wrap">
-			<?php if ( get_theme_mod( 'directory_theme_options' )['logo'] ) : ?>
+			<?php if ( get_theme_mod( 'logo', false ) ) : ?>
 				<div class='site-logo'>
-					<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'directory_theme_options' )['logo'] ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+					<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'logo', false ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
 				</div>
 			<?php else : ?>
 				<hgroup>
