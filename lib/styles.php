@@ -57,7 +57,7 @@ function directory_theme_customize_css()
 			color: <?php echo darken_color(get_theme_mod('dt_link_color', DT_LINK_COLOR), 9); ?>;
 		}
 		#primary-nav ul li {
-			padding-right: <?php echo get_theme_mod('dt_p_nav_padding_right', DT_P_NAV_PADDING_RIGHT); ?>;
+			padding: 0 <?php echo get_theme_mod('dt_p_nav_padding_left_right', DT_P_NAV_PADDING_LEFT_RIGHT); ?>;
 		}
 		#primary-nav ul li a {
 			height: <?php echo get_theme_mod('dt_p_nav_height', DT_P_NAV_HEIGHT); ?>;

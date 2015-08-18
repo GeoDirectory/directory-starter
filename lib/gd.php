@@ -53,3 +53,10 @@ function dt_geodir_buddypress_reviews_after_content() {
 	return '</div>';
 }
 add_filter('geodir_buddypress_reviews_after_content', 'dt_geodir_buddypress_reviews_after_content');
+
+function dt_geodir_reviews_g_size()
+{
+	return 60;
+}
+
+add_filter('geodir_recent_reviews_g_size', 'dt_geodir_reviews_g_size');

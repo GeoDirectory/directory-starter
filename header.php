@@ -12,6 +12,9 @@
 
 <header id="site-header" class="site-header" role="banner">
 	<div class="container">
+		<button class="dt-nav-toggle" type="button" data-toggle="collapse" data-target="#primary-nav">
+			<i class="fa fa-bars"></i>
+		</button>
 		<div class="site-logo-wrap">
 			<?php if ( get_theme_mod( 'logo', false ) ) : ?>
 				<div class='site-logo'>

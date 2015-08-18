@@ -1,0 +1,43 @@
+#buddypress #commentform input[type=text],
+#buddypress #commentform textarea,
+#buddypress .form-allowed-tags,
+#buddypress .standard-form#signup_form input[type=text],
+#buddypress .standard-form#signup_form textarea {
+  width: 100%;
+}
+
+#buddypress .standard-form #basic-details-section input[type=password],
+#buddypress .standard-form #blog-details-section input#signup_blog_url {
+  width: 100%;
+}
+
+#buddypress .standard-form#signup_form div.submit {
+  float: none;
+  text-align: right;
+}
+
+#buddypress div.message-search {
+  margin-top: 10px;
+}
+#buddypress .dir-search input[type=text],
+#buddypress .message-search input[type=text] {
+  width: auto;
+}
+#buddypress .dir-search input[type=submit],
+#buddypress .message-search input[type=submit] {
+  line-height: 1.42857143;
+}
+#buddypress div.pagination {
+  float: none;
+}
+
+//alerts
+#buddypress #message.info p {
+  @extend .alert-warning;
+  padding: 10px 18px;
+}
+
+#buddypress div#message.updated p {
+  @extend .alert-success;
+  padding: 10px 18px;
+}

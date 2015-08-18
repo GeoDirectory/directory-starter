@@ -567,14 +567,14 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 
 
-	$wp_customize->add_setting( 'dt_p_nav_padding_right', array(
+	$wp_customize->add_setting( 'dt_p_nav_padding_left_right', array(
 		'transport' => 'postMessage',
-		'default'     => DT_P_NAV_PADDING_RIGHT,
+		'default'     => DT_P_NAV_PADDING_LEFT_RIGHT,
 		'capability'  => 'edit_theme_options',
-		'description' => __( 'Primary Menu Padding Right', DIRECTORY_THEME ),
+		'description' => __( 'Primary Menu Padding Left Right', DIRECTORY_THEME ),
 	) );
-	$wp_customize->add_control( 'dt_p_nav_padding_right', array(
-		'label'   => 'Primary Menu Padding Right',
+	$wp_customize->add_control( 'dt_p_nav_padding_left_right', array(
+		'label'   => 'Primary Menu Padding Left Right',
 		'section' => 'dt_primary_menu_section',
 		'type'    => 'text',
 	) );

@@ -7,6 +7,8 @@ function directory_theme_scripts() {
 	wp_enqueue_style( 'directory-theme-info', get_stylesheet_uri() );
 	// Load main theme styles.
 	wp_enqueue_style( 'directory-theme-style', get_template_directory_uri() . '/assets/css/style.css', array( 'directory-theme-info' ), '20150730' );
+	// Load main theme responsive styles.
+	//wp_enqueue_style( 'directory-theme-style-responsive', get_template_directory_uri() . '/assets/css/responsive.css', array('directory-theme-style'), '20150730' );
 	// Load main theme js.
 	wp_enqueue_script( 'directory-theme-script', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), '20150730', true );
 
@@ -20,6 +22,13 @@ function directory_theme_scripts() {
 	wp_enqueue_style( 'directory-theme_google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
 }
 add_action( 'wp_enqueue_scripts', 'directory_theme_scripts' );
+
+function directory_theme_responsive_styles() {
+	?>
+	<link rel='stylesheet' id='directory-theme-style-responsive-css'  href='<?php echo get_template_directory_uri() . '/assets/css/responsive.css'; ?>' type='text/css' />
+<?php
+}
+add_action( 'wp_head', 'directory_theme_responsive_styles', 20);
 
 /**
  * Customizer Js

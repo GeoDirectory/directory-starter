@@ -1,15 +1,27 @@
 /**
  * 5.0 - Navigation
  */
+#primary-nav:before,
+#primary-nav:after {
+  display: table;
+  content: " ";
+}
+
 #primary-nav {
   float: right;
   ul {
     margin: 0;
     li {
-      padding-right: $p-nav-padding-right;
+      padding: 0 20px;
       float: left;
       list-style-type: none;
       position: relative;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
       a {
         height: $p-nav-height;
         line-height: $p-nav-line-height;
@@ -65,4 +77,8 @@
       right: 0;
     }
   }
+}
+
+.dt-nav-toggle {
+  display: none;
 }

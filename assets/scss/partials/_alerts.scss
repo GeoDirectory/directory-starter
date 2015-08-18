@@ -7,7 +7,7 @@ Alerts
   border: 1px solid;
 }
 
-.alert-help {
+.alert-warning {
   @extend %alert;
   border-color: darken($alert-yellow, 5%);
   background: $alert-yellow;
