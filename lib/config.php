@@ -54,7 +54,7 @@ if (!defined('DT_HEADER_SHADOW_COLOR')) define('DT_HEADER_SHADOW_COLOR', "rgba(0
 //primary nav
 if (!defined('DT_P_NAV_HEIGHT')) define('DT_P_NAV_HEIGHT', '84px');
 if (!defined('DT_P_NAV_LINE_HEIGHT')) define('DT_P_NAV_LINE_HEIGHT', DT_P_NAV_HEIGHT);
-if (!defined('DT_P_NAV_PADDING_RIGHT')) define('DT_P_NAV_PADDING_RIGHT', '45px');
+if (!defined('DT_P_NAV_PADDING_LEFT_RIGHT')) define('DT_P_NAV_PADDING_LEFT_RIGHT', '20px');
 //primary nav submenu
 if (!defined('DT_P_NAV_SUBMENU_BG_COLOR')) define('DT_P_NAV_SUBMENU_BG_COLOR', DT_HEADER_BG_COLOR);
 if (!defined('DT_P_NAV_SUBMENU_BG_HOVER')) define('DT_P_NAV_SUBMENU_BG_HOVER', lighten_color(DT_P_NAV_SUBMENU_BG_COLOR, 9));

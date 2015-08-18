@@ -234,9 +234,9 @@
         } );
     } );
 
-    wp.customize( 'dt_p_nav_padding_right', function( value ) {
+    wp.customize( 'dt_p_nav_padding_left_right', function( value ) {
         value.bind( function( newval ) {
-            $( 'h1.site-title a' ).css('padding-right', newval );
+            $( 'h1.site-title a' ).css('padding-right', newval).css('padding-left', newval );
         } );
     } );
 
