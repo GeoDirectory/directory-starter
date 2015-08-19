@@ -39,7 +39,23 @@ th {
   font-weight: bold;
 }
 p {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: 0;
+  margin: 0 0 10px;
+}
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  border-left: 4px solid $body-color;
+}
+blockquote p:last-child,
+blockquote ul:last-child,
+blockquote ol:last-child {
+  margin-bottom: 0;
+}
+blockquote footer,
+blockquote small,
+blockquote .small {
+  display: block;
+  font-size: 80%;
+  line-height: 1.42857143;
+  color: $body-color;
 }

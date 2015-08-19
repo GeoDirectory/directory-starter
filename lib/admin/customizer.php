@@ -68,6 +68,7 @@ function directory_theme_customizer( $wp_customize ) {
 	//  = logo                      =
 	//  =============================
 	$wp_customize->add_setting( 'logo', array(
+		'sanitize_callback' => 'esc_url_raw',
 		'description' => __( 'Upload a logo to replace the default site name and description in the header', DIRECTORY_THEME ),
 	) );
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'logo', array(
@@ -81,6 +82,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_container_width', array(
 		'transport' => 'postMessage',
 		'default'     => DT_CONTAINER_WIDTH,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Enter Container Width', DIRECTORY_THEME ),
 	) );
@@ -94,6 +96,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_container_padding_right', array(
 		'transport' => 'postMessage',
 		'default'     => DT_CONTAINER_PADDING_RIGHT,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Enter Container Padding Right', DIRECTORY_THEME ),
 	) );
@@ -107,6 +110,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_container_padding_left', array(
 		'transport' => 'postMessage',
 		'default'     => DT_CONTAINER_PADDING_LEFT,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Enter Container Padding Left', DIRECTORY_THEME ),
 	) );
@@ -120,6 +124,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_container_margin_right', array(
 		'transport' => 'postMessage',
 		'default'     => DT_CONTAINER_MARGIN_RIGHT,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Enter Container Margin Right', DIRECTORY_THEME ),
 	) );
@@ -133,6 +138,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_container_margin_left', array(
 		'transport' => 'postMessage',
 		'default'     => DT_CONTAINER_MARGIN_LEFT,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Enter Container Margin Left', DIRECTORY_THEME ),
 	) );
@@ -148,6 +154,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_logo_margin_right', array(
 		'transport' => 'postMessage',
 		'default'     => DT_LOGO_MARGIN_RIGHT,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Logo Margin Right', DIRECTORY_THEME ),
 	) );
@@ -161,6 +168,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_logo_margin_left', array(
 		'transport' => 'postMessage',
 		'default'     => DT_LOGO_MARGIN_LEFT,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Logo Margin Left', DIRECTORY_THEME ),
 	) );
@@ -174,6 +182,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_logo_margin_top', array(
 		'transport' => 'postMessage',
 		'default'     => DT_LOGO_MARGIN_TOP,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Logo Margin Top', DIRECTORY_THEME ),
 	) );
@@ -187,6 +196,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_logo_margin_bottom', array(
 		'transport' => 'postMessage',
 		'default'     => DT_LOGO_MARGIN_BOTTOM,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Logo Margin Bottom', DIRECTORY_THEME ),
 	) );
@@ -202,6 +212,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_font_family', array(
 		'transport' => 'postMessage',
 		'default'     => DT_FONT_FAMILY,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Font Family', DIRECTORY_THEME ),
 	) );
@@ -215,6 +226,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_font_size', array(
 		'transport' => 'postMessage',
 		'default'     => DT_FONT_SIZE,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Font Size', DIRECTORY_THEME ),
 	) );
@@ -228,6 +240,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_line_height', array(
 		'transport' => 'postMessage',
 		'default'     => DT_LINE_HEIGHT,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Line Height', DIRECTORY_THEME ),
 	) );
@@ -303,6 +316,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_content_shadow', array(
 		'transport' => 'postMessage',
 		'default'     => DT_CONTENT_SHADOW,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Content Box Shadow Color', DIRECTORY_THEME ),
 	) );
@@ -439,6 +453,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_header_height', array(
 		'transport' => 'postMessage',
 		'default'     => DT_HEADER_HEIGHT,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Header Height', DIRECTORY_THEME ),
 	) );
@@ -544,6 +559,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_p_nav_height', array(
 		'transport' => 'postMessage',
 		'default'     => DT_P_NAV_HEIGHT,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Primary Menu Height', DIRECTORY_THEME ),
 	) );
@@ -557,6 +573,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_p_nav_line_height', array(
 		'transport' => 'postMessage',
 		'default'     => DT_P_NAV_LINE_HEIGHT,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Primary Menu Line Height', DIRECTORY_THEME ),
 	) );
@@ -570,6 +587,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_p_nav_padding_left_right', array(
 		'transport' => 'postMessage',
 		'default'     => DT_P_NAV_PADDING_LEFT_RIGHT,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Primary Menu Padding Left Right', DIRECTORY_THEME ),
 	) );
@@ -695,6 +713,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_copyright_padding_top', array(
 		'transport' => 'postMessage',
 		'default'     => DT_COPYRIGHT_PADDING_TOP,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Enter Copyright Padding Top', DIRECTORY_THEME ),
 	) );
@@ -708,6 +727,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting( 'dt_copyright_padding_bottom', array(
 		'transport' => 'postMessage',
 		'default'     => DT_COPYRIGHT_PADDING_BOTTOM,
+		'sanitize_callback' => 'sanitize_text_field',
 		'capability'  => 'edit_theme_options',
 		'description' => __( 'Enter Copyright Padding Bottom', DIRECTORY_THEME ),
 	) );

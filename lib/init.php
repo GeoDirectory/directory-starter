@@ -21,5 +21,21 @@ function directory_theme_setup(){
 	add_theme_support( 'post-thumbnails' );
 
 	add_theme_support( 'title-tag' );
+
+	$default_color = trim( DT_BACKGROUND_COLOR, '#' );
+
+	add_theme_support( 'custom-background', apply_filters( 'directory_theme_custom_background_args', array(
+		'default-color'      => $default_color,
+		'default-attachment' => 'fixed',
+	) ) );
+
+	add_editor_style( get_stylesheet_directory_uri() . '/assets/css/editor-style.css' );
+
+	$args = array(
+		'height'                 => DT_HEADER_HEIGHT,
+		'width'                  => 1600
+	);
+
+	add_theme_support( 'custom-header', $args );
 }
 add_action('after_setup_theme', 'directory_theme_setup');
