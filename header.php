@@ -10,7 +10,7 @@
 
 <body <?php body_class(); ?>>
 
-<header id="site-header" class="site-header" role="banner">
+<header id="site-header" class="site-header" role="banner" style="<?php echo dt_header_image(); ?>">
 	<div class="container">
 		<button class="dt-nav-toggle" type="button" data-toggle="collapse" data-target="#primary-nav">
 			<i class="fa fa-bars"></i>

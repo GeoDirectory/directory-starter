@@ -7,4 +7,18 @@
 	<?php get_search_form(); ?>
 <?php endif; ?>
 
+<div class="container">
+	<div class="content-box content-single">
+		<?php
+		while ( have_posts() ) : the_post();
+
+			// Include the page content template.
+			get_template_part( 'content' );
+
+			// End the loop.
+		endwhile;
+		?>
+	</div>
+</div>
+
 <?php get_footer(); ?>

@@ -4,6 +4,10 @@
 h1.entry-title {
   margin-top: 0;
 }
+.container .content-single article,
+.container .content-single article footer {
+  clear: both;
+}
 .content .entry {
   @extend .content-box;
 }
@@ -75,4 +79,14 @@ h1.entry-title {
       font-size: 13px;
     }
   }
+}
+.entry-footer > span {
+  margin-right: 10px;
+}
+.post-thumbnail img {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+#comments.normal-comments {
+  margin-top: 20px;
 }
