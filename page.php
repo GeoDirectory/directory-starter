@@ -1,14 +1,13 @@
 <?php get_header(); ?>
 
-<?php if (!have_posts()) : ?>
-	<div class="alert alert-warning">
-		<?php _e('Sorry, no results were found.', DIRECTORY_THEME); ?>
-	</div>
-	<?php get_search_form(); ?>
-<?php endif; ?>
-
 <div class="container">
 	<div class="content-box content-single">
+		<?php if (!have_posts()) : ?>
+			<div class="alert alert-warning">
+				<?php _e('Sorry, no results were found.', DIRECTORY_THEME); ?>
+			</div>
+			<?php get_search_form(); ?>
+		<?php endif; ?>
 		<?php
 		while ( have_posts() ) : the_post();
 
