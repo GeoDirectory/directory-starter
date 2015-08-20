@@ -199,11 +199,12 @@ dl.geodir-tab-head dd:last-child {
 .geo-bestof-contentwrap {
   border: none;
 }
-.Navi {
+.Navi,
+.nav-links {
   border-top: 1px #eee solid;
   padding-top: 20px;
   overflow: hidden;
-  a, strong.on {
+  a, strong.on, .current, .dots {
     position: relative;
     float: left;
     padding: 6px 12px;

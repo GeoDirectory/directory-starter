@@ -80,6 +80,14 @@
             background: $p-nav-submenu-bg-hover;
           }
         }
+        .sub-menu {
+          position: relative;
+          left: auto;
+          top: auto;
+          a {
+            padding-left: 50px;
+          }
+        }
       }
       li:last-child {
         padding-right: 0;

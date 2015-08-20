@@ -63,6 +63,11 @@
           background: $p-nav-submenu-bg-hover;
         }
       }
+      .sub-menu {
+        position: absolute;
+        left: -203px;
+        top: 2px;
+      }
     }
     li:last-child {
       padding-right: 0;

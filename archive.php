@@ -1,10 +1,29 @@
 <?php get_header(); ?>
 
-<?php if (!have_posts()) : ?>
-	<div class="alert alert-warning">
-		<?php _e('Sorry, no results were found.', DIRECTORY_THEME); ?>
+<div class="container">
+	<div class="content-box content-archive">
+		<?php if (!have_posts()) : ?>
+			<div class="alert-error">
+				<p><?php _e('Sorry, no results were found.', DIRECTORY_THEME); ?></p>
+			</div>
+			<?php get_search_form(); ?>
+		<?php endif; ?>
+		<?php
+		while ( have_posts() ) : the_post();
+
+			// Include the page content template.
+			get_template_part( 'content' );
+
+			// End the loop.
+		endwhile;
+
+		// Previous/next page navigation.
+		the_posts_pagination( array(
+			'prev_text'          => __( 'Previous', DIRECTORY_THEME ),
+			'next_text'          => __( 'Next', DIRECTORY_THEME ),
+		) );
+		?>
 	</div>
-	<?php get_search_form(); ?>
-<?php endif; ?>
+</div>
 
 <?php get_footer(); ?>
