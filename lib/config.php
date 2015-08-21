@@ -17,7 +17,7 @@ if (!defined('DT_CONTAINER_MARGIN_LEFT')) define('DT_CONTAINER_MARGIN_LEFT', "au
 if (!defined('DT_LOGO_MARGIN_RIGHT')) define('DT_LOGO_MARGIN_RIGHT', '0px');
 if (!defined('DT_LOGO_MARGIN_LEFT')) define('DT_LOGO_MARGIN_LEFT', '0px');
 if (!defined('DT_LOGO_MARGIN_TOP')) define('DT_LOGO_MARGIN_TOP', '15px');
-if (!defined('DT_LOGO_MARGIN_BOTTOM')) define('DT_LOGO_MARGIN_BOTTOM', '15px');
+if (!defined('DT_LOGO_MARGIN_BOTTOM')) define('DT_LOGO_MARGIN_BOTTOM', '0px');
 //typography
 if (!defined('DT_FONT_FAMILY')) define('DT_FONT_FAMILY', "'Lato','Helvetica Neue',Helvetica,Arial,sans-serif");
 if (!defined('DT_FONT_SIZE')) define('DT_FONT_SIZE', '13px');
