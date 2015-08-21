@@ -1,67 +1,137 @@
 <?php
 function directory_theme_customizer( $wp_customize ) {
 	//  =============================
+	//  = Panels                  =
+	//  =============================
+	$wp_customize->add_panel( 'dt_general_panel', array(
+		'priority'       => 10,
+		'capability'     => 'edit_theme_options',
+		'theme_supports' => '',
+		'title'          => 'General',
+		'description'    => '',
+	) );
+
+	$wp_customize->add_panel( 'dt_header_panel', array(
+		'priority'       => 20,
+		'capability'     => 'edit_theme_options',
+		'theme_supports' => '',
+		'title'          => 'Header',
+		'description'    => '',
+	) );
+
+	$wp_customize->add_panel( 'dt_footer_panel', array(
+		'priority'       => 30,
+		'capability'     => 'edit_theme_options',
+		'theme_supports' => '',
+		'title'          => 'Footer',
+		'description'    => '',
+	) );
+
+	$wp_customize->add_panel( 'dt_extras_panel', array(
+		'priority'       => 40,
+		'capability'     => 'edit_theme_options',
+		'theme_supports' => '',
+		'title'          => 'Extras',
+		'description'    => '',
+	) );
+	//  =============================
 	//  = Sections                  =
 	//  =============================
 
-	$wp_customize->add_section( 'dt_general_section', array(
-		'title'       => __( 'General', DIRECTORY_THEME ),
+	// general
+	$wp_customize->add_section( 'dt_general_container_section', array(
+		'title'       => __( 'Container', DIRECTORY_THEME ),
 		'priority'    => 30,
-		'description' => __( 'General Section', DIRECTORY_THEME ),
+		'description' => __( 'Container', DIRECTORY_THEME ),
+		'panel'  => 'dt_general_panel',
 	) );
 
-	$wp_customize->add_section( 'dt_header_section', array(
-		'title'       => __( 'Header', DIRECTORY_THEME ),
+	$wp_customize->add_section( 'dt_general_body_section', array(
+		'title'       => __( 'Body', DIRECTORY_THEME ),
 		'priority'    => 30,
-		'description' => __( 'Header Section', DIRECTORY_THEME ),
+		'description' => __( 'Body', DIRECTORY_THEME ),
+		'panel'  => 'dt_general_panel',
 	) );
 
-	$wp_customize->add_section( 'dt_typography_section', array(
+	$wp_customize->add_section( 'dt_general_links_section', array(
+		'title'       => __( 'Links', DIRECTORY_THEME ),
+		'priority'    => 30,
+		'description' => __( 'Links', DIRECTORY_THEME ),
+		'panel'  => 'dt_general_panel',
+	) );
+
+	$wp_customize->add_section( 'dt_general_typography_section', array(
 		'title'       => __( 'Typography', DIRECTORY_THEME ),
 		'priority'    => 30,
 		'description' => __( 'Typography', DIRECTORY_THEME ),
+		'panel'  => 'dt_general_panel',
 	) );
 
-	$wp_customize->add_section( 'dt_links_section', array(
-		'title'       => __( 'Links', DIRECTORY_THEME ),
+	$wp_customize->add_section( 'dt_general_content_box_section', array(
+		'title'       => __( 'Content Box', DIRECTORY_THEME ),
 		'priority'    => 30,
-		'description' => __( 'Links Section', DIRECTORY_THEME ),
+		'description' => __( 'Content Box', DIRECTORY_THEME ),
+		'panel'  => 'dt_general_panel',
 	) );
 
-	$wp_customize->add_section( 'dt_alerts_section', array(
-		'title'       => __( 'Alerts', DIRECTORY_THEME ),
+	// header
+	$wp_customize->add_section( 'dt_header_general_section', array(
+		'title'       => __( 'General', DIRECTORY_THEME ),
 		'priority'    => 30,
-		'description' => __( 'Alert colors', DIRECTORY_THEME ),
+		'description' => __( 'General', DIRECTORY_THEME ),
+		'panel'  => 'dt_header_panel',
+	) );
+
+	$wp_customize->add_section( 'dt_header_logo_section', array(
+		'title'       => __( 'Logo', DIRECTORY_THEME ),
+		'priority'    => 30,
+		'description' => __( 'Logo', DIRECTORY_THEME ),
+		'panel'  => 'dt_header_panel',
+	) );
+
+	$wp_customize->add_section( 'dt_header_color_section', array(
+		'title'       => __( 'Colors', DIRECTORY_THEME ),
+		'priority'    => 30,
+		'description' => __( 'Colors', DIRECTORY_THEME ),
+		'panel'  => 'dt_header_panel',
 	) );
 
 	$wp_customize->add_section( 'dt_primary_menu_section', array(
 		'title'       => __( 'Primary Menu', DIRECTORY_THEME ),
 		'priority'    => 30,
 		'description' => __( 'Primary Menu Section', DIRECTORY_THEME ),
+		'panel'  => 'dt_header_panel',
 	) );
 
-	$wp_customize->add_section( 'dt_content_box_section', array(
-		'title'       => __( 'Content Box', DIRECTORY_THEME ),
-		'priority'    => 30,
-		'description' => __( 'Content Box Section', DIRECTORY_THEME ),
-	) );
 
+	// footer
 	$wp_customize->add_section( 'dt_footer_widget_section', array(
 		'title'       => __( 'Footer Widgets', DIRECTORY_THEME ),
 		'priority'    => 30,
 		'description' => __( 'Footer Widgets Section', DIRECTORY_THEME ),
+		'panel'  => 'dt_footer_panel',
 	) );
 
-	$wp_customize->add_section( 'dt_copyright_section', array(
+	$wp_customize->add_section( 'dt_footer_copyright_section', array(
 		'title'       => __( 'Copyright', DIRECTORY_THEME ),
 		'priority'    => 30,
 		'description' => __( 'Copyright Section', DIRECTORY_THEME ),
+		'panel'  => 'dt_footer_panel',
+	) );
+
+	// extras
+	$wp_customize->add_section( 'dt_alerts_section', array(
+		'title'       => __( 'Alerts', DIRECTORY_THEME ),
+		'priority'    => 30,
+		'description' => __( 'Alerts', DIRECTORY_THEME ),
+		'panel'  => 'dt_extras_panel',
 	) );
 
 	$wp_customize->add_section( 'dt_button_section', array(
 		'title'       => __( 'Buttons', DIRECTORY_THEME ),
 		'priority'    => 30,
-		'description' => __( 'Buttons Section', DIRECTORY_THEME ),
+		'description' => __( 'Buttons', DIRECTORY_THEME ),
+		'panel'  => 'dt_extras_panel',
 	) );
 
 	//  =============================
@@ -73,7 +143,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'logo', array(
 		'label'    => __( 'Logo', DIRECTORY_THEME ),
-		'section'  => 'dt_header_section',
+		'section'  => 'dt_header_logo_section',
 		'settings' => 'logo',
 	) ) );
 	//  =============================
@@ -89,7 +159,7 @@ function directory_theme_customizer( $wp_customize ) {
 	$wp_customize->add_control( 'dt_container_width', array(
 		'type'        => 'text',
 		'label'   => 'Container Width',
-		'section' => 'dt_general_section',
+		'section' => 'dt_general_container_section',
 	) );
 
 
@@ -102,7 +172,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'dt_container_padding_right', array(
 		'label'   => 'Container Padding Right',
-		'section' => 'dt_general_section',
+		'section' => 'dt_general_container_section',
 		'type'    => 'text',
 	) );
 
@@ -116,7 +186,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'dt_container_padding_left', array(
 		'label'   => 'Container Padding Left',
-		'section' => 'dt_general_section',
+		'section' => 'dt_general_container_section',
 		'type'    => 'text',
 	) );
 
@@ -130,7 +200,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'dt_container_margin_right', array(
 		'label'   => 'Container Margin Right',
-		'section' => 'dt_general_section',
+		'section' => 'dt_general_container_section',
 		'type'    => 'text',
 	) );
 
@@ -144,7 +214,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'dt_container_margin_left', array(
 		'label'   => 'Container Margin Left',
-		'section' => 'dt_general_section',
+		'section' => 'dt_general_container_section',
 		'type'    => 'text',
 	) );
 
@@ -160,7 +230,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'dt_logo_margin_right', array(
 		'label'   => 'Logo Margin Right',
-		'section' => 'dt_header_section',
+		'section' => 'dt_header_logo_section',
 		'type'    => 'text',
 	) );
 
@@ -174,7 +244,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'dt_logo_margin_left', array(
 		'label'   => 'Logo Margin Left',
-		'section' => 'dt_header_section',
+		'section' => 'dt_header_logo_section',
 		'type'    => 'text',
 	) );
 
@@ -188,7 +258,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'dt_logo_margin_top', array(
 		'label'   => 'Logo Margin Top',
-		'section' => 'dt_header_section',
+		'section' => 'dt_header_logo_section',
 		'type'    => 'text',
 	) );
 
@@ -202,7 +272,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'dt_logo_margin_bottom', array(
 		'label'   => 'Logo Margin Bottom',
-		'section' => 'dt_header_section',
+		'section' => 'dt_header_logo_section',
 		'type'    => 'text',
 	) );
 
@@ -218,7 +288,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'dt_font_family', array(
 		'label'   => 'Font Family',
-		'section' => 'dt_typography_section',
+		'section' => 'dt_general_typography_section',
 		'type'    => 'text',
 	) );
 
@@ -232,7 +302,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'dt_font_size', array(
 		'label'   => 'Font Size',
-		'section' => 'dt_typography_section',
+		'section' => 'dt_general_typography_section',
 		'type'    => 'text',
 	) );
 
@@ -246,27 +316,12 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'dt_line_height', array(
 		'label'   => 'Line Height',
-		'section' => 'dt_typography_section',
+		'section' => 'dt_general_typography_section',
 		'type'    => 'text',
 	) );
 	//  =============================
 	//  = Colors                    =
 	//  =============================
-
-	$wp_customize->add_setting( 'dt_background_color', array(
-		'transport' => 'postMessage',
-		'default'           => DT_BACKGROUND_COLOR,
-		'sanitize_callback' => 'sanitize_hex_color',
-		'capability'        => 'edit_theme_options',
-		'type'              => 'option',
-	) );
-	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_background_color', array(
-		'label'       => __( 'Body Background Color', DIRECTORY_THEME ),
-		'section'     => 'dt_header_section',
-		'settings'    => 'dt_background_color',
-		'description' => __( 'Select body background color', DIRECTORY_THEME ),
-	) ) );
-
 
 	$wp_customize->add_setting( 'dt_body_color', array(
 		'transport' => 'postMessage',
@@ -277,7 +332,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_body_color', array(
 		'label'       => __( 'Body Color', DIRECTORY_THEME ),
-		'section'     => 'dt_header_section',
+		'section'     => 'dt_general_body_section',
 		'settings'    => 'dt_body_color',
 		'description' => __( 'Select body color', DIRECTORY_THEME ),
 	) ) );
@@ -294,7 +349,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_content_bg', array(
 		'label'       => __( 'Content Box Background Color', DIRECTORY_THEME ),
-		'section'     => 'dt_content_box_section',
+		'section'     => 'dt_general_content_box_section',
 		'settings'    => 'dt_content_bg',
 		'description' => __( 'Content Box Background Color', DIRECTORY_THEME ),
 	) ) );
@@ -308,7 +363,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_content_border', array(
 		'label'       => __( 'Content Box Border Color', DIRECTORY_THEME ),
-		'section'     => 'dt_content_box_section',
+		'section'     => 'dt_general_content_box_section',
 		'settings'    => 'dt_content_border',
 		'description' => __( 'Content Box Border Color', DIRECTORY_THEME ),
 	) ) );
@@ -322,7 +377,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'dt_content_shadow', array(
 		'label'   => 'Content Box Shadow Color',
-		'section' => 'dt_content_box_section',
+		'section' => 'dt_general_content_box_section',
 		'settings'    => 'dt_content_shadow',
 		'type'    => 'text',
 	) );
@@ -339,7 +394,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_h1toh6_color', array(
 		'label'       => __( 'h1 to h6 Color', DIRECTORY_THEME ),
-		'section'     => 'dt_typography_section',
+		'section'     => 'dt_general_typography_section',
 		'settings'    => 'dt_h1toh6_color',
 		'description' => __( 'Select h1 to h6 color', DIRECTORY_THEME ),
 	) ) );
@@ -415,7 +470,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_link_color', array(
 		'label'       => __( 'Link Color', DIRECTORY_THEME ),
-		'section'     => 'dt_links_section',
+		'section'     => 'dt_general_links_section',
 		'settings'    => 'dt_link_color',
 		'description' => __( 'Select Link color', DIRECTORY_THEME ),
 	) ) );
@@ -428,7 +483,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_link_hover', array(
 		'label'       => __( 'Link Hover Color', DIRECTORY_THEME ),
-		'section'     => 'dt_links_section',
+		'section'     => 'dt_general_links_section',
 		'settings'    => 'dt_link_hover',
 		'description' => __( 'Select link hover color', DIRECTORY_THEME ),
 	) ) );
@@ -441,7 +496,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_link_visited', array(
 		'label'       => __( 'Link Visited Color', DIRECTORY_THEME ),
-		'section'     => 'dt_links_section',
+		'section'     => 'dt_general_links_section',
 		'settings'    => 'dt_link_visited',
 		'description' => __( 'Select link visited color', DIRECTORY_THEME ),
 	) ) );
@@ -459,7 +514,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'dt_header_height', array(
 		'label'   => 'Header Height',
-		'section' => 'dt_header_section',
+		'section' => 'dt_header_general_section',
 		'settings'    => 'dt_header_height',
 		'type'    => 'text',
 	) );
@@ -473,7 +528,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_header_bg_color', array(
 		'label'       => __( 'Header Background Color', DIRECTORY_THEME ),
-		'section'     => 'dt_header_section',
+		'section'     => 'dt_header_color_section',
 		'settings'    => 'dt_header_bg_color',
 		'description' => __( 'Select header background color', DIRECTORY_THEME ),
 	) ) );
@@ -488,7 +543,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_header_link_color', array(
 		'label'       => __( 'Header Link Color', DIRECTORY_THEME ),
-		'section'     => 'dt_header_section',
+		'section'     => 'dt_header_color_section',
 		'settings'    => 'dt_header_link_color',
 		'description' => __( 'Select header link color', DIRECTORY_THEME ),
 	) ) );
@@ -503,7 +558,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_header_text_color', array(
 		'label'       => __( 'Header Text Color', DIRECTORY_THEME ),
-		'section'     => 'dt_header_section',
+		'section'     => 'dt_header_color_section',
 		'settings'    => 'dt_header_text_color',
 		'description' => __( 'Select header text color', DIRECTORY_THEME ),
 	) ) );
@@ -518,7 +573,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_header_link_hover', array(
 		'label'       => __( 'Header Link Color', DIRECTORY_THEME ),
-		'section'     => 'dt_header_section',
+		'section'     => 'dt_header_color_section',
 		'settings'    => 'dt_header_link_hover',
 		'description' => __( 'Select header link color', DIRECTORY_THEME ),
 	) ) );
@@ -533,7 +588,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_header_border_color', array(
 		'label'       => __( 'Header Border Color', DIRECTORY_THEME ),
-		'section'     => 'dt_header_section',
+		'section'     => 'dt_header_color_section',
 		'settings'    => 'dt_header_border_color',
 		'description' => __( 'Select header border color', DIRECTORY_THEME ),
 	) ) );
@@ -548,7 +603,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_header_shadow_color', array(
 		'label'       => __( 'Header Shadow Color', DIRECTORY_THEME ),
-		'section'     => 'dt_header_section',
+		'section'     => 'dt_header_color_section',
 		'settings'    => 'dt_header_shadow_color',
 		'description' => __( 'Select header shadow color', DIRECTORY_THEME ),
 	) ) );
@@ -704,7 +759,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_copyright_bg', array(
 		'label'       => __( 'Copyright Section Background Color', DIRECTORY_THEME ),
-		'section'     => 'dt_copyright_section',
+		'section'     => 'dt_footer_copyright_section',
 		'settings'    => 'dt_copyright_bg',
 		'description' => __( 'Select copyright section background color', DIRECTORY_THEME ),
 	) ) );
@@ -719,7 +774,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'dt_copyright_padding_top', array(
 		'label'   => 'Copyright Padding Top',
-		'section' => 'dt_copyright_section',
+		'section' => 'dt_footer_copyright_section',
 		'type'    => 'text',
 	) );
 
@@ -733,7 +788,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'dt_copyright_padding_bottom', array(
 		'label'   => 'Copyright Padding Bottom',
-		'section' => 'dt_copyright_section',
+		'section' => 'dt_footer_copyright_section',
 		'type'    => 'text',
 	) );
 
@@ -747,7 +802,7 @@ function directory_theme_customizer( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_copyright_border_color', array(
 		'label'       => __( 'Copyright Section Border Color', DIRECTORY_THEME ),
-		'section'     => 'dt_copyright_section',
+		'section'     => 'dt_footer_copyright_section',
 		'settings'    => 'dt_copyright_border_color',
 		'description' => __( 'Select copyright section border color', DIRECTORY_THEME ),
 	) ) );
@@ -819,6 +874,13 @@ function directory_theme_customizer( $wp_customize ) {
 	//  =     Built in Settings     =
 	//  =============================
 	$wp_customize->get_setting( 'blogname' )->transport = 'postMessage';
+
+	$wp_customize->get_section( 'title_tagline' )->panel  = 'dt_general_panel';
+	$wp_customize->get_section( 'colors' )->panel  = 'dt_general_panel';
+
+	$wp_customize->get_section( 'header_image' )->panel  = 'dt_header_panel';
+	$wp_customize->get_section( 'background_image' )->panel  = 'dt_general_panel';
+	$wp_customize->get_section( 'static_front_page' )->panel  = 'dt_general_panel';
 }
 
 add_action( 'customize_register', 'directory_theme_customizer' );

@@ -99,12 +99,6 @@
     //  = Colors                    =
     //  =============================
 
-    wp.customize( 'dt_background_color', function( value ) {
-        value.bind( function( newval ) {
-            $( 'body' ).css('background-color', newval );
-        } );
-    } );
-
     wp.customize( 'dt_body_color', function( value ) {
         value.bind( function( newval ) {
             $( 'body' ).css('color', newval );

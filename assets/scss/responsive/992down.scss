@@ -1,8 +1,9 @@
 @media (max-width: 992px) {
   .dt-nav-toggle {
-    float: right;
-    margin-top: 25px;
     display: inline-block;
+    position: absolute;
+    right: 15px;
+    top:25px;
   }
   #geodir_content,
   #gd-sidebar-wrapper {
@@ -17,7 +18,12 @@
 
   .site-header {
     height: auto;
+    min-height: $header-height;
     overflow: hidden;
+    .container {
+      overflow: hidden;
+      position: relative;
+    }
   }
   .site-logo-wrap {
     float: none;
