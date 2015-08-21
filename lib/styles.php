@@ -19,13 +19,11 @@ function directory_theme_customize_css()
 			margin-right:<?php echo get_theme_mod('dt_logo_margin_right', DT_LOGO_MARGIN_RIGHT); ?>;
 			margin-left:<?php echo get_theme_mod('dt_logo_margin_left', DT_LOGO_MARGIN_LEFT); ?>;
 			margin-top:<?php echo get_theme_mod('dt_logo_margin_top', DT_LOGO_MARGIN_TOP); ?>;
-			margin-bottom:<?php echo get_theme_mod('dt_logo_margin_bottom', DT_LOGO_MARGIN_BOTTOM); ?>;
 		}
 		body {
 			font-family:<?php echo get_theme_mod('dt_font_family', DT_FONT_FAMILY); ?>;
 			font-size:<?php echo get_theme_mod('dt_font_size', DT_FONT_SIZE); ?>;
 			line-height:<?php echo get_theme_mod('dt_line_height', DT_LINE_HEIGHT); ?>;
-			background-color:<?php echo get_theme_mod('dt_background_color', DT_BACKGROUND_COLOR); ?>;
 			color:<?php echo get_theme_mod('dt_body_color', DT_BODY_COLOR); ?>;
 		}
 		.content-box, .content .entry, #geodir_content, .sidebar .widget, .geodir-content-right .geodir-company_info, .geodir_full_page .geodir-category-list-in, .geodir_full_page .geodir-loc-bar {

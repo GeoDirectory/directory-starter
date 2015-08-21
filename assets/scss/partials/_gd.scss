@@ -924,3 +924,13 @@ ul.geodir_recent_reviews li {
 .geodir-chosen-container-single .chosen-search input[type="text"] {
   float: none;
 }
+#geodir_wrapper {
+  clear: both;
+}
+ul.treeview {
+  list-style: none;
+  input[type="checkbox"] {
+    margin-left: 0;
+  }
+}
+.map_category input[type="text"] { margin-bottom: 10px; }
