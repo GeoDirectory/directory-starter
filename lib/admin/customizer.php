@@ -262,20 +262,6 @@ function directory_theme_customizer( $wp_customize ) {
 		'type'    => 'text',
 	) );
 
-
-	$wp_customize->add_setting( 'dt_logo_margin_bottom', array(
-		'transport' => 'postMessage',
-		'default'     => DT_LOGO_MARGIN_BOTTOM,
-		'sanitize_callback' => 'sanitize_text_field',
-		'capability'  => 'edit_theme_options',
-		'description' => __( 'Logo Margin Bottom', DIRECTORY_THEME ),
-	) );
-	$wp_customize->add_control( 'dt_logo_margin_bottom', array(
-		'label'   => 'Logo Margin Bottom',
-		'section' => 'dt_header_logo_section',
-		'type'    => 'text',
-	) );
-
 	//  =============================
 	//  = Typography                =
 	//  =============================

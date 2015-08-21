@@ -19,7 +19,6 @@ function directory_theme_customize_css()
 			margin-right:<?php echo get_theme_mod('dt_logo_margin_right', DT_LOGO_MARGIN_RIGHT); ?>;
 			margin-left:<?php echo get_theme_mod('dt_logo_margin_left', DT_LOGO_MARGIN_LEFT); ?>;
 			margin-top:<?php echo get_theme_mod('dt_logo_margin_top', DT_LOGO_MARGIN_TOP); ?>;
-			margin-bottom:<?php echo get_theme_mod('dt_logo_margin_bottom', DT_LOGO_MARGIN_BOTTOM); ?>;
 		}
 		body {
 			font-family:<?php echo get_theme_mod('dt_font_family', DT_FONT_FAMILY); ?>;

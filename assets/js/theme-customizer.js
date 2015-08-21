@@ -67,12 +67,6 @@
         } );
     } );
 
-    wp.customize( 'dt_logo_margin_bottom', function( value ) {
-        value.bind( function( newval ) {
-            $( '.site-logo-wrap').find('.site-logo').css('margin-bottom', newval );
-        } );
-    } );
-
     //  =============================
     //  = Typography                =
     //  =============================
