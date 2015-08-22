@@ -34,10 +34,8 @@
 //alerts
 #buddypress #message.info p {
   @extend .alert-warning;
-  padding: 10px 18px;
 }
 
 #buddypress div#message.updated p {
   @extend .alert-success;
-  padding: 10px 18px;
 }
