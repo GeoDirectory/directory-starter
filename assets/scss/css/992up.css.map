@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,yBAA0B,CACxB,YAAa,CACX,OAAO,CAAE,gBAAgB",
-"sources": ["../responsive/992up.scss"],
-"names": [],
-"file": "992up.css"
-}

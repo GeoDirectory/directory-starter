@@ -861,45 +861,50 @@ a.bp-title-button {
 }
 
 //widgets
-#gd-sidebar-wrapper ul {
-  list-style: none;
-  margin: 0;
-}
-#gd-sidebar-wrapper .geodir-search {
-  margin-right: 10px;
-}
-#gd-sidebar-wrapper .geodir-loc-bar {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-#gd-sidebar-wrapper .customize_filter-in {
-  width: 100%;
-  padding: 5px;
-}
-#gd-sidebar-wrapper .customize_filter_inner {
-  padding: 5px;
-}
-#gd-sidebar-wrapper .geodir-advance-search {
-  padding: 5px;
-}
-#gd-sidebar-wrapper .geodir-advance-search input {
-  margin-bottom: 0;
-  width: 100%;
+#gd-sidebar-wrapper {
+  .geodir-category-list-in {
+    margin-top: 0;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  .geodir-search {
+    margin-right: 10px;
+  }
+  .geodir-loc-bar {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  .customize_filter-in {
+    width: 100%;
+    padding: 5px;
+  }
+  .customize_filter_inner {
+    padding: 5px;
+  }
+  .geodir-advance-search {
+    padding: 5px;
+    input {
+      margin-bottom: 0;
+      width: 100%;
+    }
+  }
+  .widget .widget {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+  .geodir_reviewer_text {
+    margin: 0;
+  }
 }
 #geodir-add-listing-submit {
   text-align: center;
   width: 100%;
   float: none;
-}
-#gd-sidebar-wrapper .widget .widget {
-  border: none;
-  box-shadow: none;
-  margin: 0;
-  padding: 0;
-}
-#gd-sidebar-wrapper .geodir_reviewer_text {
-  margin: 0;
 }
 
 ul.geodir_recent_reviews li {
@@ -934,3 +939,34 @@ ul.treeview {
   }
 }
 .map_category input[type="text"] { margin-bottom: 10px; }
+
+//footer widgets
+.footer-widgets {
+  .geodir-loc-bar {
+    padding: 0;
+    margin: 0;
+    border: none;
+    input[type="text"],
+    input[type="password"],
+    select,
+    input[type="button"] {
+      width: 100%;
+    }
+  }
+  .customize_filter-in {
+    width: 100%;
+    padding: 5px;
+    background: transparent;
+    border: none;
+  }
+  .customize_filter ul li {
+    border: none;
+  }
+  .geodir-loc-bar-in {
+    background: transparent;
+    border: none;
+  }
+  .geodir-search {
+    margin-right: 10px;
+  }
+}
