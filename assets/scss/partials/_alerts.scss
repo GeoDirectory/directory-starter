@@ -3,33 +3,35 @@ Alerts
 --------------------------------------------------------------*/
 %alert {
   margin: 0 0 10px;
-  padding: 5px 18px;
-  border: 1px solid;
-  p:first-child {
-    margin-top: 10px;
-  }
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .alert-warning {
   @extend %alert;
-  border-color: darken($alert-yellow, 5%);
+  color: $alert-yellow-text;
+  border-color: $alert-yellow-border;
   background: $alert-yellow;
 }
 
 .alert-info {
   @extend %alert;
-  border-color: darken($alert-blue, 5%);
+  color: $alert-blue-text;
+  border-color: $alert-blue-border;
   background: $alert-blue;
 }
 
 .alert-error {
   @extend %alert;
-  border-color: darken($alert-red, 5%);
+  color: $alert-red-text;
+  border-color: $alert-red-border;
   background: $alert-red;
 }
 
 .alert-success {
   @extend %alert;
-  border-color: darken($alert-green, 5%);
+  color: $alert-green-text;
+  border-color: $alert-green-border;
   background: $alert-green;
 }

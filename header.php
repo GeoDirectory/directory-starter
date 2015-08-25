@@ -23,6 +23,7 @@
 					<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'logo', false ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
 				</div>
 			<?php else : ?>
+				<?php if ( display_header_text() ) : ?>
 				<?php
 				$desc = get_bloginfo( 'description', 'display' );
 				$class = '';
@@ -38,6 +39,7 @@
 						<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( $desc ); ?>' rel='home'><?php echo $desc; ?></a>
 					</h2>
 				</hgroup>
+				<?php endif; ?>
 			<?php endif; ?>
 		</div>
 		<?php if ( has_nav_menu( 'primary-menu' ) ) { ?>

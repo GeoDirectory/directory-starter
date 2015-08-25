@@ -137,7 +137,7 @@
 
     wp.customize( 'dt_alert_yellow', function( value ) {
         value.bind( function( newval ) {
-            $( '.alert-warning' ).css('background-color', newval );
+            $( '.alert-warning, #message.info p' ).css('background-color', newval );
         } );
     } );
 
@@ -149,13 +149,63 @@
 
     wp.customize( 'dt_alert_green', function( value ) {
         value.bind( function( newval ) {
-            $( '.alert-success' ).css('background-color', newval );
+            $( '.alert-success, div#message.updated p' ).css('background-color', newval );
         } );
     } );
 
     wp.customize( 'dt_alert_blue', function( value ) {
         value.bind( function( newval ) {
             $( '.alert-help' ).css('background-color', newval );
+        } );
+    } );
+
+
+    wp.customize( 'dt_alert_yellow_text', function( value ) {
+        value.bind( function( newval ) {
+            $( '.alert-warning, #message.info p' ).css('color', newval );
+        } );
+    } );
+
+    wp.customize( 'dt_alert_red_text', function( value ) {
+        value.bind( function( newval ) {
+            $( '.alert-error' ).css('color', newval );
+        } );
+    } );
+
+    wp.customize( 'dt_alert_green_text', function( value ) {
+        value.bind( function( newval ) {
+            $( '.alert-success, div#message.updated p' ).css('color', newval );
+        } );
+    } );
+
+    wp.customize( 'dt_alert_blue_text', function( value ) {
+        value.bind( function( newval ) {
+            $( '.alert-help' ).css('color', newval );
+        } );
+    } );
+
+
+    wp.customize( 'dt_alert_yellow_border', function( value ) {
+        value.bind( function( newval ) {
+            $( '.alert-warning, #message.info p' ).css('border-color', newval );
+        } );
+    } );
+
+    wp.customize( 'dt_alert_red_border', function( value ) {
+        value.bind( function( newval ) {
+            $( '.alert-error' ).css('border-color', newval );
+        } );
+    } );
+
+    wp.customize( 'dt_alert_green_border', function( value ) {
+        value.bind( function( newval ) {
+            $( '.alert-success, div#message.updated p' ).css('border-color', newval );
+        } );
+    } );
+
+    wp.customize( 'dt_alert_blue_border', function( value ) {
+        value.bind( function( newval ) {
+            $( '.alert-help' ).css('border-color', newval );
         } );
     } );
 

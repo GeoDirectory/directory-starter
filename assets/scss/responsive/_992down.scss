@@ -18,9 +18,9 @@
 
   .site-header {
     height: auto;
-    min-height: $header-height;
     overflow: hidden;
     .container {
+      min-height: $header-height;
       overflow: hidden;
       position: relative;
     }
