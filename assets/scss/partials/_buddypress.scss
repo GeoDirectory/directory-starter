@@ -33,9 +33,16 @@
 
 //alerts
 #buddypress #message.info p {
+  @extend %alert;
   @extend .alert-warning;
 }
 
 #buddypress div#message.updated p {
+  @extend %alert;
   @extend .alert-success;
+}
+
+#buddypress div#message.error p {
+  @extend %alert;
+  @extend .alert-error;
 }

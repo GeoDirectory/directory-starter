@@ -4,6 +4,13 @@ function directory_theme_customize_css()
 {
 	?>
 	<style type="text/css">
+/*********************************
+ * General
+ *********************************/
+
+		/* Site Identity */
+
+		/* Spacing */
 		.container, .geodir-common, .geodir-breadcrumb, .geodir_full_page .widget {
 			padding-right: <?php echo get_theme_mod('dt_container_padding_right', DT_CONTAINER_PADDING_RIGHT); ?>;
 			padding-left: <?php echo get_theme_mod('dt_container_padding_left', DT_CONTAINER_PADDING_LEFT); ?>;
@@ -15,23 +22,11 @@ function directory_theme_customize_css()
 				width: <?php echo get_theme_mod('dt_container_width', DT_CONTAINER_WIDTH); ?>;
 			}
 		}
-		.site-logo-wrap .site-logo {
-			margin-right: <?php echo get_theme_mod('dt_logo_margin_right', DT_LOGO_MARGIN_RIGHT); ?>;
-			margin-left: <?php echo get_theme_mod('dt_logo_margin_left', DT_LOGO_MARGIN_LEFT); ?>;
-			margin-top: <?php echo get_theme_mod('dt_logo_margin_top', DT_LOGO_MARGIN_TOP); ?>;
-		}
-		body {
-			font-family: <?php echo get_theme_mod('dt_font_family', DT_FONT_FAMILY); ?>;
-			font-size: <?php echo get_theme_mod('dt_font_size', DT_FONT_SIZE); ?>;
-			line-height: <?php echo get_theme_mod('dt_line_height', DT_LINE_HEIGHT); ?>;
-			color: <?php echo get_theme_mod('dt_body_color', DT_BODY_COLOR); ?>;
-		}
-		.content-box, .content .entry, #geodir_content, .sidebar .widget, .geodir-content-right .geodir-company_info, .geodir_full_page .geodir-category-list-in, .geodir_full_page .geodir-loc-bar {
-			background-color: <?php echo get_theme_mod('dt_content_bg', DT_CONTENT_BG); ?>;
-			border-color: <?php echo get_theme_mod('dt_content_border', DT_CONTENT_BORDER); ?>;
-			box-shadow: 0 1px 1px <?php echo get_theme_mod('dt_content_shadow', DT_CONTENT_SHADOW); ?>;
-		}
-		.alert-help {
+
+		/* Static Front Page */
+
+		/* Alert Colors */
+		.alert-warning, #buddypress #message.info p {
 			color: <?php echo get_theme_mod('dt_alert_yellow_text', DT_ALERT_YELLOW_TEXT); ?>;
 			background-color: <?php echo get_theme_mod('dt_alert_yellow', DT_ALERT_YELLOW); ?>;
 			border-color: <?php echo get_theme_mod('dt_alert_yellow_border', DT_ALERT_YELLOW_BORDER); ?>;
@@ -41,34 +36,18 @@ function directory_theme_customize_css()
 			background-color: <?php echo get_theme_mod('dt_alert_blue', DT_ALERT_BLUE); ?>;
 			border-color: <?php echo get_theme_mod('dt_alert_blue_border', DT_ALERT_BLUE_BORDER); ?>;
 		}
-		.alert-error{
+		.alert-error, #buddypress div#message.error p {
 			color: <?php echo get_theme_mod('dt_alert_red_text', DT_ALERT_RED_TEXT); ?>;
 			background-color: <?php echo get_theme_mod('dt_alert_red', DT_ALERT_RED); ?>;
 			border-color: <?php echo get_theme_mod('dt_alert_red_border', DT_ALERT_RED_BORDER); ?>;
 		}
-		.alert-success {
+		.alert-success, #buddypress div#message.updated p {
 			color: <?php echo get_theme_mod('dt_alert_green_text', DT_ALERT_GREEN_TEXT); ?>;
 			background-color: <?php echo get_theme_mod('dt_alert_green', DT_ALERT_GREEN); ?>;
 			border-color: <?php echo get_theme_mod('dt_alert_green_border', DT_ALERT_GREEN_BORDER); ?>;
 		}
-		h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-			color: <?php echo get_theme_mod('dt_h1toh6_color', DT_H1TOH6_COLOR); ?>;
-		}
-		a, a:visited {
-			color: <?php echo get_theme_mod('dt_link_color', DT_LINK_COLOR); ?>;
-		}
-		a:hover,
-		a:focus,
-		a:active {
-			color: <?php echo get_theme_mod('dt_link_hover', DT_LINK_HOVER); ?>;
-		}
-		#primary-nav ul li {
-			padding: 0 <?php echo get_theme_mod('dt_p_nav_padding_left_right', DT_P_NAV_PADDING_LEFT_RIGHT); ?>;
-		}
-		#primary-nav ul li a {
-			height: <?php echo get_theme_mod('dt_p_nav_height', DT_P_NAV_HEIGHT); ?>;
-			line-height: <?php echo get_theme_mod('dt_p_nav_line_height', DT_P_NAV_LINE_HEIGHT); ?>;
-		}
+
+		/* Button Colors */
 		.dt-btn, button, input[type=button], input[type=reset], input[type=submit], p.edit-link, .reply .gd_comment_replaylink #gd_comment_replaylink, #buddypress form#whats-new-form input[type=submit], #buddypress .standard-form div.submit input, #buddypress .comment-reply-link, #buddypress button, #buddypress div.generic-button a, #buddypress input[type=button], #buddypress input[type=reset], #buddypress input[type=submit], #buddypress ul.button-nav li a, #buddypress input[type=submit]#notification-bulk-manage {
 			color: <?php echo get_theme_mod('dt_btn_text_color', DT_BTN_TEXT_COLOR); ?>;
 			background-color: <?php echo get_theme_mod('dt_btn_bg_color', DT_BTN_BG_COLOR); ?>;
@@ -77,22 +56,124 @@ function directory_theme_customize_css()
 		.dt-btn:hover, button:hover, input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover, p.edit-link:hover, .reply .gd_comment_replaylink #gd_comment_replaylink:hover, #buddypress form#whats-new-form input[type=submit]:hover, #buddypress .standard-form div.submit input:hover, #buddypress .comment-reply-link:hover, #buddypress button:hover, #buddypress div.generic-button a:hover, #buddypress input[type=button]:hover, #buddypress input[type=reset]:hover, #buddypress input[type=submit]:hover, #buddypress ul.button-nav li a:hover, #buddypress input[type=submit]#notification-bulk-manage:hover {
 			background-color: <?php echo get_theme_mod('dt_btn_hover_color', DT_BTN_HOVER_COLOR); ?>;
 		}
+
+/*********************************
+ * Header
+ *********************************/
+
+		/* Logo */
+		.site-logo-wrap .site-logo {
+			margin-right: <?php echo get_theme_mod('dt_logo_margin_right', DT_LOGO_MARGIN_RIGHT); ?>;
+			margin-left: <?php echo get_theme_mod('dt_logo_margin_left', DT_LOGO_MARGIN_LEFT); ?>;
+			margin-top: <?php echo get_theme_mod('dt_logo_margin_top', DT_LOGO_MARGIN_TOP); ?>;
+		}
+
+		.site-header {
+			height: <?php echo get_theme_mod('dt_header_height', DT_HEADER_HEIGHT); ?>;px;
+			background-color: <?php echo get_theme_mod('dt_header_bg_color', DT_HEADER_BG_COLOR); ?>;
+			border-color: <?php echo get_theme_mod('dt_header_border_color', DT_HEADER_BORDER_COLOR); ?>;
+			-webkit-box-shadow: 0 1px 1px <?php echo get_theme_mod('dt_header_shadow_color', DT_HEADER_SHADOW_COLOR); ?>;
+			-moz-box-shadow: 0 1px 1px <?php echo get_theme_mod('dt_header_shadow_color', DT_HEADER_SHADOW_COLOR); ?>;
+			box-shadow: 0 1px 1px <?php echo get_theme_mod('dt_header_shadow_color', DT_HEADER_SHADOW_COLOR); ?>;
+		}
+		/* header Image */
+
+		/* Text Colors */
+		.site-header a, .site-header a:visited {
+			color: <?php echo get_theme_mod('dt_header_link_color', DT_HEADER_LINK_COLOR); ?>;
+		}
+
+		.site-header a:hover, .site-header a:focus, .site-header a:active, .site-header a:visited:hover, .site-header a:visited:focus, .site-header a:visited:active {
+			color: <?php echo get_theme_mod('dt_header_link_hover', DT_HEADER_LINK_HOVER); ?>;
+		}
+
+		/* Background Colors */
+
+		/* Spacing */
+		#primary-nav ul li {
+			padding: 0 <?php echo get_theme_mod('dt_p_nav_padding_left_right', DT_P_NAV_PADDING_LEFT_RIGHT); ?>;
+		}
+		#primary-nav ul li a {
+			height: <?php echo get_theme_mod('dt_p_nav_height', DT_P_NAV_HEIGHT); ?>;
+			line-height: <?php echo get_theme_mod('dt_p_nav_line_height', DT_P_NAV_LINE_HEIGHT); ?>;
+		}
+
+/*********************************
+ * Body
+ *********************************/
+
+		body {
+			font-family: <?php echo get_theme_mod('dt_font_family', DT_FONT_FAMILY); ?>;
+			font-size: <?php echo get_theme_mod('dt_font_size', DT_FONT_SIZE); ?>;
+			line-height: <?php echo get_theme_mod('dt_line_height', DT_LINE_HEIGHT); ?>;
+			color: <?php echo get_theme_mod('dt_body_color', DT_BODY_COLOR); ?>;
+		}
+
+		p {
+			line-height: <?php echo get_theme_mod('dt_line_height', '22px'); ?>;
+		}
+
+		.content-box, .content .entry, #geodir_content, .sidebar .widget, .geodir-content-right .geodir-company_info, .geodir_full_page .geodir-category-list-in, .geodir_full_page .geodir-loc-bar {
+			background-color: <?php echo get_theme_mod('dt_content_bg', DT_CONTENT_BG); ?>;
+			border-color: <?php echo get_theme_mod('dt_content_border', DT_CONTENT_BORDER); ?>;
+			box-shadow: 0 1px 1px <?php echo get_theme_mod('dt_content_shadow', DT_CONTENT_SHADOW); ?>;
+		}
+		/* Background Image */
+
+		/* Text Colors */
+		a {
+			color: <?php echo get_theme_mod('dt_link_color', DT_LINK_COLOR); ?>;
+		}
+		a:visited {
+			color: <?php echo get_theme_mod('dt_link_visited', DT_LINK_VISITED); ?>;
+		}
+		a:hover,
+		a:focus,
+		a:active {
+			color: <?php echo get_theme_mod('dt_link_hover', DT_LINK_HOVER); ?>;
+		}
+
+		/* Background Colors */
+
+		/* Spacing */
+
+		/* Typography */
+		h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+			color: <?php echo get_theme_mod('dt_h1toh6_color', DT_H1TOH6_COLOR); ?>;
+		}
+
+/*********************************
+ * Footer
+ *********************************/
+
+		/* Text Colors */
+
+		/* Background Colors */
 		.footer-widgets {
-			background-color: <?php echo get_theme_mod('dt_footer_widget_bg', DT_FW_BG); ?>;
+			background-color: <?php echo get_theme_mod('dt_fw_bg', DT_FW_BG); ?>;
+			border-top-color: <?php echo get_theme_mod('dt_fw_border_top_color', DT_FW_BORDER_TOP_COLOR); ?>;
+			border-bottom-color: <?php echo get_theme_mod('dt_fw_border_bottom_color', DT_FW_BORDER_BOTTOM_COLOR); ?>;
+			-webkit-box-shadow: 0 -1px 1px <?php echo get_theme_mod('dt_fw_box_shadow_color', DT_FW_BOX_SHADOW_COLOR); ?>;
+			-moz-box-shadow: 0 -1px 1px <?php echo get_theme_mod('dt_fw_box_shadow_color', DT_FW_BOX_SHADOW_COLOR); ?>;
+			box-shadow: 0 -1px 1px <?php echo get_theme_mod('dt_fw_box_shadow_color', DT_FW_BOX_SHADOW_COLOR); ?>;
 		}
 		.copyright {
 			background-color: <?php echo get_theme_mod('dt_copyright_bg', DT_COPYRIGHT_BG); ?>;
 			border-top: 1px solid #151515;
 			border-top-color: <?php echo get_theme_mod('dt_copyright_border_color', DT_COPYRIGHT_BORDER_COLOR); ?>;
 		}
+
+		/* Spacing */
 		.copyright .container {
 			padding-top: <?php echo get_theme_mod('dt_copyright_padding_top', DT_COPYRIGHT_PADDING_TOP); ?>;
 			padding-bottom: <?php echo get_theme_mod('dt_copyright_padding_bottom', DT_COPYRIGHT_PADDING_BOTTOM); ?>;
 		}
-		.site-header {
-			height: <?php echo get_theme_mod('dt_header_height', DT_HEADER_HEIGHT); ?>;px;
-			background-color: <?php echo get_theme_mod('dt_header_bg_color', DT_HEADER_BG_COLOR); ?>;
-		}
+		/* Typography */
+
+
+
+
+
 	</style>
 	<?php
 }

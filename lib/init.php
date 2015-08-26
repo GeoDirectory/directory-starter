@@ -32,6 +32,7 @@ function directory_theme_setup(){
 	add_editor_style( get_stylesheet_directory_uri() . '/assets/css/editor-style.css' );
 
 	$args = array(
+		'default-text-color'      => 'FFFFFF',
 		'height'                 => DT_HEADER_HEIGHT,
 		'width'                  => 1600
 	);
