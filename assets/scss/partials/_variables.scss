@@ -56,6 +56,7 @@ $p-nav-line-height: $p-nav-height;
 $p-nav-padding-right: 45px;
 //primary nav submenu
 $p-nav-submenu-bg-color: $header-bg-color;
+$p-nav-menu-bg-hover: lighten($header-bg-color, 9%);
 $p-nav-submenu-bg-hover: lighten($p-nav-submenu-bg-color, 9%);
 //footer widget
 $footer-widget-bg:  #2F2F2F;
