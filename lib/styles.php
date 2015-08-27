@@ -89,6 +89,20 @@ function directory_theme_customize_css()
 
 		/* Background Colors */
 
+		#primary-nav ul .sub-menu a {
+			background-color: <?php echo get_theme_mod('dt_p_nav_submenu_bg_color', DT_P_NAV_SUBMENU_BG_COLOR); ?> !important;
+		}
+
+		#primary-nav ul .sub-menu a:hover {
+			background-color: <?php echo get_theme_mod('dt_p_nav_submenu_bg_hover', DT_P_NAV_SUBMENU_BG_HOVER); ?> !important;
+		}
+
+		@media (max-width: 992px) {
+			#primary-nav ul li a:hover {
+				background: <?php echo get_theme_mod('dt_p_nav_submenu_bg_hover', DT_P_NAV_SUBMENU_BG_HOVER); ?> !important;
+			}
+		}
+
 		/* Spacing */
 		#primary-nav ul li {
 			padding: 0 <?php echo get_theme_mod('dt_p_nav_padding_left_right', DT_P_NAV_PADDING_LEFT_RIGHT); ?>;
