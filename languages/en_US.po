@@ -1,0 +1,409 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Directory Starter 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-22 10:26-0000\n"
+"PO-Revision-Date: 2015-09-22 10:40-0000\n"
+"Last-Translator: \n"
+"Language-Team: GD Team <info@wpgeodirectory.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_n:1,2;_n_noop:1,2;"
+"_nx:1,2;_nx_noop:1,2;_x;esc_attr_e;esc_attr__\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:6
+msgid "Not Found"
+msgstr ""
+
+#: 404.php:11
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: 404.php:12
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: archive.php:7 index.php:7 page.php:7 single.php:7
+msgid "Sorry, no results were found."
+msgstr ""
+
+#: archive.php:22 index.php:22
+msgid "Previous"
+msgstr ""
+
+#: archive.php:23 index.php:23
+msgid "Next"
+msgstr ""
+
+#: comments.php:16 lib/entrymeta.php:65
+#, php-format
+msgid "1 Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:40
+msgid "Comments are closed."
+msgstr ""
+
+#: content.php:26
+msgid "Pages:"
+msgstr ""
+
+#: content.php:35
+msgid "Edit"
+msgstr ""
+
+#: lib/admin/customizer.php:49 lib/admin/customizer.php:51
+#: lib/admin/customizer.php:102 lib/admin/customizer.php:104
+#: lib/admin/customizer.php:134 lib/admin/customizer.php:136
+#: lib/admin/customizer.php:166 lib/admin/customizer.php:168
+msgid "Spacing"
+msgstr ""
+
+#: lib/admin/customizer.php:56 lib/admin/customizer.php:58
+msgid "Alert Colors"
+msgstr ""
+
+#: lib/admin/customizer.php:63 lib/admin/customizer.php:65
+msgid "Button Colors"
+msgstr ""
+
+#: lib/admin/customizer.php:74 lib/admin/customizer.php:76
+#: lib/admin/customizer.php:500
+msgid "Logo"
+msgstr ""
+
+#: lib/admin/customizer.php:81 lib/admin/customizer.php:83
+#: lib/admin/customizer.php:113 lib/admin/customizer.php:115
+#: lib/admin/customizer.php:145 lib/admin/customizer.php:147
+msgid "Text Colors"
+msgstr ""
+
+#: lib/admin/customizer.php:88 lib/admin/customizer.php:90
+#: lib/admin/customizer.php:120 lib/admin/customizer.php:122
+#: lib/admin/customizer.php:152 lib/admin/customizer.php:154
+msgid "Background Colors"
+msgstr ""
+
+#: lib/admin/customizer.php:95 lib/admin/customizer.php:97
+#: lib/admin/customizer.php:127 lib/admin/customizer.php:129
+#: lib/admin/customizer.php:159 lib/admin/customizer.php:161
+msgid "Typography"
+msgstr ""
+
+#: lib/admin/customizer.php:173 lib/admin/customizer.php:175
+msgid "Copyright Text"
+msgstr ""
+
+#: lib/admin/customizer.php:208 lib/admin/customizer.php:222
+#: lib/admin/customizer.php:236 lib/admin/customizer.php:250
+#: lib/admin/customizer.php:264 lib/admin/customizer.php:284
+#: lib/admin/customizer.php:297 lib/admin/customizer.php:310
+#: lib/admin/customizer.php:323 lib/admin/customizer.php:337
+#: lib/admin/customizer.php:350 lib/admin/customizer.php:363
+#: lib/admin/customizer.php:376 lib/admin/customizer.php:390
+#: lib/admin/customizer.php:403 lib/admin/customizer.php:416
+#: lib/admin/customizer.php:429 lib/admin/customizer.php:444
+#: lib/admin/customizer.php:458 lib/admin/customizer.php:472
+#: lib/admin/customizer.php:486 lib/admin/customizer.php:523
+#: lib/admin/customizer.php:536 lib/admin/customizer.php:551
+#: lib/admin/customizer.php:564 lib/admin/customizer.php:578
+#: lib/admin/customizer.php:604 lib/admin/customizer.php:618
+#: lib/admin/customizer.php:634 lib/admin/customizer.php:647
+#: lib/admin/customizer.php:661 lib/admin/customizer.php:675
+#: lib/admin/customizer.php:687 lib/admin/customizer.php:700
+#: lib/admin/customizer.php:713 lib/admin/customizer.php:737
+#: lib/admin/customizer.php:750 lib/admin/customizer.php:762
+#: lib/admin/customizer.php:774 lib/admin/customizer.php:786
+#: lib/admin/customizer.php:803 lib/admin/customizer.php:816
+#: lib/admin/customizer.php:829 lib/admin/customizer.php:846
+#: lib/admin/customizer.php:860 lib/admin/customizer.php:874
+#: lib/admin/customizer.php:894 lib/admin/customizer.php:907
+#: lib/admin/customizer.php:920 lib/admin/customizer.php:933
+#: lib/admin/customizer.php:945 lib/admin/customizer.php:957
+#: lib/admin/customizer.php:971 lib/admin/customizer.php:984
+#, php-format
+msgid "Default: %s"
+msgstr ""
+
+#: lib/admin/customizer.php:281
+msgid "Alert Warning Background Color"
+msgstr ""
+
+#: lib/admin/customizer.php:294
+msgid "Alert Error Background Color"
+msgstr ""
+
+#: lib/admin/customizer.php:307
+msgid "Alert Success Background Color"
+msgstr ""
+
+#: lib/admin/customizer.php:320
+msgid "Alert Info Background Color"
+msgstr ""
+
+#: lib/admin/customizer.php:334
+msgid "Alert Warning Text Color"
+msgstr ""
+
+#: lib/admin/customizer.php:347
+msgid "Alert Error Text Color"
+msgstr ""
+
+#: lib/admin/customizer.php:360
+msgid "Alert Success Text Color"
+msgstr ""
+
+#: lib/admin/customizer.php:373
+msgid "Alert Info Text Color"
+msgstr ""
+
+#: lib/admin/customizer.php:387
+msgid "Alert Warning Border Color"
+msgstr ""
+
+#: lib/admin/customizer.php:400
+msgid "Alert Error Border Color"
+msgstr ""
+
+#: lib/admin/customizer.php:413
+msgid "Alert Success Border Color"
+msgstr ""
+
+#: lib/admin/customizer.php:426
+msgid "Alert Info Border Color"
+msgstr ""
+
+#: lib/admin/customizer.php:441
+msgid "Button Text Color"
+msgstr ""
+
+#: lib/admin/customizer.php:455
+msgid "Button Background Color"
+msgstr ""
+
+#: lib/admin/customizer.php:469
+msgid "Button Hover Background Color"
+msgstr ""
+
+#: lib/admin/customizer.php:483
+msgid "Button Border Color"
+msgstr ""
+
+#: lib/admin/customizer.php:497
+msgid ""
+"Upload a logo to replace the default site name and description in the header"
+msgstr ""
+
+#: lib/admin/customizer.php:520
+msgid "Header Link Color"
+msgstr ""
+
+#: lib/admin/customizer.php:533
+msgid "Header Link Hover Color"
+msgstr ""
+
+#: lib/admin/customizer.php:548
+msgid "Header Background Color"
+msgstr ""
+
+#: lib/admin/customizer.php:561
+msgid "Header Border Color"
+msgstr ""
+
+#: lib/admin/customizer.php:574
+msgid "Header Shadow Color"
+msgstr ""
+
+#: lib/admin/customizer.php:601
+msgid "Primary Menu - Sub menu Background Color"
+msgstr ""
+
+#: lib/admin/customizer.php:615
+msgid "Primary Menu - Sub menu Background hover Color"
+msgstr ""
+
+#: lib/admin/customizer.php:734
+msgid "Body Color"
+msgstr ""
+
+#: lib/admin/customizer.php:747
+msgid "h1 to h6 Color"
+msgstr ""
+
+#: lib/admin/customizer.php:759
+msgid "Link Color"
+msgstr ""
+
+#: lib/admin/customizer.php:771
+msgid "Link Hover Color"
+msgstr ""
+
+#: lib/admin/customizer.php:783
+msgid "Link Visited Color"
+msgstr ""
+
+#: lib/admin/customizer.php:800
+msgid "Content Box Background Color"
+msgstr ""
+
+#: lib/admin/customizer.php:813
+msgid "Content Box Border Color"
+msgstr ""
+
+#: lib/admin/customizer.php:891
+msgid "Footer Section Background Color"
+msgstr ""
+
+#: lib/admin/customizer.php:904
+msgid "Footer Section Border Top Color"
+msgstr ""
+
+#: lib/admin/customizer.php:917
+msgid "Footer Section Border Bottom Color"
+msgstr ""
+
+#: lib/admin/customizer.php:930
+msgid "Footer Section Box Shadow Color"
+msgstr ""
+
+#: lib/admin/customizer.php:942
+msgid "Copyright Section Background Color"
+msgstr ""
+
+#: lib/admin/customizer.php:954
+msgid "Copyright Section Border Color"
+msgstr ""
+
+#: lib/comments.php:7
+msgid "Comment navigation"
+msgstr ""
+
+#: lib/comments.php:10
+msgid "Older Comments"
+msgstr ""
+
+#: lib/comments.php:14
+msgid "Newer Comments"
+msgstr ""
+
+#: lib/comments.php:32
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: lib/comments.php:33
+msgid " - Edit"
+msgstr ""
+
+#: lib/comments.php:35
+msgid " - Reply"
+msgstr ""
+
+#: lib/comments.php:43
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: lib/config.php:6
+msgid "Copyright &copy; 2015 GeoDirectory Team. All rights reserved."
+msgstr ""
+
+#: lib/entrymeta.php:4
+msgid "Featured"
+msgstr ""
+
+#: lib/entrymeta.php:65
+msgid "Leave a comment"
+msgstr ""
+
+#: lib/entrymeta.php:65
+msgid "% Comments"
+msgstr ""
+
+#: lib/nav.php:5
+msgid "Primary Menu"
+msgstr ""
+
+#: lib/nav.php:6
+msgid "Footer Links"
+msgstr ""
+
+#: lib/sidebars.php:6
+msgid "Sidebar Primary"
+msgstr ""
+
+#: lib/sidebars.php:8
+msgid "Primary Sidebar."
+msgstr ""
+
+#: lib/sidebars.php:17
+msgid "Sidebar Footer 1"
+msgstr ""
+
+#: lib/sidebars.php:19
+msgid "Sidebar Footer 1."
+msgstr ""
+
+#: lib/sidebars.php:29
+msgid "Sidebar Footer 2"
+msgstr ""
+
+#: lib/sidebars.php:31
+msgid "Sidebar Footer 2."
+msgstr ""
+
+#: lib/sidebars.php:41
+msgid "Sidebar Footer 3"
+msgstr ""
+
+#: lib/sidebars.php:43
+msgid "Sidebar Footer 3."
+msgstr ""
+
+#: lib/sidebars.php:53
+msgid "Sidebar Footer 4"
+msgstr ""
+
+#: lib/sidebars.php:55
+msgid "Sidebar Footer 4."
+msgstr ""
+
+#, fuzzy
+#~ msgid "Location"
+#~ msgstr "'Lokácia"
+
+#, fuzzy
+#~ msgid "Enter Your Location"
+#~ msgstr "'Lokácia"
+
+#, fuzzy
+#~ msgid "GT > Location Select"
+#~ msgstr "'Lokácia"
+
+#, fuzzy
+#~ msgid "Select Location"
+#~ msgstr "'Lokácia"
+
+#, fuzzy
+#~ msgid "Homepage Location description"
+#~ msgstr "'Lokácia"
+
+#, fuzzy
+#~ msgid "Location Settings"
+#~ msgstr "'Lokácia"
+
+#, fuzzy
+#~ msgid "Location database checks"
+#~ msgstr "'Lokácia"
+
+#, fuzzy
+#~ msgid "Select location order"
+#~ msgstr "'Lokácia"
