@@ -4,7 +4,7 @@
 	<div class="content-box content-single">
 		<?php if (!have_posts()) : ?>
 			<div class="alert-error">
-				<p><?php _e('Sorry, no results were found.', DIRECTORY_THEME); ?></p>
+				<p><?php _e('Sorry, no results were found.', 'directory_starter'); ?></p>
 			</div>
 			<?php get_search_form(); ?>
 		<?php endif; ?>
