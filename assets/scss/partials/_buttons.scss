@@ -15,12 +15,14 @@
   border: 1px solid $btn-border-color;
   &:hover, &:focus {
     background-color: $btn-hover-color;
+    color: $btn-text-color;
     outline: 0;
   }
 }
 button,
 input[type=button],
 input[type=reset],
-input[type=submit] {
+input[type=submit],
+a.geodir_goback {
   @extend .dt-btn;
 }
