@@ -12,7 +12,7 @@ function directory_theme_setup(){
 	 *
 	 * You may need this tool. https://poedit.net/
 	 */
-	load_theme_textdomain('directory_starter', get_stylesheet_directory() . '/languages');
+	load_theme_textdomain('directory_starter', get_template_directory() . '/languages');
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -29,7 +29,7 @@ function directory_theme_setup(){
 		'default-attachment' => 'fixed',
 	) ) );
 
-	add_editor_style( get_stylesheet_directory_uri() . '/assets/css/editor-style.css' );
+	add_editor_style( get_template_directory_uri() . '/assets/css/editor-style.css' );
 
 	$args = array(
 		'default-text-color'      => 'FFFFFF',

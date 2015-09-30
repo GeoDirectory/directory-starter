@@ -55,8 +55,19 @@ ul.geodir-loginbox-list,
 ul#breadcrumbs {
   margin: 0;
 }
-.geodir_full_page section.widget {
+.geodir_full_page section.widget,
+.geodir_preview_section {
   @extend .container;
+}
+.geodir_preview_section {
+  border: none;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+}
+.geodir_preview_section form {
+  margin-bottom: 0;
 }
 .geodir_full_page .geodir_map_container {
   margin: 0 auto;
@@ -73,7 +84,8 @@ ul#breadcrumbs {
     }
   }
 }
-.geodir_full_page .geodir-loc-bar {
+.geodir_full_page .geodir-loc-bar,
+.geodir_preview_section form {
   @extend .content-box;
 }
 .near-compass .fa {
@@ -969,4 +981,15 @@ ul.treeview {
   .geodir-search {
     margin-right: 10px;
   }
+}
+
+.geodir_preview_section h5.geodir_information {
+  margin: 0;
+}
+.geodir_preview_section h5.geodir_information {
+  color: #757575;
+}
+#geodir_content .geodir_preview_section {
+  width: auto;
+  margin-top: 0;
 }
