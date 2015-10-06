@@ -39,6 +39,7 @@ p.edit-link {
   }
 }
 .sidebar .widget,
+.dt-sidebar .widget,
 .geodir-content-right .geodir-company_info {
   @extend .content-box;
 }
@@ -992,4 +993,30 @@ ul.treeview {
 #geodir_content .geodir_preview_section {
   width: auto;
   margin-top: 0;
+}
+#menu-item-gd-location-switcher .geodir_location_tab_container dd.geodir_location_tabs a,
+#menu-item-gd-location-switcher .geodir_location_tab_container dd.geodir_location_tabs a:hover {
+  background: #fff !important;
+}
+#primary-nav .sub-menu .geodir-chosen-container a,
+#primary-nav .sub-menu .geodir-chosen-container a:hover {
+  background: #fff !important;
+}
+#menu-item-gd-location-switcher .geodir_location_sugestion .geodir-chosen-container .chosen-drop li {
+  margin: 0;
+  padding: 5px 6px;
+  list-style: none;
+  line-height: 15px;
+}
+.geodir-chosen-container .chosen-results li.highlighted {
+  background-image: none;
+  background-color: $header-bg-color;
+}
+#reviewsTab .normal-comments ol.commentlist li {
+  border-bottom: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+#reviewsTab .normal-comments ol.children li:first-child {
+  border-top: none;
 }

@@ -117,3 +117,73 @@ h1.entry-title {
     width: auto;
   }
 }
+#dt-blog {
+  overflow: hidden;
+  float: left;
+}
+.dt-blog-s-left,
+.dt-blog-s-right {
+  width: 67%;
+}
+#dt-sidebar-wrapper {
+  width: 30%;
+  margin-left: 3%;
+  margin-top: 20px;
+  overflow: visible;
+  float: left;
+}
+#dt-sidebar-wrapper.dt-sidebar-left {
+  margin-left: 0;
+  margin-right: 3%;
+}
+.dt-blog-container {
+  overflow: hidden;
+}
+//Widget Styles
+
+// Calendar
+#wp-calendar td,
+#wp-calendar th {
+  text-align: center;
+  line-height: 30px;
+}
+#wp-calendar #prev {
+  text-align: left;
+}
+#wp-calendar #next {
+  text-align: right;
+}
+
+// Archives
+#gd-sidebar-wrapper {
+  .widget_archive,
+  .widget_nav_menu,
+  .widget_categories {
+    ul {
+      font-size: 15px;
+      line-height: 23px;
+      list-style: square;
+      margin: 0 0 20px 20px;
+      .sub-menu,
+      .children {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+#gd-sidebar-wrapper select {
+  float: none;
+  width: 100%;
+}
+
+//login & signup form
+.login_form_l,
+.registration_form_r {
+  background-color: #f3f2f0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
