@@ -84,11 +84,7 @@ function dt_geodir_insert_taxonomy($post_type, $catname, $folder_name, $last_cat
 
 	$uploads = wp_upload_dir(); // Array of key => value pairs
 
-	if (dt_godir_dummy_folder_exists($folder_name))
-		//$dummy_image_url = get_template_directory_uri() . "/'.$folder_name.'/dummy/cat_icon";
-		$dummy_image_url = get_stylesheet_directory_uri() . "/'.$folder_name.'/dummy/cat_icon";
-	else
-		$dummy_image_url = 'http://www.wpgeodirectory.com/dummy_'.strtolower($folder_name).'/cat_icon';
+	$dummy_image_url = get_template_directory_uri() . "/assets/images";
 
 	$catname = str_replace(' ', '_', $catname);
 
