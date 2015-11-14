@@ -1020,3 +1020,36 @@ ul.treeview {
 #reviewsTab .normal-comments ol.children li:first-child {
   border-top: none;
 }
+//.geodir_category_list_view li.geodir-gridview.gridview_onehalf .geodir-post-img {
+//  height: 300px;
+//}
+//.geodir_category_list_view li.geodir-gridview.gridview_onethird .geodir-post-img {
+//  height: 200px;
+//}
+//.geodir_category_list_view li.geodir-gridview.gridview_onefourth .geodir-post-img {
+//  height: 150px;
+//}
+.geodir_popular_post_category {
+  h3.widget-title {
+    margin-top: 0;
+  }
+}
+.geodir_full_page {
+  .geodir_popular_post_category {
+    h3.widget-title {
+      margin-top: 0;
+    }
+    .geodir-cat-list ul li {
+      padding-left: 0;
+    }
+    .geodir-cat-list ul.geodir-popular-cat-list {
+      margin-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+  }
+}
+select.geodir-cat-list-tax {
+  float: none;
+}
