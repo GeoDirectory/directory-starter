@@ -1059,3 +1059,23 @@ select.geodir-cat-list-tax {
 .geodir_Star {
   background-color: rgba(0,0,0,0.2);
 }
+#simplemodal-container .row {
+  margin-left: 0;
+}
+.geodir_map_container .main_list img {
+  margin-right: 7px;
+  position: relative;
+  top: 3px;
+}
+.map-category-listing {
+  min-width: 200px;
+}
+.geodir-loc-bar {
+  .customize_filter-in {
+    width: 100%;
+    ul {
+      margin-left: 0;
+      list-style-type: none;
+    }
+  }
+}
