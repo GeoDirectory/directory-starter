@@ -26,3 +26,10 @@ function dt_header_image() {
 	}
 	return $style;
 }
+
+// Replaces the excerpt "more" text by a link
+function dt_excerpt_more($more) {
+	global $post;
+	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read more...</a>';
+}
+add_filter('excerpt_more', 'dt_excerpt_more');

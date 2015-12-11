@@ -90,16 +90,16 @@ function directory_theme_customize_css()
 		/* Background Colors */
 
 		#primary-nav ul .sub-menu a {
-			background-color: <?php echo get_theme_mod('dt_p_nav_submenu_bg_color', DT_P_NAV_SUBMENU_BG_COLOR); ?> !important;
+			background-color: <?php echo get_theme_mod('dt_p_nav_submenu_bg_color', DT_P_NAV_SUBMENU_BG_COLOR); ?>;
 		}
 
 		#primary-nav ul .sub-menu a:hover {
-			background-color: <?php echo get_theme_mod('dt_p_nav_submenu_bg_hover', DT_P_NAV_SUBMENU_BG_HOVER); ?> !important;
+			background-color: <?php echo get_theme_mod('dt_p_nav_submenu_bg_hover', DT_P_NAV_SUBMENU_BG_HOVER); ?>;
 		}
 
 		@media (max-width: 992px) {
 			#primary-nav ul li a:hover {
-				background: <?php echo get_theme_mod('dt_p_nav_submenu_bg_hover', DT_P_NAV_SUBMENU_BG_HOVER); ?> !important;
+				background: <?php echo get_theme_mod('dt_p_nav_submenu_bg_hover', DT_P_NAV_SUBMENU_BG_HOVER); ?>;
 			}
 		}
 

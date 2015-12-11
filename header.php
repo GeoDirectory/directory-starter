@@ -9,12 +9,14 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+<?php do_action('dt_before_header'); ?>
 <header id="site-header" class="site-header" role="banner" style="<?php echo dt_header_image(); ?>">
 	<div class="container">
 		<?php if ( has_nav_menu( 'primary-menu' ) ) { ?>
 		<button class="dt-nav-toggle" type="button" data-toggle="collapse" data-target="#primary-nav">
-			<i class="fa fa-bars"></i>
+			<span class="dt-icon-bar"></span>
+			<span class="dt-icon-bar"></span>
+			<span class="dt-icon-bar"></span>
 		</button>
 		<?php } ?>
 		<div class="site-logo-wrap">

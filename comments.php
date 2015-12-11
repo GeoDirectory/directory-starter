@@ -9,8 +9,8 @@ if ( post_password_required() ) {
 ?>
 
 <div id="comments" class="comments-area normal-comments">
-
 	<?php if ( have_comments() ) : ?>
+	<div class="commentlist-wrap">
 		<h2 class="comments-title">
 			<?php
 			printf( _nx( '1 Comment', '%1$s Comments', get_comments_number(), 'comments title', 'directory_starter' ),
@@ -30,7 +30,7 @@ if ( post_password_required() ) {
 		</ol><!-- .comment-list -->
 
 		<?php directory_theme_comment_nav(); ?>
-
+	</div>
 	<?php endif; // have_comments() ?>
 
 	<?php
