@@ -275,6 +275,14 @@ h2.comments-title,
   margin: 0;
   height: auto;
 }
+.content-box {
+  img.aligncenter,
+  img.alignright,
+  img.alignleft {
+    height: auto
+  }
+}
+
 
 /* =WordPress Core
 -------------------------------------------------------------- */
