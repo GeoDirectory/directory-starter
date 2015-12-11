@@ -266,3 +266,11 @@ h2.comments-title,
 .dt-icon-bar+.dt-icon-bar {
   margin-top: 4px;
 }
+
+.wp-caption {
+  max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 0
+}
