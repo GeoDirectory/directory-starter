@@ -278,8 +278,9 @@ h2.comments-title,
 .content-box {
   img.aligncenter,
   img.alignright,
-  img.alignleft {
-    height: auto
+  img.alignleft,
+  img.alignnone {
+    height: auto;
   }
 }
 
