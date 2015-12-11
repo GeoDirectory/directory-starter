@@ -3,4 +3,8 @@
     margin: 0;
     width: 100%;
   }
+  .gallery .gallery-item {
+    width: 100% !important;
+    max-width: 100%;
+  }
 }
