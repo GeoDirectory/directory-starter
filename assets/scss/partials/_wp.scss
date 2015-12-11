@@ -241,7 +241,7 @@ h2.comments-title,
     .single-comment {
       border-bottom-style: dashed;
     }
-    li:last-child {
+    > li:last-child {
       .single-comment {
         margin-bottom: 0;
         border-bottom: none;
