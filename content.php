@@ -14,11 +14,13 @@
 	</header>
 	<div class="entry-content entry-summary">
 		<?php
+		global $more;
+		$more = 0;
 		if (is_singular()) {
 			the_content();
 		} else {
-		directory_theme_post_thumbnail();
-		the_excerpt();
+			directory_theme_post_thumbnail();
+			the_excerpt();
 		}
 		?>
 		<?php

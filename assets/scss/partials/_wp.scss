@@ -187,3 +187,82 @@ h1.entry-title {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+h3.widget-title,
+h1.entry-title,
+h2.entry-title,
+h2.comments-title,
+#comments h3#reply-title {
+  border-bottom: 1px solid #eee;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  font-size: 18px;
+  color: $body-color;
+  a {
+    color: $body-color;
+  }
+}
+
+.content-box.content-single,
+.content-box.content-archive {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  padding: 0
+}
+.content-box.content-single,
+.content-archive {
+  .commentlist-wrap,
+  #respond,
+  p.no-comments,
+  article.hentry {
+    margin: 15px 0;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+    //a,a:visited {
+    //  color: #757575;
+    //}
+  }
+}
+
+.container .content-archive article.type-post:last-child,
+.container .content-single article.type-post:last-child {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+#comments {
+  ol.commentlist {
+    .single-comment {
+      border-bottom-style: dashed;
+    }
+    li:last-child {
+      .single-comment {
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+  h3#reply-title a#cancel-comment-reply-link {
+    color: $link-color;
+  }
+  #reply-title small {
+    margin-left: 5px;
+  }
+}
+
+.dt-icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #ffffff
+}
+.dt-icon-bar+.dt-icon-bar {
+  margin-top: 4px;
+}

@@ -51,7 +51,8 @@ textarea {
     box-shadow: none;
   }
 }
-.customize_filter-in {
+.customize_filter-in,
+.post-password-form {
   input[type="text"],
   input[type="password"],
   input[type="datetime"],
@@ -69,5 +70,11 @@ textarea {
   select {
     width: auto;
     line-height: normal;
+  }
+}
+.post-password-form {
+  input[type="password"] {
+    display: inline-block;
+    float: none
   }
 }

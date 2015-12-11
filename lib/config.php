@@ -30,9 +30,9 @@ if (!defined('DT_CONTENT_BORDER')) define('DT_CONTENT_BORDER', "#FFFFFF");
 if (!defined('DT_CONTENT_SHADOW')) define('DT_CONTENT_SHADOW', "rgba(0,0,0,0.2)");
 if (!defined('DT_COLOR_WHITE')) define('DT_COLOR_WHITE', "#FFFFFF");
 //h1 to h6
-if (!defined('DT_H1TOH6_COLOR')) define('DT_H1TOH6_COLOR', "#ED6D62");
+if (!defined('DT_H1TOH6_COLOR')) define('DT_H1TOH6_COLOR', "#757575");
 //links
-if (!defined('DT_LINK_COLOR')) define('DT_LINK_COLOR', DT_H1TOH6_COLOR);
+if (!defined('DT_LINK_COLOR')) define('DT_LINK_COLOR', "#ED6D62");
 if (!defined('DT_LINK_HOVER')) define('DT_LINK_HOVER', '#E84739');
 if (!defined('DT_LINK_VISITED')) define('DT_LINK_VISITED', DT_LINK_COLOR);
 //header
