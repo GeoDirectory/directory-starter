@@ -15,8 +15,6 @@ function dt_godir_insert_dummy_posts($post_type, $categories, $folder_name)
 {
 	dt_godir_default_taxonomies($post_type, $categories, $folder_name);
 
-	ini_set('max_execution_time', 999999); //300 seconds = 5 minutes
-
 	global $wpdb, $current_user;
 
 	//include_once(get_template_directory() . '/'.$folder_name.'/dummy/dummy_content.php');
