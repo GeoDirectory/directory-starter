@@ -458,3 +458,13 @@ a img.aligncenter {
 .gallery-columns-9 .gallery-caption {
   display: none
 }
+
+.post-navigation {
+  .nav-links {
+    border-top: none;
+    padding-top: 10px;
+    .nav-next {
+      float: right
+    }
+  }
+}
