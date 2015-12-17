@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Directory Starter 0.0.1\n"
+"Project-Id-Version: Directory Starter 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-22 10:26-0000\n"
-"PO-Revision-Date: 2015-09-22 10:40-0000\n"
+"POT-Creation-Date: 2015-12-17 05:36-0000\n"
+"PO-Revision-Date: 2015-12-17 05:36-0000\n"
 "Last-Translator: \n"
 "Language-Team: GD Team <info@wpgeodirectory.com>\n"
 "Language: en_US\n"
@@ -34,11 +34,11 @@ msgstr ""
 msgid "Sorry, no results were found."
 msgstr ""
 
-#: archive.php:22 index.php:22
+#: archive.php:22 index.php:22 single.php:27
 msgid "Previous"
 msgstr ""
 
-#: archive.php:23 index.php:23
+#: archive.php:23 index.php:23 single.php:24
 msgid "Next"
 msgstr ""
 
@@ -53,11 +53,11 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: content.php:26
+#: content.php:28
 msgid "Pages:"
 msgstr ""
 
-#: content.php:35
+#: content.php:37
 msgid "Edit"
 msgstr ""
 
@@ -320,6 +320,30 @@ msgstr ""
 msgid "Featured"
 msgstr ""
 
+#: lib/entrymeta.php:10
+msgid "Format"
+msgstr ""
+
+#: lib/entrymeta.php:31
+msgid "Posted on"
+msgstr ""
+
+#: lib/entrymeta.php:40
+msgid "Author"
+msgstr ""
+
+#: lib/entrymeta.php:46 lib/entrymeta.php:54
+msgid ", "
+msgstr ""
+
+#: lib/entrymeta.php:49
+msgid "Categories"
+msgstr ""
+
+#: lib/entrymeta.php:57
+msgid "Tags"
+msgstr ""
+
 #: lib/entrymeta.php:65
 msgid "Leave a comment"
 msgstr ""
@@ -374,6 +398,14 @@ msgstr ""
 
 #: lib/sidebars.php:55
 msgid "Sidebar Footer 4."
+msgstr ""
+
+#: single.php:25
+msgid "Next post:"
+msgstr ""
+
+#: single.php:28
+msgid "Previous post:"
 msgstr ""
 
 #, fuzzy
