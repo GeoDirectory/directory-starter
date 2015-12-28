@@ -1,19 +1,6 @@
 <?php
 // GeoDirectory Plugin compatibility functions.
 
-// Change some GD settings
-add_action( 'after_switch_theme', 'directory_theme_geodirectory_settings' );
-function directory_theme_geodirectory_settings() {
-	update_option('geodir_set_as_home', '1');
-	update_option('geodir_width_home_contant_section', '67');
-	update_option('geodir_width_listing_contant_section', '67');
-	update_option('geodir_width_search_contant_section', '67');
-	update_option('geodir_width_author_contant_section', '67');
-	update_option('geodir_listing_view', 'listview');
-	update_option('geodir_search_view', 'listview');
-	update_option('geodir_author_view', 'listview');
-}
-
 // Change avatar size
 function dt_comment_avatar_size() {
 	return 60;
