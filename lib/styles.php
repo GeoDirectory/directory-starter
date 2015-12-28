@@ -191,4 +191,4 @@ function directory_theme_customize_css()
 	</style>
 	<?php
 }
-add_action( 'wp_head', 'directory_theme_customize_css');
+add_action( 'wp_head', 'directory_theme_customize_css',5); // load before normal styles

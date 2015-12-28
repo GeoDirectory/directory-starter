@@ -8,7 +8,7 @@ function directory_theme_scripts() {
 	// Load main theme styles.
 	wp_enqueue_style( 'directory-theme-style', get_template_directory_uri() . '/assets/css/style.css', array( 'directory-theme-info' ), '20150730' );
 	// Load main theme responsive styles.
-	//wp_enqueue_style( 'directory-theme-style-responsive', get_template_directory_uri() . '/assets/css/responsive.css', array('directory-theme-style'), '20150730' );
+	wp_enqueue_style( 'directory-theme-style-responsive', get_template_directory_uri() . '/assets/css/responsive.css', array('directory-theme-style'), '20150730' );
 	// Load main theme js.
 	wp_enqueue_script( 'directory-theme-script', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), '20150730', true );
 
@@ -36,7 +36,7 @@ function directory_theme_responsive_styles() {
 	<link rel='stylesheet' id='directory-theme-style-responsive-css'  href='<?php echo get_template_directory_uri() . '/assets/css/responsive.css'; ?>' type='text/css' />
 <?php
 }
-add_action( 'wp_head', 'directory_theme_responsive_styles', 20);
+//add_action( 'wp_head', 'directory_theme_responsive_styles', 20);
 
 /**
  * Customizer Js
