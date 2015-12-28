@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Directory Starter 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-17 05:36-0000\n"
-"PO-Revision-Date: 2015-12-17 05:36-0000\n"
+"POT-Creation-Date: 2015-12-28 22:28-0000\n"
+"PO-Revision-Date: 2015-12-28 22:28-0000\n"
 "Last-Translator: \n"
 "Language-Team: GD Team <info@wpgeodirectory.com>\n"
 "Language: en_US\n"
@@ -61,6 +61,22 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
+#: lib/admin/customizer.php:12
+msgid "General"
+msgstr ""
+
+#: lib/admin/customizer.php:20
+msgid "Header"
+msgstr ""
+
+#: lib/admin/customizer.php:28
+msgid "Body"
+msgstr ""
+
+#: lib/admin/customizer.php:36
+msgid "Footer"
+msgstr ""
+
 #: lib/admin/customizer.php:49 lib/admin/customizer.php:51
 #: lib/admin/customizer.php:102 lib/admin/customizer.php:104
 #: lib/admin/customizer.php:134 lib/admin/customizer.php:136
@@ -100,7 +116,12 @@ msgid "Typography"
 msgstr ""
 
 #: lib/admin/customizer.php:173 lib/admin/customizer.php:175
+#: lib/admin/customizer.php:998
 msgid "Copyright Text"
+msgstr ""
+
+#: lib/admin/customizer.php:206
+msgid "Desktop Container Width"
 msgstr ""
 
 #: lib/admin/customizer.php:208 lib/admin/customizer.php:222
@@ -132,6 +153,22 @@ msgstr ""
 #: lib/admin/customizer.php:971 lib/admin/customizer.php:984
 #, php-format
 msgid "Default: %s"
+msgstr ""
+
+#: lib/admin/customizer.php:219
+msgid "Container Padding Right"
+msgstr ""
+
+#: lib/admin/customizer.php:233
+msgid "Container Padding Left"
+msgstr ""
+
+#: lib/admin/customizer.php:247
+msgid "Container Margin Right"
+msgstr ""
+
+#: lib/admin/customizer.php:261
+msgid "Container Margin Left"
 msgstr ""
 
 #: lib/admin/customizer.php:281
@@ -231,6 +268,34 @@ msgstr ""
 msgid "Primary Menu - Sub menu Background hover Color"
 msgstr ""
 
+#: lib/admin/customizer.php:630
+msgid "Header Height"
+msgstr ""
+
+#: lib/admin/customizer.php:644
+msgid "Logo Margin Right"
+msgstr ""
+
+#: lib/admin/customizer.php:658
+msgid "Logo Margin Left"
+msgstr ""
+
+#: lib/admin/customizer.php:672
+msgid "Logo Margin Top"
+msgstr ""
+
+#: lib/admin/customizer.php:684
+msgid "Primary Menu Height"
+msgstr ""
+
+#: lib/admin/customizer.php:697
+msgid "Primary Menu Line Height"
+msgstr ""
+
+#: lib/admin/customizer.php:710
+msgid "Primary Menu Padding Left Right"
+msgstr ""
+
 #: lib/admin/customizer.php:734
 msgid "Body Color"
 msgstr ""
@@ -259,6 +324,22 @@ msgstr ""
 msgid "Content Box Border Color"
 msgstr ""
 
+#: lib/admin/customizer.php:825
+msgid "Content Box Shadow Color"
+msgstr ""
+
+#: lib/admin/customizer.php:843
+msgid "Font Family"
+msgstr ""
+
+#: lib/admin/customizer.php:857
+msgid "Font Size"
+msgstr ""
+
+#: lib/admin/customizer.php:871
+msgid "Line Height"
+msgstr ""
+
 #: lib/admin/customizer.php:891
 msgid "Footer Section Background Color"
 msgstr ""
@@ -281,6 +362,14 @@ msgstr ""
 
 #: lib/admin/customizer.php:954
 msgid "Copyright Section Border Color"
+msgstr ""
+
+#: lib/admin/customizer.php:968
+msgid "Copyright Padding Top"
+msgstr ""
+
+#: lib/admin/customizer.php:981
+msgid "Copyright Padding Bottom"
 msgstr ""
 
 #: lib/comments.php:7
@@ -313,7 +402,7 @@ msgid "Your comment is awaiting moderation."
 msgstr ""
 
 #: lib/config.php:6
-msgid "Copyright &copy; 2015 GeoDirectory Team. All rights reserved."
+msgid "Copyright &copy; 2015. All rights reserved."
 msgstr ""
 
 #: lib/entrymeta.php:4
