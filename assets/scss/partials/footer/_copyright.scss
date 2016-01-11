@@ -5,5 +5,30 @@
     padding-top: $copyright-padding-top;
     padding-bottom: $copyright-padding-bottom;
     text-align: center;
+    p {
+      margin: 0;
+    }
+  }
+}
+.ds_footer_links {
+  li {
+    list-style: none;
+    float: left;
+    a,
+    a:hover,
+    a:visited,
+    a:active {
+      color: $body-color;
+      padding: 3px 8px;
+    }
+  }
+}
+.footer-links-active {
+  overflow: hidden;
+  .copyright-text {
+    float: left;
+  }
+  .ds_footer_links {
+    float: right;
   }
 }

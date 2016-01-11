@@ -70,6 +70,13 @@ function directory_theme_customizer( $wp_customize ) {
 	//  = Header                    =
 	//  =============================
 
+	$wp_customize->add_section( 'dt_header_top_section', array(
+		'title'       => __( 'Header Top', 'directory-starter' ),
+		'priority'    => 8,
+		'description' => __( 'Header Top', 'directory-starter' ),
+		'panel'  => 'dt_header_panel',
+	) );
+
 	$wp_customize->add_section( 'dt_header_logo_section', array(
 		'title'       => __( 'Logo', 'directory-starter' ),
 		'priority'    => 9,
@@ -489,6 +496,19 @@ function directory_theme_customizer( $wp_customize ) {
 /*********************************
  * Header
  *********************************/
+	// Header top
+	$wp_customize->add_setting( 'dt_enable_header_top', array(
+			'default' => apply_filters('dt_enable_header_top_default_value', DT_ENABLE_HEADER_TOP),
+			'sanitize_callback' => 'sanitize_text_field',
+			'capability'  => 'edit_theme_options',
+	) );
+	$wp_customize->add_control( 'dt_enable_header_top', array(
+			'label'   => __('Enable Header Top Section', 'directory-starter' ),
+			'section' => 'dt_header_top_section',
+			'type'    => 'checkbox',
+			'std'         => '0',
+			'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_ENABLE_HEADER_TOP ),
+	) );
 
 	/* Logo */
 
