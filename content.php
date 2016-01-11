@@ -25,7 +25,7 @@
 		?>
 		<?php
 		wp_link_pages( array(
-			'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'directory_starter' ) . '</span>',
+			'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'directory-starter' ) . '</span>',
 			'after'       => '</div>',
 			'link_before' => '<span>',
 			'link_after'  => '</span>',
@@ -34,6 +34,6 @@
 	</div>
 	<footer class="entry-footer">
 		<?php directory_theme_entry_meta(); ?>
-		<?php edit_post_link( __( 'Edit', 'directory_starter' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', 'directory-starter' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer>
 </article>

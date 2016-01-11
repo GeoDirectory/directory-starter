@@ -4,7 +4,7 @@
 	<div class="content-box content-archive">
 		<?php if (!have_posts()) : ?>
 			<div class="alert-error">
-				<p><?php _e('Sorry, no results were found.', 'directory_starter'); ?></p>
+				<p><?php _e('Sorry, no results were found.', 'directory-starter'); ?></p>
 			</div>
 			<?php get_search_form(); ?>
 		<?php endif; ?>
@@ -19,8 +19,8 @@
 
 		// Previous/next page navigation.
 		the_posts_pagination( array(
-			'prev_text'          => __( 'Previous', 'directory_starter' ),
-			'next_text'          => __( 'Next', 'directory_starter' ),
+			'prev_text'          => __( 'Previous', 'directory-starter' ),
+			'next_text'          => __( 'Next', 'directory-starter' ),
 		) );
 		?>
 	</div>

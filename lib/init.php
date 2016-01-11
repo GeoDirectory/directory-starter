@@ -12,7 +12,7 @@ function directory_theme_setup(){
 	 *
 	 * You may need this tool. https://poedit.net/
 	 */
-	load_theme_textdomain('directory_starter', get_template_directory() . '/languages');
+	load_theme_textdomain('directory-starter', get_template_directory() . '/languages');
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );

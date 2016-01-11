@@ -25,7 +25,7 @@
 	</div>
 	<div class="copyright">
 		<div class="container">
-			<?php echo get_theme_mod( 'dt_copyright_text', DT_COPYRIGHT_TEXT ); ?>
+			<?php echo esc_attr( get_theme_mod( 'dt_copyright_text', DT_COPYRIGHT_TEXT ) ); ?>
 		</div>
 	</div>
 </footer>
