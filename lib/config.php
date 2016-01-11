@@ -1,5 +1,6 @@
 <?php
-
+// Enable header top?
+if (!defined('DT_ENABLE_HEADER_TOP')) define('DT_ENABLE_HEADER_TOP', 'No');
 // Number of footer sidebars you need
 if (!defined('FOOTER_SIDEBAR_COUNT')) define('FOOTER_SIDEBAR_COUNT', 4);
 // Copyright text

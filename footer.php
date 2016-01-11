@@ -23,9 +23,19 @@
 			<?php }?>
 		</div>
 	</div>
-	<div class="copyright">
+	<div class="copyright <?php echo (has_nav_menu( 'footer-links' )) ? 'footer-links-active' : ''; ?>">
 		<div class="container">
+			<p class="copyright-text">
 			<?php echo esc_attr( get_theme_mod( 'dt_copyright_text', DT_COPYRIGHT_TEXT ) ); ?>
+			</p>
+			<?php
+			if (has_nav_menu( 'footer-links' )) {
+				wp_nav_menu( array(
+						'theme_location' => 'footer-links',
+						'container_class' => 'ds_footer_links'
+				) );
+			}
+			?>
 		</div>
 	</div>
 </footer>
