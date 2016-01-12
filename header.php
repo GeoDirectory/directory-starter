@@ -43,9 +43,13 @@
 					<h1 class='site-title <?php echo $class; ?>'>
 						<a <?php echo $style; ?> href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a>
 					</h1>
-					<h2 class="site-description">
-						<a <?php echo $style; ?> href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( $desc ); ?>' rel='home'><?php echo $desc; ?></a>
-					</h2>
+					<?php
+					$enable_header_top = esc_attr(get_theme_mod('dt_enable_header_top', DT_ENABLE_HEADER_TOP));
+					if ($enable_header_top != '1') { ?>
+						<h2 class="site-description">
+							<a <?php echo $style; ?> href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( $desc ); ?>' rel='home'><?php echo $desc; ?></a>
+						</h2>
+					<?php } ?>
 				</hgroup>
 				<?php endif; ?>
 			<?php endif; ?>

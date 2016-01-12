@@ -60,7 +60,11 @@ function directory_theme_customize_css()
 /*********************************
  * Header
  *********************************/
-
+		/* Header Top */
+		.ds-top-header {
+			background-color: <?php echo esc_attr(get_theme_mod('dt_header_top_bg_color', DT_HEADER_TOP_BG_COLOR)); ?>;
+			border-bottom: 1px solid #151515;
+		}
 		/* Logo */
 		.site-logo-wrap .site-logo {
 			margin-right: <?php echo esc_attr(get_theme_mod('dt_logo_margin_right', DT_LOGO_MARGIN_RIGHT)); ?>;

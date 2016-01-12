@@ -36,12 +36,17 @@ if (!defined('DT_H1TOH6_COLOR')) define('DT_H1TOH6_COLOR', "#757575");
 if (!defined('DT_LINK_COLOR')) define('DT_LINK_COLOR', "#ED6D62");
 if (!defined('DT_LINK_HOVER')) define('DT_LINK_HOVER', '#E84739');
 if (!defined('DT_LINK_VISITED')) define('DT_LINK_VISITED', DT_LINK_COLOR);
+//header top
+if (!defined('DT_HEADER_TOP_TEXT_COLOR')) define('DT_HEADER_TOP_TEXT_COLOR', "#FFFFFF");
+if (!defined('DT_HEADER_TOP_LINK_COLOR')) define('DT_HEADER_TOP_LINK_COLOR', "#FFFFFF");
+if (!defined('DT_HEADER_TOP_LINK_HOVER')) define('DT_HEADER_TOP_LINK_HOVER', '#E8E8E8');
+if (!defined('DT_HEADER_TOP_BG_COLOR')) define('DT_HEADER_TOP_BG_COLOR', '#202020');
 //header
 if (!defined('DT_HEADER_HEIGHT')) define('DT_HEADER_HEIGHT', '85px');
 if (!defined('DT_HEADER_FIXED_TOP')) define('DT_HEADER_FIXED_TOP', '32px');
 if (!defined('DT_HEADER_BG_COLOR')) define('DT_HEADER_BG_COLOR', "#2F2F2F");
-if (!defined('DT_HEADER_LINK_COLOR')) define('DT_HEADER_LINK_COLOR', "#FFFFFF");
 if (!defined('DT_HEADER_TEXT_COLOR')) define('DT_HEADER_TEXT_COLOR', "#FFFFFF");
+if (!defined('DT_HEADER_LINK_COLOR')) define('DT_HEADER_LINK_COLOR', "#FFFFFF");
 if (!defined('DT_HEADER_LINK_HOVER')) define('DT_HEADER_LINK_HOVER', '#E8E8E8');
 if (!defined('DT_HEADER_BORDER_COLOR')) define('DT_HEADER_BORDER_COLOR', "#FFFFFF");
 if (!defined('DT_HEADER_SHADOW_COLOR')) define('DT_HEADER_SHADOW_COLOR', "rgba(0,0,0,0.2)");
