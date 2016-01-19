@@ -332,24 +332,33 @@ function directory_theme_customize_css()
 		//  =============================
 		?>
 			.ds-top-header {
-				background-color: <?php echo esc_attr(get_theme_mod('dt_header_top_bg_color', DT_HEADER_TOP_BG_COLOR)); ?>;
-				border-bottom: 1px solid #151515;
+				color: <?php echo esc_attr(get_theme_mod('dt_header_top_text_color', DT_HEADER_TOP_TEXT_COLOR)); ?>;
 			}
 		<?php
 		//  =============================
 		//  2.1.3 - Header Top Link Color
 		//  =============================
 		?>
+			.ds-top-header a,
+			.ds-top-header a:visited {
+				color: <?php echo esc_attr(get_theme_mod('dt_header_top_link_color', DT_HEADER_TOP_LINK_COLOR)); ?>;
+			}
 		<?php
 		//  =============================
 		//  2.1.4 - Header Top Link Hover Color
 		//  =============================
 		?>
+			.ds-top-header a:hover {
+				color: <?php echo esc_attr(get_theme_mod('dt_header_top_link_hover', DT_HEADER_TOP_LINK_HOVER)); ?>;
+			}
 		<?php
 		//  =============================
 		//  2.1.5 - Header Top Background Color
 		//  =============================
 		?>
+			.ds-top-header {
+				background-color: <?php echo esc_attr(get_theme_mod('dt_header_top_bg_color', DT_HEADER_TOP_BG_COLOR)); ?>;
+			}
 	<?php
 	//  =============================
 	//  2.2 - Logo
@@ -380,6 +389,9 @@ function directory_theme_customize_css()
 		//  2.4.1 - Header Text color
 		//  =============================
 		?>
+			.site-header {
+				color: <?php echo esc_attr(get_theme_mod('header_textcolor', DT_BODY_COLOR)); ?>;
+			}
 		<?php
 		//  =============================
 		//  2.4.2 - Header Link color

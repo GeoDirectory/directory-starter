@@ -1,6 +1,6 @@
 <?php
 // Enable header top?
-if (!defined('DT_ENABLE_HEADER_TOP')) define('DT_ENABLE_HEADER_TOP', 'No');
+if (!defined('DT_ENABLE_HEADER_TOP')) define('DT_ENABLE_HEADER_TOP', '');
 // Number of footer sidebars you need
 if (!defined('FOOTER_SIDEBAR_COUNT')) define('FOOTER_SIDEBAR_COUNT', 4);
 // Copyright text
@@ -37,7 +37,7 @@ if (!defined('DT_LINK_COLOR')) define('DT_LINK_COLOR', "#ED6D62");
 if (!defined('DT_LINK_HOVER')) define('DT_LINK_HOVER', '#E84739');
 if (!defined('DT_LINK_VISITED')) define('DT_LINK_VISITED', DT_LINK_COLOR);
 //header top
-if (!defined('DT_HEADER_TOP_TEXT_COLOR')) define('DT_HEADER_TOP_TEXT_COLOR', "#FFFFFF");
+if (!defined('DT_HEADER_TOP_TEXT_COLOR')) define('DT_HEADER_TOP_TEXT_COLOR', DT_BODY_COLOR);
 if (!defined('DT_HEADER_TOP_LINK_COLOR')) define('DT_HEADER_TOP_LINK_COLOR', "#FFFFFF");
 if (!defined('DT_HEADER_TOP_LINK_HOVER')) define('DT_HEADER_TOP_LINK_HOVER', '#E8E8E8');
 if (!defined('DT_HEADER_TOP_BG_COLOR')) define('DT_HEADER_TOP_BG_COLOR', '#202020');
