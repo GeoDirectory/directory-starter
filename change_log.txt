@@ -3,3 +3,4 @@ Footer links not working - FIXED
 Header top section - ADDED
 Settings added to change header top colors - ADDED
 Customizer code refactoring and bug fixes - FIXED
+Customizer styles loading before main styles - FIXED
