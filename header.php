@@ -10,7 +10,15 @@
 
 <body <?php body_class(); ?>>
 <?php do_action('dt_before_header'); ?>
-<header id="site-header" class="site-header" role="banner" style="<?php echo dt_header_image(); ?>">
+<?php
+$enable_header_top = esc_attr(get_theme_mod('dt_enable_header_top', DT_ENABLE_HEADER_TOP));
+if ($enable_header_top == '1') {
+	$extra_class = 'dt-header-top-enabled';
+} else {
+	$extra_class = '';
+}
+?>
+<header id="site-header" class="site-header <?php echo $extra_class; ?>" role="banner" style="<?php echo dt_header_image(); ?>">
 	<div class="container">
 		<?php if ( has_nav_menu( 'primary-menu' ) ) { ?>
 		<button class="dt-nav-toggle" type="button" data-toggle="collapse" data-target="#primary-nav">
@@ -43,9 +51,12 @@
 					<h1 class='site-title <?php echo $class; ?>'>
 						<a <?php echo $style; ?> href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a>
 					</h1>
-					<h2 class="site-description">
-						<a <?php echo $style; ?> href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( $desc ); ?>' rel='home'><?php echo $desc; ?></a>
-					</h2>
+					<?php
+					if ($enable_header_top != '1') { ?>
+						<h2 class="site-description">
+							<a <?php echo $style; ?> href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( $desc ); ?>' rel='home'><?php echo $desc; ?></a>
+						</h2>
+					<?php } ?>
 				</hgroup>
 				<?php endif; ?>
 			<?php endif; ?>

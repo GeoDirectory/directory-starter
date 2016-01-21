@@ -1,3 +1,5 @@
 v1.0.1
 Footer links not working - FIXED
 Header top section - ADDED
+Settings added to change header top colors - ADDED
+Customizer code refactoring and bug fixes - FIXED

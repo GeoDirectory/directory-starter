@@ -1,6 +1,6 @@
 <?php
 // Dummy data functions
-function dt_godir_dummy_folder_exists($folder_name)
+function dt_geodir_dummy_folder_exists($folder_name)
 {
 	//$path = get_template_directory() . '/'.$folder_name.'/dummy/';
 	$path = get_stylesheet_directory() . '/'.$folder_name.'/dummy/';
@@ -11,9 +11,9 @@ function dt_godir_dummy_folder_exists($folder_name)
 
 }
 
-function dt_godir_insert_dummy_posts($post_type, $categories, $folder_name)
+function dt_geodir_insert_dummy_posts($post_type, $categories, $folder_name)
 {
-	dt_godir_default_taxonomies($post_type, $categories, $folder_name);
+	dt_geodir_default_taxonomies($post_type, $categories, $folder_name);
 
 	global $wpdb, $current_user;
 
@@ -21,7 +21,7 @@ function dt_godir_insert_dummy_posts($post_type, $categories, $folder_name)
 	include_once(get_stylesheet_directory() . '/'.$folder_name.'/dummy/dummy_content.php');
 }
 
-function dt_godir_delete_dummy_posts($post_type){
+function dt_geodir_delete_dummy_posts($post_type){
 
 	global $wpdb, $plugin_prefix;
 	$detail_table = $plugin_prefix .$post_type.'_detail';
@@ -37,7 +37,7 @@ function dt_godir_delete_dummy_posts($post_type){
 	$wpdb->get_results("DELETE FROM ".$detail_table." WHERE post_dummy='1'");
 }
 
-function dt_godir_default_taxonomies($post_type, $categories, $folder_name)
+function dt_geodir_default_taxonomies($post_type, $categories, $folder_name)
 {
 
 	global $wpdb, $dummy_image_path;

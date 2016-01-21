@@ -17,3 +17,8 @@
      margin-left: $logo-margin-left;
   }
 }
+.dt-header-top-enabled {
+  .site-logo-wrap h1 {
+    margin-top: 25px;
+  }
+}

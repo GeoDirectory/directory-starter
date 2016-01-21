@@ -4,19 +4,16 @@ function ds_add_top_header() {
     if ($enable_header_top != '1') {
         return;
     }
-//    global $current_user;
-//    get_currentuserinfo();
-//    if ( class_exists( 'BuddyPress' ) ) {
-//        $user_link = bp_get_loggedin_user_link().'settings/';
-//    } else {
-//        $user_link = get_author_posts_url( $current_user->ID );
-//    }
     ?>
     <div class="ds-top-header">
         <div class="container">
             <div class="ds-top-header-inner">
                 <div class="ds-top-head-left">
-                    <?php echo get_bloginfo( 'description', 'display' ); ?>
+                    <?php
+                        if ( display_header_text() )  {
+                            echo get_bloginfo( 'description', 'display' );
+                        }
+                     ?>
                 </div>
                 <div class="ds-top-head-right">
                     <?php wp_nav_menu( array(
