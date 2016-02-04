@@ -33,6 +33,7 @@
  * 16.0 - Print
  * 17.0 - WordPress Core Styles
  * 18.0 - GeoDirectory Compatibility
+ * 19.0 - Reviews
  */
 @import "partials/variables";
 @import "partials/mixins";
@@ -50,5 +51,6 @@
 @import "partials/buttons";
 @import "partials/wp";
 @import "partials/gd";
+@import "partials/reviews";
 @import "partials/buddypress";
 @import "partials/misc";

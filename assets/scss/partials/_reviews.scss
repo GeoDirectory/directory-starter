@@ -1,0 +1,147 @@
+/**
+ * 19.0 - Reviews
+ */
+
+%review-comments {
+  #comments {
+    .comments-title {
+      margin-top: 0;
+    }
+    .comment-content {
+      width: auto;
+      margin-left: 75px;
+      text-align: justify;
+      .gd-rating-text {
+        display: none;
+      }
+      .geodir-rating {
+        margin-top: -35px;
+      }
+    }
+    .bypostauthor cite span {
+      color: $body-color;
+      background-color: #f3f2f0;
+      border: 1px solid #d4d2d0;
+      position: relative;
+      margin-left: 5px;
+      padding: 2px 5px;
+      font-size: 10px;
+      background-image: none;
+      border-radius: 2px;
+      box-shadow: none;
+      line-height: 14px;
+    }
+    ol.commentlist {
+      margin: 0;
+      li.comment {
+        position: relative;
+        margin: 0 !important;
+        list-style-type: none;
+        border-bottom: 1px solid #eee;
+        width: auto;
+        padding: 0;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      .avatar {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        margin-right: 15px;
+      }
+      ol.children {
+        .comment-content {
+          margin-top: -35px;
+        }
+        .comment-links {
+          margin-top: 10px;
+        }
+        li {
+          margin-right: 0;
+        }
+        li:first-child {
+          border-top: 1px solid #eee;
+        }
+      }
+      article {
+        margin: 15px 0;
+      }
+    }
+    article {
+      header {
+        font-size: 15px;
+        float: none;
+        max-width: 100%;
+        margin: 0 0 10px;
+        overflow: hidden;
+        position: relative;
+        cite,
+        time,
+        span.item {
+          margin: 0;
+          margin-right: 20px;
+          display: inline-block;
+          float: left;
+          span.fn {
+            display: none
+          }
+        }
+        cite {
+          margin-right: 10px;
+          font-size: 15px;
+          line-height: 20px;
+          color: inherit;
+          font-style: normal;
+          b, span {
+            display: inline-block;
+            float: left;
+          }
+        }
+        time {
+          color: $body-color;
+        }
+        img {
+          position: relative;
+          float: left;
+          padding: 0;
+          line-height: 0;
+          top: 0px;
+          left: 0px;
+        }
+      }
+    }
+    .comment-links {
+      overflow: hidden;
+      width: auto;
+      text-align: right;
+      position: absolute;
+      top: 0;
+      right: 0;
+      .reply {
+        margin-left: auto;
+        float: right;
+      }
+    }
+    p.edit-link {
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: left;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 4px 12px;
+      margin-right: 10px;
+      a {
+        color: #777;
+      }
+    }
+  }
+}
+
+#reviewsTab {
+  @extend %review-comments;
+}
+
+.wpl_reviews {
+  @extend %review-comments;
+}
