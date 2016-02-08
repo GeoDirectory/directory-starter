@@ -4,13 +4,13 @@
  */
 function directory_theme_scripts() {
 	// Load theme information.
-	wp_enqueue_style( 'directory-theme-info', get_stylesheet_uri() );
+	//wp_enqueue_style( 'directory-theme-info', get_stylesheet_uri() );//lets not load this, not need.
 	// Load main theme styles.
-	wp_enqueue_style( 'directory-theme-style', get_template_directory_uri() . '/assets/css/style.css', array( 'directory-theme-info' ), '20150730' );
+	wp_enqueue_style( 'directory-theme-style', get_template_directory_uri() . '/assets/css/style.css', array( 'directory-theme-info' ), DIRECTORY_STARTER_VER );
 	// Load main theme responsive styles.
-	wp_enqueue_style( 'directory-theme-style-responsive', get_template_directory_uri() . '/assets/css/responsive.css', array('directory-theme-style'), '20150730' );
+	wp_enqueue_style( 'directory-theme-style-responsive', get_template_directory_uri() . '/assets/css/responsive.css', array('directory-theme-style'), DIRECTORY_STARTER_VER );
 	// Load main theme js.
-	wp_enqueue_script( 'directory-theme-script', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), '20150730', true );
+	wp_enqueue_script( 'directory-theme-script', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), DIRECTORY_STARTER_VER, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

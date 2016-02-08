@@ -7,6 +7,9 @@ To manage your codebase properly, you should place all your functions in 'lib' f
 Include each function file here.
 */
 
+// Define the version number for quick access
+if (!defined('DIRECTORY_STARTER_VER')) define('DIRECTORY_STARTER_VER', '1.0.1');
+
 require_once('lib/utils.php');             // Utility functions goes here
 require_once('lib/config.php');            // Configuration goes here
 require_once('lib/init.php');              // Theme setup functions goes here
