@@ -14,11 +14,11 @@ p.edit-link {
   overflow: hidden;
   .gd_comment_replaylink {
     float: right;
-    #gd_comment_replaylink {
+    .comment-reply-link {
       @extend .dt-btn;
       @extend %btn-links;
       span {
-        display: none;
+        display: none
       }
     }
   }
@@ -352,23 +352,7 @@ dl.geodir-tab-head dd:last-child {
   .overall-more-rating {
     margin: 0;
   }
-  .comment-links {
-    overflow: hidden;
-    width: auto;
-    margin-left: 75px;
-    .reply {
-      margin-left: auto;
-      float: right;
-    }
-  }
-  ol.commentlist {
-    margin: 0;
-    .avatar {
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      border-radius: 4px;
-    }
-  }
+
   .gdreview_section {
     background: transparent !important;
   }
@@ -383,18 +367,6 @@ dl.geodir-tab-head dd:last-child {
     }
   }
 }
-#reviewsTab #comments {
-  p.edit-link {
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: left;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    a {
-      color: #777;
-    }
-  }
-}
 //reviews
 #reviewsTab {
   .gdbp-wrapper-reviews .comments-area {
@@ -403,48 +375,9 @@ dl.geodir-tab-head dd:last-child {
       margin-left: 0;
     }
   }
-  ol.commentlist {
-    .comment-meta {
-      .item {
-        display: none;
-      }
-    }
-    li {
-      list-style-type: none;
-      border-bottom: 1px solid #eee;
-      &:last-child {
-        border-bottom: none;
-      }
-    }
-  }
+
   .comments-area {
-    article {
-      header {
-        cite,
-        time,
-        span.item {
-          margin: 0;
-          margin-right: 20px;
-          display: inline-block;
-          float: left;
-        }
-        cite {
-          b, span {
-            display: inline-block;
-            float: left;
-          }
-        }
-      }
-    }
-    .bypostauthor cite span {
-      color: $body-color;
-      background-color: #f3f2f0;
-      border: 1px solid #d4d2d0;
-      position: relative;
-    }
     .comment-content {
-      width: auto;
-      margin-left: 75px;
       .comment_more_ratings {
         padding: 0;
         margin: 0;
@@ -757,9 +690,9 @@ a.bp-title-button {
   max-width: 100%;
   margin: 0;
 }
-.geodir_category_list_view li.geodir-gridview .geodir-post-img .geodir_thumbnail {
-  border: 1px #e1e1e1 solid;
-}
+//.geodir_category_list_view li.geodir-gridview .geodir-post-img .geodir_thumbnail {
+//  border: 1px #e1e1e1 solid;
+//}
 .gdbp-listings-page .geodir_category_list_view h3.geodir-entry-title {
   margin-top: 5px !important;
 }
@@ -775,7 +708,8 @@ a.bp-title-button {
   line-height: 22px !important;
 }
 
-#post_mapTab {
+#post_mapTab,
+.wpl_post_map {
   img.adp-marker {
     height: 30px;
     padding: 5px;
@@ -793,6 +727,7 @@ a.bp-title-button {
     padding: 8px 3px;
   }
   .geodir_map_container {
+    overflow: hidden;
     input[type="text"] {
       margin-top: 10px;
       width: 82%;
@@ -817,10 +752,12 @@ a.bp-title-button {
     }
   }
 }
-#reviewsTab {
-  #comments .comments-title {
-    margin-top: 0;
+.wpl_post_map {
+  .top_banner_section {
+    margin-bottom: 0 !important;
   }
+}
+#reviewsTab {
   #respond {
     margin-top: 50px;
   }
@@ -850,22 +787,7 @@ a.bp-title-button {
       display: block;
     }
   }
-  .comments-area article header {
-    font-size: 15px;
-    margin-bottom: 10px;
-    cite {
-      margin-right: 10px;
-    }
-    time {
-      color: $body-color;
-    }
-  }
-  ol.children li {
-    margin-right: 0;
-  }
-  ol.children li:first-child {
-    border-top: 1px solid #eee;
-  }
+
 }
 #comments .comment_more_ratings .gd_ratings_module_box h4 {
   font-size: 15px;
@@ -1078,4 +1000,64 @@ select.geodir-cat-list-tax {
       list-style-type: none;
     }
   }
+}
+
+#comments {
+  .comment-reply-link {
+    @extend .dt-btn;
+    width: auto;
+    height: auto;
+    line-height: 16px;
+  }
+  .gd_comment_replaylink span {
+    display: none;
+  }
+
+  .navigation {
+    margin-top: 20px;
+    overflow: hidden;
+    .assistive-text.section-heading {
+      display: none;
+    }
+
+    .nav-previous {
+      float: left;
+      width: 50%;
+    }
+
+    .nav-next {
+      float: right;
+      text-align: right;
+      width: 50%;
+    }
+  }
+}
+
+.wpl_reviews {
+  #comments #reply-title small {
+    display: inline-block;
+  }
+  h2.comments-title {
+    display: none;
+  }
+
+  #comments .logged-in-as {
+    padding-top: 10px;
+  }
+
+  //review list
+  ol.commentlist {
+    list-style-type: none;
+    ol.children {
+      list-style-type: none;
+    }
+  }
+}
+
+.geodir_category_list_view li.geodir-gridview {
+  border: 1px solid #eee;
+}
+
+.geodir_category_list_view li.geodir-gridview:last-child {
+  border: 1px solid #eee !important;
 }
