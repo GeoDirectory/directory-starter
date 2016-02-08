@@ -7,6 +7,12 @@ function dt_comment_avatar_size() {
 }
 add_filter('geodir_comment_avatar_size', 'dt_comment_avatar_size');
 
+// Change bp integration avatar size
+function dt_bp_comment_avatar_size() {
+	return 60;
+}
+add_filter('gdbuddypress_comment_avatar_size', 'dt_bp_comment_avatar_size');
+
 // Change avatar size
 function dt_geodir_buddypress_reviews_before_content() {
 	return '<div id="reviewsTab">';

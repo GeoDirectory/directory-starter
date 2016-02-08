@@ -18,7 +18,7 @@ if ( post_password_required() ) {
 			?>
 		</h2>
 
-		<?php directory_theme_comment_nav(); ?>
+		<?php //directory_theme_comment_nav(); ?>
 
 		<ol class="commentlist">
 			<?php
