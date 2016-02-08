@@ -30,13 +30,15 @@ function directory_theme_comment( $comment, $args, $depth ) { ?>
 			<div class="dt-comment-header">
 				<strong><?php echo get_comment_author_link(); ?></strong>
 				<?php printf( __( '%1$s at %2$s', 'directory-starter' ), get_comment_date(),  get_comment_time() ); ?>
-				<?php edit_comment_link( __( ' - Edit', 'directory-starter' ),'  ','' ); ?>
+				<div class="dt-comment-btn-wrap">
+				<?php edit_comment_link( __( 'Edit', 'directory-starter' ),'  ','' ); ?>
 				<?php comment_reply_link( array_merge( $args, array(
-					'reply_text' => __( ' - Reply', 'directory-starter' ),
+					'reply_text' => __( 'Reply', 'directory-starter' ),
 					'add_below' => 'comment',
 					'depth' => $depth,
 					'max_depth' => $args['max_depth']
 				) ) ); ?>
+				</div>
 			</div>
 			<div class="comment-text">
 				<?php if ( $comment->comment_approved == '0' ) : ?>
