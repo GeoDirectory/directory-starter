@@ -679,36 +679,6 @@ ul.treeview {
 }
 .map_category input[type="text"] { margin-bottom: 10px; }
 
-//footer widgets
-.footer-widgets {
-  .geodir-loc-bar {
-    padding: 0;
-    margin: 0;
-    border: none;
-    input[type="text"],
-    input[type="password"],
-    select,
-    input[type="button"] {
-      width: 100%;
-    }
-  }
-  .customize_filter-in {
-    width: 100%;
-    padding: 5px;
-    background: transparent;
-    border: none;
-  }
-  .customize_filter ul li {
-    border: none;
-  }
-  .geodir-loc-bar-in {
-    background: transparent;
-    border: none;
-  }
-  .geodir-search {
-    margin-right: 10px;
-  }
-}
 
 .geodir_preview_section h5.geodir_information {
   margin: 0;
@@ -830,27 +800,3 @@ select.geodir-cat-list-tax {
   font-size: 17px;
 }
 
-.gdbp-listings-page {
-  .geodir_category_list_view {
-    .gridview_onehalf {
-      h3.geodir-entry-title {
-        margin-top: 20px !important;
-      }
-    }
-    .gridview_onethird {
-      h3.geodir-entry-title {
-        margin-top: 15px !important;
-      }
-    }
-    .gridview_onefourth {
-      h3.geodir-entry-title {
-        margin-top: 10px !important;
-      }
-    }
-    .gridview_onefifth {
-      h3.geodir-entry-title {
-        margin-top: 5px !important
-      }
-    }
-  }
-}
