@@ -2,7 +2,6 @@
 // Dummy data functions
 function dt_geodir_dummy_folder_exists($folder_name)
 {
-	//$path = get_template_directory() . '/'.$folder_name.'/dummy/';
 	$path = get_stylesheet_directory() . '/'.$folder_name.'/dummy/';
 	if (!is_dir($path))
 		return false;
@@ -17,7 +16,6 @@ function dt_geodir_insert_dummy_posts($post_type, $categories, $folder_name)
 
 	global $wpdb, $current_user;
 
-	//include_once(get_template_directory() . '/'.$folder_name.'/dummy/dummy_content.php');
 	include_once(get_stylesheet_directory() . '/'.$folder_name.'/dummy/dummy_content.php');
 }
 
@@ -42,11 +40,6 @@ function dt_geodir_default_taxonomies($post_type, $categories, $folder_name)
 
 	global $wpdb, $dummy_image_path;
 
-	$last_catid = isset($last_catid) ? $last_catid : '';
-
-	$last_term = get_term($last_catid, $post_type.'category');
-
-	//print_r($uploads) ;
 	for ($i = 0; $i < count($categories); $i++) {
 		$parent_catid = 0;
 		if (is_array($categories[$i])) {

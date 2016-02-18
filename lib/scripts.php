@@ -4,7 +4,6 @@
  */
 function directory_theme_scripts() {
 	// Load theme information.
-	//wp_enqueue_style( 'directory-theme-info', get_stylesheet_uri() );//lets not load this, not need.
 	// Load main theme styles.
 	wp_enqueue_style( 'directory-theme-style', get_template_directory_uri() . '/assets/css/style.css', array(), DIRECTORY_STARTER_VER );
 	// Load main theme responsive styles.

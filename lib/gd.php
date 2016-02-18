@@ -77,7 +77,7 @@ function dt_geodir_add_cpt_dummy_column($post_type) {
 function dt_geodir_add_custom_fields($fieldsets = array(), $fields = array(), $filters = array(), $fields_to_remove = array()) {
 
 	// Field Set
-	if ($fieldsets) {
+	if (!empty($fieldsets)) {
 		foreach ( $fieldsets as $fieldset_index => $fieldset ) {
 			$check_geodir_field_set = dt_geodir_check_fieldset_exists( $fieldset['site_title'], $fieldset['listing_type'] );
 			if ( ! $check_geodir_field_set ) {
@@ -87,7 +87,7 @@ function dt_geodir_add_custom_fields($fieldsets = array(), $fields = array(), $f
 	}
 
 	// Custom Fields
-	if ($fields) {
+	if (!empty($fields)) {
 		foreach ( $fields as $field_index => $field ) {
 			$check_cf_exists = dt_geodir_check_custom_field_exists( $field['htmlvar_name'], $field['listing_type'] );
 			if ( ! $check_cf_exists ) {
@@ -97,14 +97,14 @@ function dt_geodir_add_custom_fields($fieldsets = array(), $fields = array(), $f
 	}
 
 	// Advance Search Filters
-	if ($filters && function_exists('geodir_load_translation_geodiradvancesearch')) {
+	if (!empty($filters) && function_exists('geodir_load_translation_geodiradvancesearch')) {
 		foreach ($filters as $filter_index => $filter) {
 			geodir_custom_advance_search_field_save($filter);
 		}
 	}
 
 	// Fields to delete
-	if ($fields_to_remove) {
+	if (!empty($fields_to_remove)) {
 		foreach($fields_to_remove as $field_key => $field_names) {
 			foreach($field_names as $field_name) {
 				dt_geodir_delete_custom_field($field_name, $field_key);
