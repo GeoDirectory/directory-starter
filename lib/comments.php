@@ -22,7 +22,7 @@ function directory_theme_comment_nav() {
 }
 
 function directory_theme_comment( $comment, $args, $depth ) { ?>
-	<?php $add_below = ''; ?>
+
 <li <?php comment_class(); ?> id="comment-<?php comment_ID() ?>">
 	<div class="single-comment">
 		<div class="avatar-wrap"><?php echo get_avatar( $comment->comment_author_email, 60 ); ?></div>

@@ -77,9 +77,6 @@ function dt_geodir_insert_taxonomy($post_type, $catname, $folder_name, $last_cat
 
 	$dummy_image_url = get_template_directory_uri() . "/assets/images";
 
-	$catname = str_replace(' ', '_', $catname);
-
-	//$uploaded = (array)fetch_remote_file("$dummy_image_url/" . $catname . ".png");
 	$uploaded = (array)fetch_remote_file("$dummy_image_url/cat_icon.png");
 
 	$new_path = null;
@@ -130,7 +127,7 @@ function dt_geodir_dummy_content_generator($post_infos = array()) {
 			$dummy_post_longitude = geodir_random_float(geodir_random_float($city_bound_lng1, $city_bound_lng2), geodir_random_float($city_bound_lng2, $city_bound_lng1));
 		else
 			$dummy_post_longitude = geodir_random_float(geodir_random_float($city_bound_lng2, $city_bound_lng1), geodir_random_float($city_bound_lng1, $city_bound_lng2));
-		$post_address = array();
+
 		$postal_code = '';
 		$address = '';
 
