@@ -39,12 +39,13 @@ function dt_geodir_default_taxonomies($post_type, $categories, $folder_name)
 {
 
 	global $wpdb, $dummy_image_path;
-
-	for ($i = 0; $i < count($categories); $i++) {
+    $cat_count = count($categories);
+	for ($i = 0; $i < $cat_count; $i++) {
 		$parent_catid = 0;
 		if (is_array($categories[$i])) {
 			$cat_name_arr = $categories[$i];
-			for ($j = 0; $j < count($cat_name_arr); $j++) {
+            $count_cat_name_arr = count($cat_name_arr);
+			for ($j = 0; $j < $count_cat_name_arr; $j++) {
 				$catname = $cat_name_arr[$j];
 
 				if (!term_exists($catname, $post_type.'category')) {
