@@ -84,6 +84,14 @@
   }
 }
 
-.dt-nav-toggle {
+#gd-account-nav,
+.dt-nav-toggle,
+.dt-mobile-account-wrap{
   display: none;
+  font-size: 25px;
+}
+
+#mm-gd-account-nav.mm-opened,
+#gd-account-nav.mm-opened{
+  display:block !important;
 }

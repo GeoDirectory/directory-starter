@@ -9,6 +9,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div id="ds-container" >
 <?php do_action('dt_before_header'); ?>
 <?php
 $enable_header_top = esc_attr(get_theme_mod('dt_enable_header_top', DT_ENABLE_HEADER_TOP));
@@ -19,14 +20,17 @@ if ($enable_header_top == '1') {
 }
 ?>
 <header id="site-header" class="site-header <?php echo $extra_class; ?>" role="banner" style="<?php echo dt_header_image(); ?>">
+
 	<div class="container">
-		<?php if ( has_nav_menu( 'primary-menu' ) ) { ?>
-		<button class="dt-nav-toggle" type="button" data-toggle="collapse" data-target="#primary-nav">
-			<span class="dt-icon-bar"></span>
-			<span class="dt-icon-bar"></span>
-			<span class="dt-icon-bar"></span>
-		</button>
-		<?php } ?>
+
+        <?php
+        /**
+         * This action is called before the site logo wrapper.
+         *
+         * @since 1.0.2
+         */
+        do_action('dt_before_site_logo');?>
+
 		<div class="site-logo-wrap">
 			<?php if ( get_theme_mod( 'logo', false ) ) : ?>
 				<div class='site-logo'>
@@ -70,6 +74,18 @@ if ($enable_header_top == '1') {
 				) );
 			?>
 		</nav>
-		<?php } ?>
+
+		<?php
+            /**
+             * Filter the mobile navigation button html.
+             *
+             * @since 1.0.2
+             */
+            echo apply_filters('dt_mobile_menu_button','<div class="dt-nav-toggle  dt-mobile-nav-button-wrap"><a href="#primary-nav"><i class="fa fa-bars"></i></a></div>');
+        } ?>
+
+
+
+
 	</div>
 </header>

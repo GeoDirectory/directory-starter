@@ -5,6 +5,14 @@
     right: 15px;
     top:25px;
   }
+
+  .dt-mobile-account-wrap {
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top:25px;
+  }
+
   #geodir_content,
   #gd-sidebar-wrapper {
     width: 100% !important;
@@ -27,7 +35,13 @@
   }
   .site-logo-wrap {
     float: none;
+    margin: 0 auto;
+    width: 50%;
+    h1 {
+      text-align: center;
+    }
   }
+
   #primary-nav {
     display: none;
     float: none;
