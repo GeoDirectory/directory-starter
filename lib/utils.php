@@ -28,7 +28,7 @@ function dt_header_image() {
 }
 
 // Replaces the excerpt "more" text by a link
-function dt_excerpt_more($more) {
+function dt_excerpt_more() {
 	global $post;
 	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read more...</a>';
 }

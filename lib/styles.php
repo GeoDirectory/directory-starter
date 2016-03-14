@@ -102,9 +102,7 @@ function directory_theme_customize_css()
 	 * 		4.5.1 - Copyright Text
 	 */
 
-?>
-	<style type="text/css">
-<?php
+
 //  =============================
 //  1.0 - General
 //  =============================
@@ -744,8 +742,5 @@ function directory_theme_customize_css()
 		//  =============================
 		//  4.5.1 - Copyright Text
 		//  =============================
-		?>
-	</style>
-	<?php
+
 }
-add_action( 'wp_head', 'directory_theme_customize_css',5); // load before normal styles
