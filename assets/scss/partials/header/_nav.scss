@@ -8,9 +8,15 @@
 }
 
 #primary-nav {
-  float: right;
+  display: inline-block;
+  vertical-align: top;
+  width: 80%;
+  box-sizing: border-box;
+  padding: 0px 5px;
+  margin-left: -1%; // compensate for border problems
   ul {
     margin: 0;
+    float: right;
     li {
       padding: 0 20px;
       float: left;
@@ -94,4 +100,8 @@
 #mm-gd-account-nav.mm-opened,
 #gd-account-nav.mm-opened{
   display:block !important;
+}
+
+#mm-primary-nav li.sd-my-account{
+  display: none;
 }

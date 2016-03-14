@@ -67,6 +67,8 @@
  * 		2.7.5 - Primary Menu Height
  * 		2.7.6 - Primary Menu Line Height
  * 		2.7.7 - Primary Menu Padding Left Right
+ * 	    2.7.8 - Header Logo Width
+ * 	    2.7.9 - Header Menu Width
  * 3.0 - Body
  *   3.1 - Background Image
  * 		3.1.1 - Background Image
@@ -575,7 +577,7 @@
 
             wp.customize( 'dt_header_height', function( value ) {
                 value.bind( function( newval ) {
-                    $( '.site-header' ).css('height', newval );
+                    $( '.site-header' ).css('min-height', newval );
                 } );
             } );
 
@@ -636,6 +638,26 @@
             wp.customize( 'dt_p_nav_padding_left_right', function( value ) {
                 value.bind( function( newval ) {
                     $( '#primary-nav').find('ul li' ).css('padding-right', newval).css('padding-left', newval );
+                } );
+            } );
+
+        //  =============================
+        //  2.7.8 - Header Logo Width
+        //  =============================
+
+            wp.customize( 'dt_header_logo_width', function( value ) {
+                value.bind( function( newval ) {
+                    $( '.site-logo-wrap').css('width', newval);
+                } );
+            } );
+
+        //  =============================
+        //  2.7.9 - Header Menu Width
+        //  =============================
+
+            wp.customize( 'dt_header_menu_width', function( value ) {
+                value.bind( function( newval ) {
+                    $( '#primary-nav').css('width', newval);
                 } );
             } );
 

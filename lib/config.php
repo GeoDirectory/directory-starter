@@ -50,6 +50,8 @@ if (!defined('DT_HEADER_LINK_COLOR')) define('DT_HEADER_LINK_COLOR', "#FFFFFF");
 if (!defined('DT_HEADER_LINK_HOVER')) define('DT_HEADER_LINK_HOVER', '#E8E8E8');
 if (!defined('DT_HEADER_BORDER_COLOR')) define('DT_HEADER_BORDER_COLOR', "#FFFFFF");
 if (!defined('DT_HEADER_SHADOW_COLOR')) define('DT_HEADER_SHADOW_COLOR', "rgba(0,0,0,0.2)");
+if (!defined('DT_HEADER_LOGO_WIDTH')) define('DT_HEADER_LOGO_WIDTH', '20%');
+if (!defined('DT_HEADER_MENU_WIDTH')) define('DT_HEADER_MENU_WIDTH', '80%');
 //primary nav
 if (!defined('DT_P_NAV_HEIGHT')) define('DT_P_NAV_HEIGHT', '84px');
 if (!defined('DT_P_NAV_LINE_HEIGHT')) define('DT_P_NAV_LINE_HEIGHT', DT_P_NAV_HEIGHT);
