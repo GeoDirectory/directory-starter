@@ -976,12 +976,12 @@ $wp_customize->add_panel( 'dt_header_panel', array(
 
         $wp_customize->add_setting( 'dt_header_logo_width', array(
             'transport' => 'postMessage',
-            'default' => apply_filters('dt_header_logo_width_default_value', DT_HEADER_LOGO_WIDTH),
+            'default' => apply_filters('dt_header_logo_width_default_value', DT_HEADER_LOGO_WIDTH.'%'),// customizer escapes % in default value so we need to add %% so it does not
             'sanitize_callback' => 'sanitize_text_field',
             'capability'  => 'edit_theme_options',
         ) );
         $wp_customize->add_control( 'dt_header_logo_width', array(
-            'label'   => __('Header Min Height', 'directory-starter' ),
+            'label'   => __('Header Logo Width', 'directory-starter' ),
             'section' => 'dt_header_spacing_section',
             'settings'    => 'dt_header_logo_width',
             'type'    => 'text',
@@ -994,12 +994,12 @@ $wp_customize->add_panel( 'dt_header_panel', array(
 
         $wp_customize->add_setting( 'dt_header_menu_width', array(
             'transport' => 'postMessage',
-            'default' => apply_filters('dt_header_menu_width_default_value', DT_HEADER_MENU_WIDTH),
+            'default' => apply_filters('dt_header_menu_width_default_value', DT_HEADER_MENU_WIDTH.'%'),// customizer escapes % in default value so we need to add %% so it does not
             'sanitize_callback' => 'sanitize_text_field',
             'capability'  => 'edit_theme_options',
         ) );
         $wp_customize->add_control( 'dt_header_menu_width', array(
-            'label'   => __('Header Min Height', 'directory-starter' ),
+            'label'   => __('Header Menu Width', 'directory-starter' ),
             'section' => 'dt_header_spacing_section',
             'settings'    => 'dt_header_menu_width',
             'type'    => 'text',

@@ -71,7 +71,7 @@
       }
       .sub-menu {
         position: absolute;
-        left: -203px;
+        left: -202px;
         top: 2px;
       }
     }
@@ -83,7 +83,7 @@
       opacity: 1;
       display: block;
     }
-    li:last-child:hover > .sub-menu {
+    li:last-child:hover {
       left: auto;
       right: 0;
     }
