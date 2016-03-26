@@ -8,9 +8,15 @@
 }
 
 #primary-nav {
-  float: right;
+  display: inline-block;
+  vertical-align: top;
+  width: 80%;
+  box-sizing: border-box;
+  padding: 0px 5px;
+  margin-left: -1%; // compensate for border problems
   ul {
     margin: 0;
+    float: right;
     li {
       padding: 0 20px;
       float: left;
@@ -65,7 +71,7 @@
       }
       .sub-menu {
         position: absolute;
-        left: -203px;
+        left: -202px;
         top: 2px;
       }
     }
@@ -77,13 +83,25 @@
       opacity: 1;
       display: block;
     }
-    li:last-child:hover > .sub-menu {
+    li:last-child:hover {
       left: auto;
       right: 0;
     }
   }
 }
 
-.dt-nav-toggle {
+#gd-account-nav,
+.dt-nav-toggle,
+.dt-mobile-account-wrap{
+  display: none;
+  font-size: 25px;
+}
+
+#mm-gd-account-nav.mm-opened,
+#gd-account-nav.mm-opened{
+  display:block !important;
+}
+
+#mm-primary-nav li.sd-my-account{
   display: none;
 }

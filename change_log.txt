@@ -4,3 +4,6 @@ Header top section - ADDED
 Settings added to change header top colors - ADDED
 Customizer code refactoring and bug fixes - FIXED
 Customizer styles loading before main styles - FIXED
+Header logo/menu changed from float to inline-block -  CHANGED
+Customizer settings added for logo/menu widths - ADDED
+3rd level menu items sometimes have problems - FIXED
