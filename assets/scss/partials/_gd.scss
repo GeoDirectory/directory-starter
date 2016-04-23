@@ -37,7 +37,11 @@ p.edit-link {
   .top_banner_section {
     margin-bottom: 0;
   }
+  &.geodir-sidebar-left{
+    margin-left: 0;
+  }
 }
+
 .sidebar .widget,
 .dt-sidebar .widget,
 .geodir-content-right .geodir-company_info {
