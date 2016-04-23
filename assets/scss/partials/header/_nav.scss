@@ -71,8 +71,8 @@
       }
       .sub-menu {
         position: absolute;
-        left: -202px;
-        top: 2px;
+        left: -200px;
+        top: 0px;
       }
     }
     li:last-child {
@@ -100,4 +100,7 @@
 #mm-gd-account-nav.mm-opened,
 #gd-account-nav.mm-opened{
   display:block !important;
+}
+.mm-menu .chosen-results{
+  color: #666
 }
