@@ -1,5 +1,5 @@
 .site-header {
-  height: $header-height;
+  min-height: $header-height;
   background-color: $header-bg-color;
   border-bottom: 1px solid $header-border-color;
   -webkit-box-shadow: 0 1px 1px $header-shadow-color;

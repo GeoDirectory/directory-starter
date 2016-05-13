@@ -65,6 +65,8 @@ function directory_theme_customizer( $wp_customize ) {
  * 		2.7.5 - Primary Menu Height
  * 		2.7.6 - Primary Menu Line Height
  * 		2.7.7 - Primary Menu Padding Left Right
+ *      2.7.8 - Header Logo Width
+ *      2.7.9 - Header Menu Width
  * 3.0 - Body
  *   3.1 - Background Image
  * 		3.1.1 - Background Image
@@ -862,7 +864,7 @@ $wp_customize->add_panel( 'dt_header_panel', array(
 				'capability'  => 'edit_theme_options',
 		) );
 		$wp_customize->add_control( 'dt_header_height', array(
-				'label'   => __('Header Height', 'directory-starter' ),
+				'label'   => __('Header Min Height', 'directory-starter' ),
 				'section' => 'dt_header_spacing_section',
 				'settings'    => 'dt_header_height',
 				'type'    => 'text',
@@ -930,7 +932,7 @@ $wp_customize->add_panel( 'dt_header_panel', array(
 				'capability'  => 'edit_theme_options',
 		) );
 		$wp_customize->add_control( 'dt_p_nav_height', array(
-				'label'   => __('Primary Menu Height', 'directory-starter' ),
+				'label'   => __('Primary Menu Min Height', 'directory-starter' ),
 				'section' => 'dt_header_spacing_section',
 				'type'    => 'text',
 				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_P_NAV_HEIGHT ),
@@ -967,6 +969,42 @@ $wp_customize->add_panel( 'dt_header_panel', array(
 				'type'    => 'text',
 				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_P_NAV_PADDING_LEFT_RIGHT ),
 		) );
+
+        //  =============================
+        //  2.7.8 - Header Logo Width
+        //  =============================
+
+        $wp_customize->add_setting( 'dt_header_logo_width', array(
+            'transport' => 'postMessage',
+            'default' => apply_filters('dt_header_logo_width_default_value', DT_HEADER_LOGO_WIDTH.'%'),// customizer escapes % in default value so we need to add %% so it does not
+            'sanitize_callback' => 'sanitize_text_field',
+            'capability'  => 'edit_theme_options',
+        ) );
+        $wp_customize->add_control( 'dt_header_logo_width', array(
+            'label'   => __('Header Logo Width', 'directory-starter' ),
+            'section' => 'dt_header_spacing_section',
+            'settings'    => 'dt_header_logo_width',
+            'type'    => 'text',
+            'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_HEADER_LOGO_WIDTH ),
+        ) );
+
+        //  =============================
+        //  2.7.9 - Header Menu Width
+        //  =============================
+
+        $wp_customize->add_setting( 'dt_header_menu_width', array(
+            'transport' => 'postMessage',
+            'default' => apply_filters('dt_header_menu_width_default_value', DT_HEADER_MENU_WIDTH.'%'),// customizer escapes % in default value so we need to add %% so it does not
+            'sanitize_callback' => 'sanitize_text_field',
+            'capability'  => 'edit_theme_options',
+        ) );
+        $wp_customize->add_control( 'dt_header_menu_width', array(
+            'label'   => __('Header Menu Width', 'directory-starter' ),
+            'section' => 'dt_header_spacing_section',
+            'settings'    => 'dt_header_menu_width',
+            'type'    => 'text',
+            'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_HEADER_MENU_WIDTH ),
+        ) );
 
 //  =============================
 //  3.0 - Body

@@ -66,6 +66,8 @@ function directory_theme_customize_css()
 	 * 		2.7.5 - Primary Menu Height
 	 * 		2.7.6 - Primary Menu Line Height
 	 * 		2.7.7 - Primary Menu Padding Left Right
+     *      2.7.8 - Header Logo Width
+     *      2.7.9 - Header Menu Width
 	 * 3.0 - Body
 	 *   3.1 - Background Image
 	 * 		3.1.1 - Background Image
@@ -417,7 +419,7 @@ function directory_theme_customize_css()
 		//  =============================
 		?>
 			.site-header {
-				height: <?php echo esc_attr(get_theme_mod('dt_header_height', DT_HEADER_HEIGHT)); ?>;px;
+				min-height: <?php echo esc_attr(get_theme_mod('dt_header_height', DT_HEADER_HEIGHT)); ?>;
 				background-color: <?php echo esc_attr(get_theme_mod('dt_header_bg_color', DT_HEADER_BG_COLOR)); ?>;
 				border-color: <?php echo esc_attr(get_theme_mod('dt_header_border_color', DT_HEADER_BORDER_COLOR)); ?>;
 				-webkit-box-shadow: 0 1px 1px <?php echo esc_attr(get_theme_mod('dt_header_shadow_color', DT_HEADER_SHADOW_COLOR)); ?>;
@@ -518,6 +520,22 @@ function directory_theme_customize_css()
 			#primary-nav ul li {
 				padding: 0 <?php echo esc_attr(get_theme_mod('dt_p_nav_padding_left_right', DT_P_NAV_PADDING_LEFT_RIGHT)); ?>;
 			}
+        <?php
+        //  =============================
+        //  2.7.8 - Header Logo Width
+        //  =============================
+        ?>
+            .site-logo-wrap{
+                width: <?php echo esc_attr(get_theme_mod('dt_header_logo_width', DT_HEADER_LOGO_WIDTH)); ?>;
+            }
+        <?php
+        //  =============================
+        //  2.7.9 - Header Menu Width
+        //  =============================
+        ?>
+            #primary-nav{
+                width: <?php echo esc_attr(get_theme_mod('dt_header_menu_width', DT_HEADER_MENU_WIDTH)); ?>;
+            }
 	<?php
 //  =============================
 //  3.0 - Body

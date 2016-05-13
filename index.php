@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php do_action('dt_index_before_main_content'); ?>
+
 <div class="container">
 	<div class="content-box content-single">
 		<?php if (!have_posts()) : ?>
@@ -25,5 +27,7 @@
 		?>
 	</div>
 </div>
+
+<?php do_action('dt_index_after_main_content'); ?>
 
 <?php get_footer(); ?>
