@@ -468,3 +468,18 @@ a img.aligncenter {
     }
   }
 }
+
+.blog-sidebar {
+  margin-top: 35px;
+  h4.widgettitle {
+    border-bottom: 1px solid #eee;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    color: $body-color;
+    a {
+      color: $body-color;
+    }
+  }
+}

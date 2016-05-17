@@ -86,6 +86,9 @@ function directory_theme_customizer( $wp_customize ) {
  * 		3.4.2 - Font Size
  * 		3.4.3 - Line Height
  *   3.5 - Spacing
+ *   3.6 - Sidebar
+ * 		3.6.1 - Enable Blog Sidebar
+ *      3.6.2 - Blog Sidebar Position
  * 4.0 - Footer
  *   4.1 - Text Colors
  *   4.2 - Background Colors
@@ -1263,6 +1266,55 @@ $wp_customize->add_panel( 'dt_body_panel', array(
 			'description' => __( 'Spacing', 'directory-starter' ),
 			'panel'  => 'dt_body_panel',
 	) );
+
+	//  =============================
+	//  3.6 - Sidebar
+	//  =============================
+
+	$wp_customize->add_section( 'dt_body_sidebar_section', array(
+			'title'       => __( 'Sidebar', 'directory-starter' ),
+			'priority'    => 40,
+			'description' => __( 'Sidebar', 'directory-starter' ),
+			'panel'  => 'dt_body_panel',
+	) );
+
+		//  =============================
+		//  3.6.1 - Enable Blog Sidebar
+		//  =============================
+
+		$wp_customize->add_setting( 'dt_enable_blog_sidebar', array(
+				'default' => apply_filters('dt_enable_blog_sidebar_default_value', DT_ENABLE_BLOG_SIDEBAR),
+				'sanitize_callback' => 'sanitize_text_field',
+				'capability'  => 'edit_theme_options',
+		) );
+		$wp_customize->add_control( 'dt_enable_blog_sidebar', array(
+				'label'   => __('Enable Blog Sidebar', 'directory-starter' ),
+				'section' => 'dt_body_sidebar_section',
+				'type'    => 'checkbox',
+				'std'         => '0',
+				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_ENABLE_BLOG_SIDEBAR ),
+		) );
+
+		//  =============================
+		//  3.6.2 - Blog Sidebar Position
+		//  =============================
+
+		$wp_customize->add_setting( 'dt_blog_sidebar_position', array(
+				'default' => apply_filters('dt_blog_sidebar_position_default_value', DT_BLOG_SIDEBAR_POSITION),
+				'sanitize_callback' => 'sanitize_text_field',
+				'capability'  => 'edit_theme_options',
+		) );
+		$wp_customize->add_control( 'dt_blog_sidebar_position', array(
+				'label'   => __('Blog Sidebar Position', 'directory-starter' ),
+				'section' => 'dt_body_sidebar_section',
+				'type'    => 'select',
+				'choices' => array(
+						'left' => 'Left',
+						'right' => 'Right',
+				),
+				'std'         => 'right',
+				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_BLOG_SIDEBAR_POSITION ),
+		) );
 
 //  =============================
 //  4.0 - Footer
