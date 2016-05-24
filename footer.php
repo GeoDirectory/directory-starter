@@ -28,6 +28,7 @@
 		<div class="container">
 			<p class="copyright-text">
 			<?php echo esc_attr( get_theme_mod( 'dt_copyright_text', DT_COPYRIGHT_TEXT ) ); ?>
+			<?php do_action('dt_footer_copyright'); ?>
 			</p>
 			<?php
 			if (has_nav_menu( 'footer-links' )) {
@@ -39,6 +40,7 @@
 			?>
 		</div>
 	</div>
+
 </footer>
 <?php wp_footer(); ?>
 </div>
