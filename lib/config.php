@@ -2,7 +2,7 @@
 // Enable header top?
 if (!defined('DT_ENABLE_HEADER_TOP')) define('DT_ENABLE_HEADER_TOP', '');
 // Enable blog sidebar?
-if (!defined('DT_ENABLE_BLOG_SIDEBAR')) define('DT_ENABLE_BLOG_SIDEBAR', '');
+if (!defined('DT_ENABLE_BLOG_SIDEBAR')) define('DT_ENABLE_BLOG_SIDEBAR', '1');
 if (!defined('DT_BLOG_SIDEBAR_POSITION')) define('DT_BLOG_SIDEBAR_POSITION', 'right');
 // Number of footer sidebars you need
 if (!defined('FOOTER_SIDEBAR_COUNT')) define('FOOTER_SIDEBAR_COUNT', 4);

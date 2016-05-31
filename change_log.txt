@@ -1,3 +1,7 @@
+v1.0.4
+Default page now has sidebar - CHANGED
+Added full width page template - ADDED
+
 v1.0.3
 Primary Sidebar not working - FIXED
 CSS changes for GD - CHANGED

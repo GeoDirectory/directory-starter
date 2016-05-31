@@ -27,6 +27,7 @@ function directory_theme_scripts() {
     $customizer_css = ob_get_clean();
 
     wp_add_inline_style( 'directory-theme-style', $customizer_css );
+	
 }
 add_action( 'wp_enqueue_scripts', 'directory_theme_scripts' );
 
