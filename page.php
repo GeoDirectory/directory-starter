@@ -9,7 +9,7 @@ $dt_blog_sidebar_position = esc_attr(get_theme_mod('dt_blog_sidebar_position', D
 	<?php if ($dt_blog_sidebar_position == 'left') { ?>
 		<div class="col-lg-4 col-md-3">
 			<div class="sidebar blog-sidebar page-sidebar">
-				<?php get_sidebar(); ?>
+				<?php get_sidebar('pages'); ?>
 			</div>
 		</div>
 	<?php } ?>
@@ -40,7 +40,7 @@ $dt_blog_sidebar_position = esc_attr(get_theme_mod('dt_blog_sidebar_position', D
 	<?php if ($dt_blog_sidebar_position == 'right') { ?>
 		<div class="col-lg-4 col-md-3">
 			<div class="sidebar blog-sidebar page-sidebar">
-				<?php get_sidebar(); ?>
+				<?php get_sidebar('pages'); ?>
 			</div>
 		</div>
 	<?php } ?>

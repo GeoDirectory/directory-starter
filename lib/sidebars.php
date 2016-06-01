@@ -3,9 +3,19 @@ function directory_theme_widgets_init()
 {
 	// Sidebars
 	register_sidebar(array(
-		'name' => __('Sidebar Primary', 'directory-starter'),
+		'name' => __('Sidebar Blog', 'directory-starter'),
 		'id' => 'sidebar-primary',
-		'description' => __( 'Primary Sidebar.', 'directory-starter' ),
+		'description' => __( 'Sidebar for blog pages, can be enabled from customizer Body>Sidebar', 'directory-starter' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+
+	register_sidebar(array(
+		'name' => __('Sidebar Page', 'directory-starter'),
+		'id' => 'pages',
+		'description' => __( 'Sidebar for pages.', 'directory-starter' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
