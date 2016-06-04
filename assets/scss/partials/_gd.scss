@@ -113,6 +113,10 @@ ul#breadcrumbs {
   float: right;
 }
 .geodir-loginbox-list li {
+  select{
+    float: none;
+    width:100%;
+  }
   border-bottom: none;
 }
 //border less grids

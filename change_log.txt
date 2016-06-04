@@ -2,6 +2,8 @@ v1.0.4
 Default page now has sidebar - CHANGED
 Added full width page template - ADDED
 Pages now have their own sidebar - ADDED
+RTL CSS added - ADDED
+Fontawesome css added to theme - ADDED
 
 v1.0.3
 Primary Sidebar not working - FIXED

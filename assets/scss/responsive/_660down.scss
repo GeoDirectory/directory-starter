@@ -18,3 +18,9 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  body.admin-bar .mm-page{
+    position: inherit;
+  }
+}
