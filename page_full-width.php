@@ -1,19 +1,17 @@
-<?php get_header(); 
+<?php
+/**
+ * Template Name: Full Width Page
+ *
+ * @package Directory_Starter
+ * @since 1.0.4
+ */
 
-do_action('dt_page_before_main_content'); 
+get_header(); 
 
-$dt_blog_sidebar_position = esc_attr(get_theme_mod('dt_blog_sidebar_position', DT_BLOG_SIDEBAR_POSITION));
-?>
+do_action('dt_page_before_main_content'); ?>
 <div class="container">
 	<div class="row">
-	<?php if ($dt_blog_sidebar_position == 'left') { ?>
-		<div class="col-lg-4 col-md-3">
-			<div class="sidebar blog-sidebar page-sidebar">
-				<?php get_sidebar('pages'); ?>
-			</div>
-		</div>
-	<?php } ?>
-	<div class="col-lg-8 col-md-9">
+	<div class="col-lg-12">
 		<div class="content-box content-single">
 			<?php if (!have_posts()) : ?>
 				<div class="alert alert-warning">
@@ -37,13 +35,6 @@ $dt_blog_sidebar_position = esc_attr(get_theme_mod('dt_blog_sidebar_position', D
 			?>
 		</div>
 	</div>
-	<?php if ($dt_blog_sidebar_position == 'right') { ?>
-		<div class="col-lg-4 col-md-3">
-			<div class="sidebar blog-sidebar page-sidebar">
-				<?php get_sidebar('pages'); ?>
-			</div>
-		</div>
-	<?php } ?>
 	</div>
 </div>
 
