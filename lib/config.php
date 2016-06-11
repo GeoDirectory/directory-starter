@@ -69,6 +69,11 @@ if (!defined('DT_FW_BG')) define('DT_FW_BG', "#2F2F2F");
 if (!defined('DT_FW_BORDER_TOP_COLOR')) define('DT_FW_BORDER_TOP_COLOR', "#FFFFFF");
 if (!defined('DT_FW_BORDER_BOTTOM_COLOR')) define('DT_FW_BORDER_BOTTOM_COLOR', "#444");
 if (!defined('DT_FW_BOX_SHADOW_COLOR')) define('DT_FW_BOX_SHADOW_COLOR', "rgba(0,0,0,0.2)");
+if (!defined('DT_FW_TEXT_COLOR')) define('DT_FW_TEXT_COLOR', "#BBB");
+if (!defined('DT_FW_H1TOH6_COLOR')) define('DT_FW_H1TOH6_COLOR', "#BBB");
+if (!defined('DT_FW_LINK_COLOR')) define('DT_FW_LINK_COLOR', "#BBB");
+if (!defined('DT_FW_LINK_HOVER')) define('DT_FW_LINK_HOVER', '#E84739');
+if (!defined('DT_FW_LINK_VISITED')) define('DT_FW_LINK_VISITED', DT_FW_LINK_COLOR);
 //copyright
 if (!defined('DT_COPYRIGHT_BG')) define('DT_COPYRIGHT_BG', "#202020");
 if (!defined('DT_COPYRIGHT_PADDING_TOP')) define('DT_COPYRIGHT_PADDING_TOP', '20px');

@@ -91,6 +91,11 @@ function directory_theme_customizer( $wp_customize ) {
  *      3.6.2 - Blog Sidebar Position
  * 4.0 - Footer
  *   4.1 - Text Colors
+ * 		4.1.1 - Text Color
+ * 		4.1.2 - h1 to h6 Color
+ * 		4.1.3 - Link Color
+ * 		4.1.4 - Link Hover Color
+ * 		4.1.5 - Link Visited Color
  *   4.2 - Background Colors
  * 		4.2.1 - Footer Section Background Color
  * 		4.2.2 - Footer Section Border Top Color
@@ -1339,6 +1344,88 @@ $wp_customize->add_panel( 'dt_footer_panel', array(
 		'description' => __( 'Text Colors', 'directory-starter' ),
 		'panel'  => 'dt_footer_panel',
 	) );
+
+		//  =============================
+		//  4.1.1 - Text Color
+		//  =============================
+
+		$wp_customize->add_setting( 'dt_fw_text_color', array(
+				'transport' => 'postMessage',
+				'default' => apply_filters('dt_fw_text_color_default_value', DT_FW_TEXT_COLOR),
+				'sanitize_callback' => 'sanitize_hex_color',
+				'capability'        => 'edit_theme_options',
+		) );
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_fw_text_color', array(
+				'label'       => __( 'Text Color', 'directory-starter' ),
+				'section'     => 'dt_footer_text_section',
+				'settings'    => 'dt_fw_text_color',
+				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_FW_TEXT_COLOR ),
+		) ) );
+
+		//  =============================
+		//  4.1.2 - h1 to h6 Color
+		//  =============================
+
+		$wp_customize->add_setting( 'dt_fw_h1toh6_color', array(
+				'transport' => 'postMessage',
+				'default' => apply_filters('dt_fw_h1toh6_color_default_value', DT_FW_H1TOH6_COLOR),
+				'sanitize_callback' => 'sanitize_hex_color',
+				'capability'        => 'edit_theme_options',
+		) );
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_fw_h1toh6_color', array(
+				'label'       => __( 'h1 to h6 Color', 'directory-starter' ),
+				'section'     => 'dt_footer_text_section',
+				'settings'    => 'dt_fw_h1toh6_color',
+				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_FW_H1TOH6_COLOR ),
+		) ) );
+
+		//  =============================
+		//  4.1.3 - Link Color
+		//  =============================
+
+		$wp_customize->add_setting( 'dt_fw_link_color', array(
+				'default' => apply_filters('dt_fw_link_color_default_value', DT_FW_LINK_COLOR),
+				'sanitize_callback' => 'sanitize_hex_color',
+				'capability'        => 'edit_theme_options',
+		) );
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_fw_link_color', array(
+				'label'       => __( 'Link Color', 'directory-starter' ),
+				'section'     => 'dt_footer_text_section',
+				'settings'    => 'dt_fw_link_color',
+				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_FW_LINK_COLOR ),
+		) ) );
+
+		//  =============================
+		//  4.1.4 - Link Hover Color
+		//  =============================
+
+		$wp_customize->add_setting( 'dt_fw_link_hover', array(
+				'default' => apply_filters('dt_fw_link_hover_default_value', DT_FW_LINK_HOVER),
+				'sanitize_callback' => 'sanitize_hex_color',
+				'capability'        => 'edit_theme_options',
+		) );
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_fw_link_hover', array(
+				'label'       => __( 'Link Hover Color', 'directory-starter' ),
+				'section'     => 'dt_footer_text_section',
+				'settings'    => 'dt_fw_link_hover',
+				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_FW_LINK_HOVER ),
+		) ) );
+
+		//  =============================
+		//  4.1.5 - Link Visited Color
+		//  =============================
+
+		$wp_customize->add_setting( 'dt_fw_link_visited', array(
+				'default' => apply_filters('dt_fw_link_visited_default_value', DT_FW_LINK_VISITED),
+				'sanitize_callback' => 'sanitize_hex_color',
+				'capability'        => 'edit_theme_options',
+		) );
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_fw_link_visited', array(
+				'label'       => __( 'Link Visited Color', 'directory-starter' ),
+				'section'     => 'dt_footer_text_section',
+				'settings'    => 'dt_fw_link_visited',
+				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_FW_LINK_VISITED ),
+		) ) );
 
 	//  =============================
 	//  4.2 - Background Colors
