@@ -89,6 +89,11 @@ function directory_theme_customize_css()
 	 *   3.5 - Spacing
 	 * 4.0 - Footer
 	 *   4.1 - Text Colors
+	 * 		4.1.1 - Text Color
+	 * 		4.1.2 - h1 to h6 Color
+	 * 		4.1.3 - Link Color
+	 * 		4.1.4 - Link Hover Color
+	 * 		4.1.5 - Link Visited Color
 	 *   4.2 - Background Colors
 	 * 		4.2.1 - Footer Section Background Color
 	 * 		4.2.2 - Footer Section Border Top Color
@@ -584,6 +589,7 @@ function directory_theme_customize_css()
 		//  =============================
 		?>
 			a:hover,
+			a:visited:hover,
 			a:focus,
 			a:active {
 				color: <?php echo esc_attr(get_theme_mod('dt_link_hover', DT_LINK_HOVER)); ?>;
@@ -674,6 +680,60 @@ function directory_theme_customize_css()
 	//  4.1 - Text Colors
 	//  =============================
 	?>
+		<?php
+		//  =============================
+		//  4.1.1 - Body Color
+		//  =============================
+		?>
+			.footer-widgets {
+				color: <?php echo esc_attr(get_theme_mod('dt_fw_text_color', DT_FW_TEXT_COLOR)); ?>;
+			}
+		<?php
+		//  =============================
+		//  4.1.2 - h1 to h6 Color
+		//  =============================
+		?>
+			.footer-widgets h1,
+			.footer-widgets .h1,
+			.footer-widgets h2,
+			.footer-widgets .h2,
+			.footer-widgets h3,
+			.footer-widgets .h3,
+			.footer-widgets h4,
+			.footer-widgets .h4,
+			.footer-widgets h5,
+			.footer-widgets .h5,
+			.footer-widgets h6,
+			.footer-widgets .h6 {
+				color: <?php echo esc_attr(get_theme_mod('dt_fw_h1toh6_color', DT_FW_H1TOH6_COLOR)); ?>;
+			}
+		<?php
+		//  =============================
+		//  4.1.3 - Link Color
+		//  =============================
+		?>
+			.footer-widgets a {
+				color: <?php echo esc_attr(get_theme_mod('dt_fw_link_color', DT_FW_LINK_COLOR)); ?>;
+			}
+		<?php
+		//  =============================
+		//  4.1.4 - Link Hover Color
+		//  =============================
+		?>
+			.footer-widgets a:hover,
+			.footer-widgets a:visited:hover,
+			.footer-widgets a:focus,
+			.footer-widgets a:active {
+				color: <?php echo esc_attr(get_theme_mod('dt_fw_link_hover', DT_FW_LINK_HOVER)); ?>;
+			}
+		<?php
+		//  =============================
+		//  4.1.5 - Link Visited Color
+		//  =============================
+		?>
+			.footer-widgets a:visited {
+				color: <?php echo esc_attr(get_theme_mod('dt_fw_link_visited', DT_FW_LINK_VISITED)); ?>;
+			}
 	<?php
 	//  =============================
 	//  4.2 - Background Colors
