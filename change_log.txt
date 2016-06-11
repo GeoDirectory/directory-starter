@@ -5,6 +5,8 @@ Pages now have their own sidebar - ADDED
 RTL CSS added - ADDED
 Fontawesome css added to theme - ADDED
 Mobile login widget title change from h2 to strong - CHANGED
+Footer text color settings - ADDED
+
 
 v1.0.3
 Primary Sidebar not working - FIXED
