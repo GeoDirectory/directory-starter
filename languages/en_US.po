@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Directory Starter 1.0.2\n"
+"Project-Id-Version: Directory Starter 1.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-13 21:11+0100\n"
-"PO-Revision-Date: 2016-05-13 21:11+0100\n"
+"POT-Creation-Date: 2016-05-20 15:32+0100\n"
+"PO-Revision-Date: 2016-06-03 14:47+0100\n"
 "Last-Translator: \n"
 "Language-Team: GD Team <info@wpgeodirectory.com>\n"
 "Language: en_US\n"
@@ -30,15 +30,15 @@ msgstr ""
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 
-#: archive.php:7 index.php:9 page.php:9 single.php:9
+#: archive.php:7 index.php:28 page.php:28 single.php:28
 msgid "Sorry, no results were found."
 msgstr ""
 
-#: archive.php:22 index.php:24 single.php:29
+#: archive.php:22 index.php:43 single.php:48
 msgid "Previous"
 msgstr ""
 
-#: archive.php:23 index.php:25 single.php:26
+#: archive.php:23 index.php:44 single.php:45
 msgid "Next"
 msgstr ""
 
@@ -78,350 +78,363 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: lib/admin/customizer.php:115
+#: lib/admin/customizer.php:118
 msgid "General"
 msgstr ""
 
-#: lib/admin/customizer.php:146 lib/admin/customizer.php:148
-#: lib/admin/customizer.php:850 lib/admin/customizer.php:852
-#: lib/admin/customizer.php:1261 lib/admin/customizer.php:1263
-#: lib/admin/customizer.php:1413 lib/admin/customizer.php:1415
+#: lib/admin/customizer.php:149 lib/admin/customizer.php:151
+#: lib/admin/customizer.php:853 lib/admin/customizer.php:855
+#: lib/admin/customizer.php:1264 lib/admin/customizer.php:1266
+#: lib/admin/customizer.php:1465 lib/admin/customizer.php:1467
 msgid "Spacing"
 msgstr ""
 
-#: lib/admin/customizer.php:164
+#: lib/admin/customizer.php:167
 msgid "Desktop Container Width"
 msgstr ""
 
-#: lib/admin/customizer.php:166 lib/admin/customizer.php:183
-#: lib/admin/customizer.php:200 lib/admin/customizer.php:217
-#: lib/admin/customizer.php:234 lib/admin/customizer.php:273
-#: lib/admin/customizer.php:290 lib/admin/customizer.php:307
-#: lib/admin/customizer.php:324 lib/admin/customizer.php:341
-#: lib/admin/customizer.php:358 lib/admin/customizer.php:375
-#: lib/admin/customizer.php:392 lib/admin/customizer.php:409
-#: lib/admin/customizer.php:426 lib/admin/customizer.php:443
-#: lib/admin/customizer.php:460 lib/admin/customizer.php:488
-#: lib/admin/customizer.php:505 lib/admin/customizer.php:522
-#: lib/admin/customizer.php:539 lib/admin/customizer.php:580
-#: lib/admin/customizer.php:597 lib/admin/customizer.php:614
-#: lib/admin/customizer.php:631 lib/admin/customizer.php:648
-#: lib/admin/customizer.php:718 lib/admin/customizer.php:735
-#: lib/admin/customizer.php:763 lib/admin/customizer.php:780
-#: lib/admin/customizer.php:797 lib/admin/customizer.php:814
-#: lib/admin/customizer.php:831 lib/admin/customizer.php:871
-#: lib/admin/customizer.php:888 lib/admin/customizer.php:905
-#: lib/admin/customizer.php:922 lib/admin/customizer.php:938
-#: lib/admin/customizer.php:954 lib/admin/customizer.php:970
-#: lib/admin/customizer.php:988 lib/admin/customizer.php:1006
-#: lib/admin/customizer.php:1057 lib/admin/customizer.php:1074
-#: lib/admin/customizer.php:1090 lib/admin/customizer.php:1106
-#: lib/admin/customizer.php:1122 lib/admin/customizer.php:1157
-#: lib/admin/customizer.php:1174 lib/admin/customizer.php:1191
-#: lib/admin/customizer.php:1219 lib/admin/customizer.php:1236
-#: lib/admin/customizer.php:1253 lib/admin/customizer.php:1314
-#: lib/admin/customizer.php:1330 lib/admin/customizer.php:1346
-#: lib/admin/customizer.php:1362 lib/admin/customizer.php:1378
-#: lib/admin/customizer.php:1394 lib/admin/customizer.php:1432
-#: lib/admin/customizer.php:1448
+#: lib/admin/customizer.php:169 lib/admin/customizer.php:186
+#: lib/admin/customizer.php:203 lib/admin/customizer.php:220
+#: lib/admin/customizer.php:237 lib/admin/customizer.php:276
+#: lib/admin/customizer.php:293 lib/admin/customizer.php:310
+#: lib/admin/customizer.php:327 lib/admin/customizer.php:344
+#: lib/admin/customizer.php:361 lib/admin/customizer.php:378
+#: lib/admin/customizer.php:395 lib/admin/customizer.php:412
+#: lib/admin/customizer.php:429 lib/admin/customizer.php:446
+#: lib/admin/customizer.php:463 lib/admin/customizer.php:491
+#: lib/admin/customizer.php:508 lib/admin/customizer.php:525
+#: lib/admin/customizer.php:542 lib/admin/customizer.php:583
+#: lib/admin/customizer.php:600 lib/admin/customizer.php:617
+#: lib/admin/customizer.php:634 lib/admin/customizer.php:651
+#: lib/admin/customizer.php:721 lib/admin/customizer.php:738
+#: lib/admin/customizer.php:766 lib/admin/customizer.php:783
+#: lib/admin/customizer.php:800 lib/admin/customizer.php:817
+#: lib/admin/customizer.php:834 lib/admin/customizer.php:874
+#: lib/admin/customizer.php:891 lib/admin/customizer.php:908
+#: lib/admin/customizer.php:925 lib/admin/customizer.php:941
+#: lib/admin/customizer.php:957 lib/admin/customizer.php:973
+#: lib/admin/customizer.php:991 lib/admin/customizer.php:1009
+#: lib/admin/customizer.php:1060 lib/admin/customizer.php:1077
+#: lib/admin/customizer.php:1093 lib/admin/customizer.php:1109
+#: lib/admin/customizer.php:1125 lib/admin/customizer.php:1160
+#: lib/admin/customizer.php:1177 lib/admin/customizer.php:1194
+#: lib/admin/customizer.php:1222 lib/admin/customizer.php:1239
+#: lib/admin/customizer.php:1256 lib/admin/customizer.php:1295
+#: lib/admin/customizer.php:1316 lib/admin/customizer.php:1366
+#: lib/admin/customizer.php:1382 lib/admin/customizer.php:1398
+#: lib/admin/customizer.php:1414 lib/admin/customizer.php:1430
+#: lib/admin/customizer.php:1446 lib/admin/customizer.php:1484
+#: lib/admin/customizer.php:1500
 #, php-format
 msgid "Default: %s"
 msgstr ""
 
-#: lib/admin/customizer.php:180
+#: lib/admin/customizer.php:183
 msgid "Container Padding Right"
 msgstr ""
 
-#: lib/admin/customizer.php:197
+#: lib/admin/customizer.php:200
 msgid "Container Padding Left"
 msgstr ""
 
-#: lib/admin/customizer.php:214
+#: lib/admin/customizer.php:217
 msgid "Container Margin Right"
 msgstr ""
 
-#: lib/admin/customizer.php:231
+#: lib/admin/customizer.php:234
 msgid "Container Margin Left"
 msgstr ""
 
-#: lib/admin/customizer.php:253 lib/admin/customizer.php:255
+#: lib/admin/customizer.php:256 lib/admin/customizer.php:258
 msgid "Alert Colors"
 msgstr ""
 
-#: lib/admin/customizer.php:270
+#: lib/admin/customizer.php:273
 msgid "Alert Warning Background Color"
 msgstr ""
 
-#: lib/admin/customizer.php:287
+#: lib/admin/customizer.php:290
 msgid "Alert Error Background Color"
 msgstr ""
 
-#: lib/admin/customizer.php:304
+#: lib/admin/customizer.php:307
 msgid "Alert Success Background Color"
 msgstr ""
 
-#: lib/admin/customizer.php:321
+#: lib/admin/customizer.php:324
 msgid "Alert Info Background Color"
 msgstr ""
 
-#: lib/admin/customizer.php:338
+#: lib/admin/customizer.php:341
 msgid "Alert Warning Text Color"
 msgstr ""
 
-#: lib/admin/customizer.php:355
+#: lib/admin/customizer.php:358
 msgid "Alert Error Text Color"
 msgstr ""
 
-#: lib/admin/customizer.php:372
+#: lib/admin/customizer.php:375
 msgid "Alert Success Text Color"
 msgstr ""
 
-#: lib/admin/customizer.php:389
+#: lib/admin/customizer.php:392
 msgid "Alert Info Text Color"
 msgstr ""
 
-#: lib/admin/customizer.php:406
+#: lib/admin/customizer.php:409
 msgid "Alert Warning Border Color"
 msgstr ""
 
-#: lib/admin/customizer.php:423
+#: lib/admin/customizer.php:426
 msgid "Alert Error Border Color"
 msgstr ""
 
-#: lib/admin/customizer.php:440
+#: lib/admin/customizer.php:443
 msgid "Alert Success Border Color"
 msgstr ""
 
-#: lib/admin/customizer.php:457
+#: lib/admin/customizer.php:460
 msgid "Alert Info Border Color"
 msgstr ""
 
-#: lib/admin/customizer.php:468 lib/admin/customizer.php:470
+#: lib/admin/customizer.php:471 lib/admin/customizer.php:473
 msgid "Button Colors"
 msgstr ""
 
-#: lib/admin/customizer.php:485
+#: lib/admin/customizer.php:488
 msgid "Button Text Color"
 msgstr ""
 
-#: lib/admin/customizer.php:502
+#: lib/admin/customizer.php:505
 msgid "Button Background Color"
 msgstr ""
 
-#: lib/admin/customizer.php:519
+#: lib/admin/customizer.php:522
 msgid "Button Hover Background Color"
 msgstr ""
 
-#: lib/admin/customizer.php:536
+#: lib/admin/customizer.php:539
 msgid "Button Border Color"
 msgstr ""
 
-#: lib/admin/customizer.php:551
+#: lib/admin/customizer.php:554
 msgid "Header"
 msgstr ""
 
-#: lib/admin/customizer.php:560 lib/admin/customizer.php:562 lib/nav.php:8
+#: lib/admin/customizer.php:563 lib/admin/customizer.php:565 lib/nav.php:8
 msgid "Header Top"
 msgstr ""
 
-#: lib/admin/customizer.php:576
+#: lib/admin/customizer.php:579
 msgid "Enable Header Top Section"
 msgstr ""
 
-#: lib/admin/customizer.php:594
+#: lib/admin/customizer.php:597
 msgid "Header Top Text Color"
 msgstr ""
 
-#: lib/admin/customizer.php:611
+#: lib/admin/customizer.php:614
 msgid "Header Top Link Color"
 msgstr ""
 
-#: lib/admin/customizer.php:628
+#: lib/admin/customizer.php:631
 msgid "Header Top Link Hover Color"
 msgstr ""
 
-#: lib/admin/customizer.php:645
+#: lib/admin/customizer.php:648
 msgid "Header Top Background Color"
 msgstr ""
 
-#: lib/admin/customizer.php:656 lib/admin/customizer.php:658
-#: lib/admin/customizer.php:671
+#: lib/admin/customizer.php:659 lib/admin/customizer.php:661
+#: lib/admin/customizer.php:674
 msgid "Logo"
 msgstr ""
 
-#: lib/admin/customizer.php:668
+#: lib/admin/customizer.php:671
 msgid ""
 "Upload a logo to replace the default site name and description in the header"
 msgstr ""
 
-#: lib/admin/customizer.php:692 lib/admin/customizer.php:694
-#: lib/admin/customizer.php:1037 lib/admin/customizer.php:1039
-#: lib/admin/customizer.php:1284 lib/admin/customizer.php:1286
+#: lib/admin/customizer.php:695 lib/admin/customizer.php:697
+#: lib/admin/customizer.php:1040 lib/admin/customizer.php:1042
+#: lib/admin/customizer.php:1336 lib/admin/customizer.php:1338
 msgid "Text Colors"
 msgstr ""
 
-#: lib/admin/customizer.php:715
+#: lib/admin/customizer.php:718
 msgid "Header Link Color"
 msgstr ""
 
-#: lib/admin/customizer.php:732
+#: lib/admin/customizer.php:735
 msgid "Header Link Hover Color"
 msgstr ""
 
-#: lib/admin/customizer.php:743 lib/admin/customizer.php:745
-#: lib/admin/customizer.php:1131 lib/admin/customizer.php:1133
-#: lib/admin/customizer.php:1295 lib/admin/customizer.php:1297
+#: lib/admin/customizer.php:746 lib/admin/customizer.php:748
+#: lib/admin/customizer.php:1134 lib/admin/customizer.php:1136
+#: lib/admin/customizer.php:1347 lib/admin/customizer.php:1349
 msgid "Background Colors"
 msgstr ""
 
-#: lib/admin/customizer.php:760
+#: lib/admin/customizer.php:763
 msgid "Header Background Color"
 msgstr ""
 
-#: lib/admin/customizer.php:777
+#: lib/admin/customizer.php:780
 msgid "Header Border Color"
 msgstr ""
 
-#: lib/admin/customizer.php:793
+#: lib/admin/customizer.php:796
 msgid "Header Shadow Color"
 msgstr ""
 
-#: lib/admin/customizer.php:811
+#: lib/admin/customizer.php:814
 msgid "Primary Menu - Sub menu Background Color"
 msgstr ""
 
-#: lib/admin/customizer.php:828
+#: lib/admin/customizer.php:831
 msgid "Primary Menu - Sub menu Background hover Color"
 msgstr ""
 
-#: lib/admin/customizer.php:839 lib/admin/customizer.php:841
-#: lib/admin/customizer.php:1199 lib/admin/customizer.php:1201
-#: lib/admin/customizer.php:1402 lib/admin/customizer.php:1404
+#: lib/admin/customizer.php:842 lib/admin/customizer.php:844
+#: lib/admin/customizer.php:1202 lib/admin/customizer.php:1204
+#: lib/admin/customizer.php:1454 lib/admin/customizer.php:1456
 msgid "Typography"
 msgstr ""
 
-#: lib/admin/customizer.php:867
+#: lib/admin/customizer.php:870
 msgid "Header Min Height"
 msgstr ""
 
-#: lib/admin/customizer.php:885
+#: lib/admin/customizer.php:888
 msgid "Logo Margin Right"
 msgstr ""
 
-#: lib/admin/customizer.php:902
+#: lib/admin/customizer.php:905
 msgid "Logo Margin Left"
 msgstr ""
 
-#: lib/admin/customizer.php:919
+#: lib/admin/customizer.php:922
 msgid "Logo Margin Top"
 msgstr ""
 
-#: lib/admin/customizer.php:935
+#: lib/admin/customizer.php:938
 msgid "Primary Menu Min Height"
 msgstr ""
 
-#: lib/admin/customizer.php:951
+#: lib/admin/customizer.php:954
 msgid "Primary Menu Line Height"
 msgstr ""
 
-#: lib/admin/customizer.php:967
+#: lib/admin/customizer.php:970
 msgid "Primary Menu Padding Left Right"
 msgstr ""
 
-#: lib/admin/customizer.php:984
+#: lib/admin/customizer.php:987
 msgid "Header Logo Width"
 msgstr ""
 
-#: lib/admin/customizer.php:1002
+#: lib/admin/customizer.php:1005
 msgid "Header Menu Width"
 msgstr ""
 
-#: lib/admin/customizer.php:1017
+#: lib/admin/customizer.php:1020
 msgid "Body"
 msgstr ""
 
-#: lib/admin/customizer.php:1054
+#: lib/admin/customizer.php:1057
 msgid "Body Color"
 msgstr ""
 
-#: lib/admin/customizer.php:1071
+#: lib/admin/customizer.php:1074
 msgid "h1 to h6 Color"
 msgstr ""
 
-#: lib/admin/customizer.php:1087
+#: lib/admin/customizer.php:1090
 msgid "Link Color"
 msgstr ""
 
-#: lib/admin/customizer.php:1103
+#: lib/admin/customizer.php:1106
 msgid "Link Hover Color"
 msgstr ""
 
-#: lib/admin/customizer.php:1119
+#: lib/admin/customizer.php:1122
 msgid "Link Visited Color"
 msgstr ""
 
-#: lib/admin/customizer.php:1154
+#: lib/admin/customizer.php:1157
 msgid "Content Box Background Color"
 msgstr ""
 
-#: lib/admin/customizer.php:1171
+#: lib/admin/customizer.php:1174
 msgid "Content Box Border Color"
 msgstr ""
 
-#: lib/admin/customizer.php:1187
+#: lib/admin/customizer.php:1190
 msgid "Content Box Shadow Color"
 msgstr ""
 
-#: lib/admin/customizer.php:1216
+#: lib/admin/customizer.php:1219
 msgid "Font Family"
 msgstr ""
 
-#: lib/admin/customizer.php:1233
+#: lib/admin/customizer.php:1236
 msgid "Font Size"
 msgstr ""
 
-#: lib/admin/customizer.php:1250
+#: lib/admin/customizer.php:1253
 msgid "Line Height"
 msgstr ""
 
-#: lib/admin/customizer.php:1275
-msgid "Footer"
+#: lib/admin/customizer.php:1275 lib/admin/customizer.php:1277
+msgid "Sidebar"
 msgstr ""
 
-#: lib/admin/customizer.php:1311
-msgid "Footer Section Background Color"
+#: lib/admin/customizer.php:1291
+msgid "Enable Blog Sidebar"
+msgstr ""
+
+#: lib/admin/customizer.php:1308
+msgid "Blog Sidebar Position"
 msgstr ""
 
 #: lib/admin/customizer.php:1327
+msgid "Footer"
+msgstr ""
+
+#: lib/admin/customizer.php:1363
+msgid "Footer Section Background Color"
+msgstr ""
+
+#: lib/admin/customizer.php:1379
 msgid "Footer Section Border Top Color"
 msgstr ""
 
-#: lib/admin/customizer.php:1343
+#: lib/admin/customizer.php:1395
 msgid "Footer Section Border Bottom Color"
 msgstr ""
 
-#: lib/admin/customizer.php:1359
+#: lib/admin/customizer.php:1411
 msgid "Footer Section Box Shadow Color"
 msgstr ""
 
-#: lib/admin/customizer.php:1375
+#: lib/admin/customizer.php:1427
 msgid "Copyright Section Background Color"
 msgstr ""
 
-#: lib/admin/customizer.php:1391
+#: lib/admin/customizer.php:1443
 msgid "Copyright Section Border Color"
 msgstr ""
 
-#: lib/admin/customizer.php:1429
+#: lib/admin/customizer.php:1481
 msgid "Copyright Padding Top"
 msgstr ""
 
-#: lib/admin/customizer.php:1445
+#: lib/admin/customizer.php:1497
 msgid "Copyright Padding Bottom"
 msgstr ""
 
-#: lib/admin/customizer.php:1456 lib/admin/customizer.php:1458
-#: lib/admin/customizer.php:1473
+#: lib/admin/customizer.php:1508 lib/admin/customizer.php:1510
+#: lib/admin/customizer.php:1525
 msgid "Copyright Text"
 msgstr ""
 
@@ -450,7 +463,7 @@ msgstr ""
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: lib/config.php:7
+#: lib/config.php:10
 msgid "Copyright &copy; 2016. All rights reserved."
 msgstr ""
 
@@ -538,11 +551,11 @@ msgstr ""
 msgid "Sidebar Footer 4."
 msgstr ""
 
-#: single.php:27
+#: single.php:46
 msgid "Next post:"
 msgstr ""
 
-#: single.php:30
+#: single.php:49
 msgid "Previous post:"
 msgstr ""
 

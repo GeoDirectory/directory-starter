@@ -291,7 +291,7 @@ function directory_theme_customize_css()
 		//  1.5.1 - Button Text Color
 		//  =============================
 		?>
-			.dt-btn, button, input[type=button], input[type=reset], input[type=submit], p.edit-link, #buddypress form#whats-new-form input[type=submit], #buddypress .standard-form div.submit input, #buddypress .comment-reply-link, #buddypress button, #buddypress div.generic-button a, #buddypress input[type=button], #buddypress input[type=reset], #buddypress input[type=submit], #buddypress ul.button-nav li a, #buddypress input[type=submit]#notification-bulk-manage {
+			.dt-btn, button, input[type=button], input[type=reset], input[type=submit], p.edit-link, #buddypress form#whats-new-form input[type=submit], #buddypress .standard-form div.submit input, #buddypress .comment-reply-link, #buddypress button, #buddypress div.generic-button a, #buddypress input[type=button], #buddypress input[type=reset], #buddypress input[type=submit], #buddypress ul.button-nav li a, #buddypress input[type=submit]#notification-bulk-manage, dl.geodir-tab-head dd.geodir-tab-active a {
 				color: <?php echo esc_attr(get_theme_mod('dt_btn_text_color', DT_BTN_TEXT_COLOR)); ?>;
 				background-color: <?php echo esc_attr(get_theme_mod('dt_btn_bg_color', DT_BTN_BG_COLOR)); ?>;
 				border: 1px solid <?php echo esc_attr(get_theme_mod('dt_btn_border_color', DT_BTN_BORDER_COLOR)); ?>;
@@ -485,7 +485,8 @@ function directory_theme_customize_css()
 		//  2.7.2 - Logo Margin Right
 		//  =============================
 		?>
-			.site-logo-wrap .site-logo {
+			.site-logo-wrap .site-logo,
+			.site-logo-wrap h1.site-title-no-desc{
 				margin-right: <?php echo esc_attr(get_theme_mod('dt_logo_margin_right', DT_LOGO_MARGIN_RIGHT)); ?>;
 				margin-left: <?php echo esc_attr(get_theme_mod('dt_logo_margin_left', DT_LOGO_MARGIN_LEFT)); ?>;
 				margin-top: <?php echo esc_attr(get_theme_mod('dt_logo_margin_top', DT_LOGO_MARGIN_TOP)); ?>;

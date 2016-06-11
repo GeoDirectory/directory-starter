@@ -113,6 +113,10 @@ ul#breadcrumbs {
   float: right;
 }
 .geodir-loginbox-list li {
+  select{
+    float: none;
+    width:100%;
+  }
   border-bottom: none;
 }
 //border less grids
@@ -807,3 +811,11 @@ select.geodir-cat-list-tax {
 .gd-cptcat-ul {
   list-style: outside none none;
 }
+
+.map-category-listing-main ul.treeview{
+  margin-bottom: 0;
+  input[type="checkbox"] {
+  margin: 0;
+  }
+}
+

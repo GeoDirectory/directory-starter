@@ -17,6 +17,11 @@
   ul {
     margin: 0;
     float: right;
+
+    @for $i from 1 to 20 {
+      li:nth-child(#{$i}) { z-index: 1500 - $i; }
+    }
+
     li {
       padding: 0 20px;
       float: left;
@@ -101,6 +106,20 @@
 #gd-account-nav.mm-opened{
   display:block !important;
 }
-.mm-menu .chosen-results{
-  color: #666
+.mm-menu{
+  .chosen-results{
+    color: #666
+  }
+
+  select {
+    width: 100%;
+    margin: 5px auto;
+    float: none;
+    color: #666;
+  }
+  .gd-no-chosen-seach{
+    width: 100%;
+  }
 }
+
+

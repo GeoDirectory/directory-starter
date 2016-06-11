@@ -141,7 +141,7 @@ function dt_add_mobile_gd_account_menu()
     <div id="gd-account-nav" >
         <div >
             <?php if (class_exists('geodir_loginwidget')) {
-                the_widget('geodir_loginwidget', 'mobile-login-widget', '');
+                the_widget('geodir_loginwidget', 'mobile-login-widget', array('before_title'=>'<strong class="mobile-login-widget-title">','after_title'=>'</strong>'));
             }?>
         </div>
     </div>
