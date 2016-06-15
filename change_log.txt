@@ -7,7 +7,6 @@ Fontawesome css added to theme - ADDED
 Mobile login widget title change from h2 to strong - CHANGED
 Footer text color settings - ADDED
 
-
 v1.0.3
 Primary Sidebar not working - FIXED
 CSS changes for GD - CHANGED

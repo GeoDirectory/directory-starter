@@ -44,7 +44,7 @@ add_action('after_setup_theme', 'directory_theme_setup');
 add_action( 'dt_footer_copyright', 'dt_footer_copyright_default', 10 );
 function dt_footer_copyright_default() {
 	$dt_disable_footer_credits = esc_attr(get_theme_mod('dt_disable_footer_credits', DT_DISABLE_FOOTER_CREDITS));
-	if ($dt_disable_footer_credits != '1' && is_home()) {
+	if ($dt_disable_footer_credits != '1' && is_front_page()) {
 		$wp_link = '<a style="color:#757575;" href="http://wordpress.org" target="_blank" title="' . esc_attr__('WordPress', 'directory-starter') . '"><span>' . __('WordPress', 'directory-starter') . '</span></a>';
 
 		$gd_link = '<a style="color:#757575;" href="https://wpgeodirectory.com/" target="_blank" title="' . esc_attr__('GeoDirectory', 'directory-starter') . '" rel="designer"><span>' . __('GeoDirectory', 'directory-starter') . '</span></a>';
