@@ -8,7 +8,7 @@ Include each function file here.
 */
 
 // Define the version number for quick access
-if (!defined('DIRECTORY_STARTER_VER')) define('DIRECTORY_STARTER_VER', '1.0.3');
+if (!defined('DIRECTORY_STARTER_VER')) define('DIRECTORY_STARTER_VER', '1.0.4');
 
 require_once('lib/utils.php');             // Utility functions goes here
 require_once('lib/config.php');            // Configuration goes here

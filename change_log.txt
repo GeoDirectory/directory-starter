@@ -6,11 +6,11 @@ RTL CSS added - ADDED
 Fontawesome css added to theme - ADDED
 Mobile login widget title change from h2 to strong - CHANGED
 Footer text color settings - ADDED
+Footer credit links - ADDED
+CSS changes for GD - CHANGED
 
 v1.0.3
 Primary Sidebar not working - FIXED
-CSS changes for GD - CHANGED
-Footer credit links - ADDED
 
 v1.0.2
 Search form not responsive - FIXED
