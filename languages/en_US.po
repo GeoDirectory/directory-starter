@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Directory Starter 1.0.4\n"
+"Project-Id-Version: Directory Starter 1.0.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-17 15:39+0100\n"
-"PO-Revision-Date: 2016-06-17 15:39+0100\n"
+"POT-Creation-Date: 2016-06-18 16:17+0100\n"
+"PO-Revision-Date: 2016-06-18 16:17+0100\n"
 "Last-Translator: \n"
 "Language-Team: GD Team <info@wpgeodirectory.com>\n"
 "Language: en_US\n"
@@ -518,22 +518,18 @@ msgstr ""
 msgid "% Comments"
 msgstr ""
 
-#: lib/init.php:48
+#: lib/init.php:54 lib/init.php:60
 msgid "WordPress"
 msgstr ""
 
-#: lib/init.php:50
-msgid "GeoDirectory"
+#: lib/init.php:56 lib/init.php:61
+#, php-format
+msgid "Copyright &copy; %1$s %2$s Theme"
 msgstr ""
 
-#: lib/init.php:52
+#: lib/init.php:58 lib/init.php:62
 #, php-format
-msgid "Theme: %1$s by %2$s."
-msgstr ""
-
-#: lib/init.php:52
-#, php-format
-msgid "Powered by %s."
+msgid " - Powered by %s."
 msgstr ""
 
 #: lib/nav.php:3

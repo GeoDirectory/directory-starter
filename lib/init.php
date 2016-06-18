@@ -44,13 +44,28 @@ add_action('after_setup_theme', 'directory_theme_setup');
 add_action( 'dt_footer_copyright', 'dt_footer_copyright_default', 10 );
 function dt_footer_copyright_default() {
 	$dt_disable_footer_credits = esc_attr(get_theme_mod('dt_disable_footer_credits', DT_DISABLE_FOOTER_CREDITS));
-	if ($dt_disable_footer_credits != '1' && is_front_page()) {
-		$wp_link = '<a style="color:#757575;" href="http://wordpress.org" target="_blank" title="' . esc_attr__('WordPress', 'directory-starter') . '"><span>' . __('WordPress', 'directory-starter') . '</span></a>';
+	if ($dt_disable_footer_credits != '1') {
+		$theme = wp_get_theme();
+		$theme_name = $theme->display('Name');
+		$theme_url = $theme->display('ThemeURI');
 
-		$gd_link = '<a style="color:#757575;" href="https://wpgeodirectory.com/" target="_blank" title="' . esc_attr__('GeoDirectory', 'directory-starter') . '" rel="designer"><span>' . __('GeoDirectory', 'directory-starter') . '</span></a>';
 
-		$default_footer_value = sprintf(__('Theme: %1$s by %2$s.', 'directory-starter'), 'Directory Starter', $gd_link) . ' ' . sprintf(__('Powered by %s.', 'directory-starter'), $wp_link);
+		if(is_front_page()){
+			$wp_link = '<a style="color:#757575;" href="https://wordpress.org" target="_blank" title="' . esc_attr__('WordPress', 'directory-starter') . '"><span>' . __('WordPress', 'directory-starter') . '</span></a>';
+			$default_footer_value = "<a style='color:#757575;' href='$theme_url' target='_blank' title='$theme_name'>";
+			$default_footer_value .= sprintf(__('Copyright &copy; %1$s %2$s Theme', 'directory-starter'),date('Y'), $theme_name);
+			$default_footer_value .= "</a>";
+			$default_footer_value .= sprintf(__(' - Powered by %s.', 'directory-starter'), $wp_link);
+		}else{
+			$wp_link = __('WordPress', 'directory-starter');
+			$default_footer_value = sprintf(__('Copyright &copy; %1$s %2$s Theme', 'directory-starter'),date('Y'), $theme_name);
+			$default_footer_value .= sprintf(__(' - Powered by %s.', 'directory-starter'), $wp_link);
+		}
+
 
 		echo $default_footer_value;
+
+	}else{
+		echo esc_attr( get_theme_mod( 'dt_copyright_text', DT_COPYRIGHT_TEXT ) );
 	}
 }

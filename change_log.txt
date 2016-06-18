@@ -1,3 +1,6 @@
+v1.0.5
+Double text in footer with some settings - FIXED
+
 v1.0.4
 Default page now has sidebar - CHANGED
 Added full width page template - ADDED
