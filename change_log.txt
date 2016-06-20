@@ -1,14 +1,19 @@
+v1.0.5
+Double text in footer with some settings - FIXED
+
 v1.0.4
 Default page now has sidebar - CHANGED
 Added full width page template - ADDED
 Pages now have their own sidebar - ADDED
 RTL CSS added - ADDED
 Fontawesome css added to theme - ADDED
+Mobile login widget title change from h2 to strong - CHANGED
+Footer text color settings - ADDED
+Footer credit links - ADDED
+CSS changes for GD - CHANGED
 
 v1.0.3
 Primary Sidebar not working - FIXED
-CSS changes for GD - CHANGED
-Footer credit links - ADDED
 
 v1.0.2
 Search form not responsive - FIXED
