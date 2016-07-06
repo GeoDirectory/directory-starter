@@ -1,3 +1,6 @@
+v1.0.6
+WooCommerce compatibility - ADDED
+
 v1.0.5
 Double text in footer with some settings - FIXED
 
