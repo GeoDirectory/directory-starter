@@ -101,15 +101,24 @@ function directory_theme_customizer( $wp_customize ) {
  * 		4.2.2 - Footer Section Border Top Color
  * 		4.2.3 - Footer Section Border Bottom Color
  * 		4.2.4 - Footer Section Box Shadow Color
- * 		4.2.5 - Copyright Section Background Color
- * 		4.2.6 - Copyright Section Border Color
  *   4.3 - Typography
  *   4.4 - Spacing
- * 		4.4.1 - Copyright Padding Top
- * 		4.4.2 - Copyright Padding Bottom
- *   4.5 - Copyright Text
- * 		4.5.1 - Copyright Text
- * 		4.5.2 - Credits
+ * 5.0 - Copyright
+ * 	5.1 - Text Colors
+ * 		5.1.1 - Text Color
+ * 		5.1.2 - Link Color
+ * 		5.1.3 - Link Hover Color
+ * 		5.1.4 - Link Visited Color
+ *	5.2 - Background Colors
+ * 		5.2.1 - Copyright Section Background Color
+ * 		5.2.2 - Copyright Section Border Color
+ * 	5.3 - Typography
+ * 	5.4 - Spacing
+ * 		5.4.1 - Copyright Padding Top
+ * 		5.4.2 - Copyright Padding Bottom
+ * 	5.5 - Copyright Text
+ * 		5.5.1 - Copyright Text
+ * 		5.5.2 - Credits
  */
 
 
@@ -1350,7 +1359,6 @@ $wp_customize->add_panel( 'dt_footer_panel', array(
 		//  =============================
 
 		$wp_customize->add_setting( 'dt_fw_text_color', array(
-				'transport' => 'postMessage',
 				'default' => apply_filters('dt_fw_text_color_default_value', DT_FW_TEXT_COLOR),
 				'sanitize_callback' => 'sanitize_hex_color',
 				'capability'        => 'edit_theme_options',
@@ -1367,7 +1375,6 @@ $wp_customize->add_panel( 'dt_footer_panel', array(
 		//  =============================
 
 		$wp_customize->add_setting( 'dt_fw_h1toh6_color', array(
-				'transport' => 'postMessage',
 				'default' => apply_filters('dt_fw_h1toh6_color_default_value', DT_FW_H1TOH6_COLOR),
 				'sanitize_callback' => 'sanitize_hex_color',
 				'capability'        => 'edit_theme_options',
@@ -1502,37 +1509,6 @@ $wp_customize->add_panel( 'dt_footer_panel', array(
 				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_FW_BOX_SHADOW_COLOR ),
 		) ) );
 
-		//  =============================
-		//  4.2.5 - Copyright Section Background Color
-		//  =============================
-
-		$wp_customize->add_setting( 'dt_copyright_bg', array(
-				'default' => apply_filters('dt_copyright_bg_default_value', DT_COPYRIGHT_BG),
-				'sanitize_callback' => 'sanitize_hex_color',
-				'capability'        => 'edit_theme_options',
-		) );
-		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_copyright_bg', array(
-				'label'       => __( 'Copyright Section Background Color', 'directory-starter' ),
-				'section'     => 'dt_footer_bg_section',
-				'settings'    => 'dt_copyright_bg',
-				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_COPYRIGHT_BG ),
-		) ) );
-
-		//  =============================
-		//  4.2.6 - Copyright Section Border Color
-		//  =============================
-
-		$wp_customize->add_setting( 'dt_copyright_border_color', array(
-				'default' => apply_filters('dt_copyright_border_color_default_value', DT_COPYRIGHT_BORDER_COLOR),
-				'sanitize_callback' => 'sanitize_hex_color',
-				'capability'        => 'edit_theme_options',
-		) );
-		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_copyright_border_color', array(
-				'label'       => __( 'Copyright Section Border Color', 'directory-starter' ),
-				'section'     => 'dt_footer_bg_section',
-				'settings'    => 'dt_copyright_border_color',
-				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_COPYRIGHT_BORDER_COLOR ),
-		) ) );
 
 	//  =============================
 	//  4.3 - Typography
@@ -1556,8 +1532,163 @@ $wp_customize->add_panel( 'dt_footer_panel', array(
 		'panel'  => 'dt_footer_panel',
 	) );
 
+
+//  =============================
+//  5.0 - Copyright
+//  =============================
+
+	$wp_customize->add_panel( 'dt_copyright_panel', array(
+			'priority'       => 30,
+			'capability'     => 'edit_theme_options',
+			'theme_supports' => '',
+			'title'          => __('Copyright', 'directory-starter' ),
+			'description'    => '',
+	) );
+
+	//  =============================
+	//  5.1 - Text Colors
+	//  =============================
+
+	$wp_customize->add_section( 'dt_copyright_text_section', array(
+			'title'       => __( 'Text Colors', 'directory-starter' ),
+			'priority'    => 30,
+			'description' => __( 'Text Colors', 'directory-starter' ),
+			'panel'  => 'dt_copyright_panel',
+	) );
+
 		//  =============================
-		//  4.4.1 - Copyright Padding Top
+		//  5.1.1 - Text Color
+		//  =============================
+
+		$wp_customize->add_setting( 'dt_copyright_text_color', array(
+				'default' => apply_filters('dt_copyright_text_color_default_value', DT_COPYRIGHT_TEXT_COLOR),
+				'sanitize_callback' => 'sanitize_hex_color',
+				'capability'        => 'edit_theme_options',
+		) );
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_copyright_text_color', array(
+				'label'       => __( 'Text Color', 'directory-starter' ),
+				'section'     => 'dt_copyright_text_section',
+				'settings'    => 'dt_copyright_text_color',
+				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_COPYRIGHT_TEXT_COLOR ),
+		) ) );
+
+
+		//  =============================
+		//  5.1.2 - Link Color
+		//  =============================
+
+		$wp_customize->add_setting( 'dt_copyright_link_color', array(
+				'default' => apply_filters('dt_copyright_link_color_default_value', DT_COPYRIGHT_LINK_COLOR),
+				'sanitize_callback' => 'sanitize_hex_color',
+				'capability'        => 'edit_theme_options',
+		) );
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_copyright_link_color', array(
+				'label'       => __( 'Link Color', 'directory-starter' ),
+				'section'     => 'dt_copyright_text_section',
+				'settings'    => 'dt_copyright_link_color',
+				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_COPYRIGHT_LINK_COLOR ),
+		) ) );
+
+		//  =============================
+		//  5.1.3 - Link Hover Color
+		//  =============================
+
+		$wp_customize->add_setting( 'dt_copyright_link_hover', array(
+				'default' => apply_filters('dt_copyright_link_hover_default_value', DT_COPYRIGHT_LINK_HOVER),
+				'sanitize_callback' => 'sanitize_hex_color',
+				'capability'        => 'edit_theme_options',
+		) );
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_copyright_link_hover', array(
+				'label'       => __( 'Link Hover Color', 'directory-starter' ),
+				'section'     => 'dt_copyright_text_section',
+				'settings'    => 'dt_copyright_link_hover',
+				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_COPYRIGHT_LINK_HOVER ),
+		) ) );
+
+		//  =============================
+		//  5.1.4 - Link Visited Color
+		//  =============================
+
+		$wp_customize->add_setting( 'dt_copyright_link_visited', array(
+				'default' => apply_filters('dt_copyright_link_visited_default_value', DT_COPYRIGHT_LINK_VISITED),
+				'sanitize_callback' => 'sanitize_hex_color',
+				'capability'        => 'edit_theme_options',
+		) );
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_copyright_link_visited', array(
+				'label'       => __( 'Link Visited Color', 'directory-starter' ),
+				'section'     => 'dt_copyright_text_section',
+				'settings'    => 'dt_copyright_link_visited',
+				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_COPYRIGHT_LINK_VISITED ),
+		) ) );
+
+	//  =============================
+	//  5.2 - Background Colors
+	//  =============================
+
+	$wp_customize->add_section( 'dt_copyright_bg_section', array(
+			'title'       => __( 'Background Colors', 'directory-starter' ),
+			'priority'    => 30,
+			'description' => __( 'Background Colors', 'directory-starter' ),
+			'panel'  => 'dt_copyright_panel',
+	) );
+
+		//  =============================
+		//  5.2.1 - Copyright Section Background Color
+		//  =============================
+
+		$wp_customize->add_setting( 'dt_copyright_bg', array(
+				'default' => apply_filters('dt_copyright_bg_default_value', DT_COPYRIGHT_BG),
+				'sanitize_callback' => 'sanitize_hex_color',
+				'capability'        => 'edit_theme_options',
+		) );
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_copyright_bg', array(
+				'label'       => __( 'Copyright Section Background Color', 'directory-starter' ),
+				'section'     => 'dt_copyright_bg_section',
+				'settings'    => 'dt_copyright_bg',
+				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_COPYRIGHT_BG ),
+		) ) );
+
+		//  =============================
+		//  5.2.2 - Copyright Section Border Color
+		//  =============================
+
+		$wp_customize->add_setting( 'dt_copyright_border_color', array(
+				'default' => apply_filters('dt_copyright_border_color_default_value', DT_COPYRIGHT_BORDER_COLOR),
+				'sanitize_callback' => 'sanitize_hex_color',
+				'capability'        => 'edit_theme_options',
+		) );
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'dt_copyright_border_color', array(
+				'label'       => __( 'Copyright Section Border Color', 'directory-starter' ),
+				'section'     => 'dt_copyright_bg_section',
+				'settings'    => 'dt_copyright_border_color',
+				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_COPYRIGHT_BORDER_COLOR ),
+		) ) );
+
+	//  =============================
+	//  5.3 - Typography
+	//  =============================
+
+	$wp_customize->add_section( 'dt_copyright_typography_section', array(
+			'title'       => __( 'Typography', 'directory-starter' ),
+			'priority'    => 30,
+			'description' => __( 'Typography', 'directory-starter' ),
+			'panel'  => 'dt_copyright_panel',
+	) );
+
+
+	//  =============================
+	//  5.4 - Spacing
+	//  =============================
+
+	$wp_customize->add_section( 'dt_copyright_spacing_section', array(
+			'title'       => __( 'Spacing', 'directory-starter' ),
+			'priority'    => 30,
+			'description' => __( 'Spacing', 'directory-starter' ),
+			'panel'  => 'dt_copyright_panel',
+	) );
+
+		//  =============================
+		//  5.4.1 - Copyright Padding Top
 		//  =============================
 
 		$wp_customize->add_setting( 'dt_copyright_padding_top', array(
@@ -1567,13 +1698,13 @@ $wp_customize->add_panel( 'dt_footer_panel', array(
 		) );
 		$wp_customize->add_control( 'dt_copyright_padding_top', array(
 				'label'   => __('Copyright Padding Top', 'directory-starter' ),
-				'section' => 'dt_footer_spacing_section',
+				'section' => 'dt_copyright_spacing_section',
 				'type'    => 'text',
 				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_COPYRIGHT_PADDING_TOP ),
 		) );
 
 		//  =============================
-		//  4.4.2 - Copyright Padding Bottom
+		//  5.4.2 - Copyright Padding Bottom
 		//  =============================
 
 		$wp_customize->add_setting( 'dt_copyright_padding_bottom', array(
@@ -1583,24 +1714,24 @@ $wp_customize->add_panel( 'dt_footer_panel', array(
 		) );
 		$wp_customize->add_control( 'dt_copyright_padding_bottom', array(
 				'label'   => __('Copyright Padding Bottom', 'directory-starter' ),
-				'section' => 'dt_footer_spacing_section',
+				'section' => 'dt_copyright_spacing_section',
 				'type'    => 'text',
 				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_COPYRIGHT_PADDING_BOTTOM ),
 		) );
 
 	//  =============================
-	//  4.5 - Copyright Text
+	//  5.5 - Copyright Text
 	//  =============================
 
-	$wp_customize->add_section( 'dt_footer_copy_text_section', array(
-		'title'       => __( 'Copyright Text', 'directory-starter' ),
-		'priority'    => 30,
-		'description' => __( 'Copyright Text', 'directory-starter' ),
-		'panel'  => 'dt_footer_panel',
+	$wp_customize->add_section( 'dt_copyright_copy_text_section', array(
+			'title'       => __( 'Copyright Text', 'directory-starter' ),
+			'priority'    => 30,
+			'description' => __( 'Copyright Text', 'directory-starter' ),
+			'panel'  => 'dt_copyright_panel',
 	) );
 
 		//  =============================
-		//  4.5.1 - Copyright Text
+		//  5.5.1 - Copyright Text
 		//  =============================
 
 		$wp_customize->add_setting( 'dt_copyright_text', array(
@@ -1611,11 +1742,11 @@ $wp_customize->add_panel( 'dt_footer_panel', array(
 		$wp_customize->add_control( 'dt_copyright_text', array(
 				'type'        => 'text',
 				'label'   => __('Copyright Text', 'directory-starter' ),
-				'section' => 'dt_footer_copy_text_section'
+				'section' => 'dt_copyright_copy_text_section'
 		) );
 
 		//  =============================
-		//  4.5.2 - Credits
+		//  5.5.2 - Credits
 		//  =============================
 
 		$wp_customize->add_setting( 'dt_disable_footer_credits', array(
@@ -1625,10 +1756,10 @@ $wp_customize->add_panel( 'dt_footer_panel', array(
 		) );
 		$wp_customize->add_control( 'dt_disable_footer_credits', array(
 				'label'   => __('Disable Footer Credits', 'directory-starter' ),
-				'section' => 'dt_footer_copy_text_section',
+				'section' => 'dt_copyright_copy_text_section',
 				'type'    => 'checkbox',
 				'std'         => '0',
-				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_DISABLE_FOOTER_CREDITS ),
+				//'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_DISABLE_FOOTER_CREDITS ),
 		) );
 
 }
