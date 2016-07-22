@@ -90,19 +90,34 @@
  *   3.5 - Spacing
  * 4.0 - Footer
  *   4.1 - Text Colors
+ * 		4.1.1 - Text Color
+ * 		4.1.2 - h1 to h6 Color
+ * 		4.1.3 - Link Color
+ * 		4.1.4 - Link Hover Color
+ * 		4.1.5 - Link Visited Color
  *   4.2 - Background Colors
  * 		4.2.1 - Footer Section Background Color
  * 		4.2.2 - Footer Section Border Top Color
  * 		4.2.3 - Footer Section Border Bottom Color
  * 		4.2.4 - Footer Section Box Shadow Color
- * 		4.2.5 - Copyright Section Background Color
- * 		4.2.6 - Copyright Section Border Color
  *   4.3 - Typography
  *   4.4 - Spacing
- * 		4.4.1 - Copyright Padding Top
- * 		4.4.2 - Copyright Padding Bottom
- *   4.5 - Copyright Text
- * 		4.5.1 - Copyright Text
+ * 5.0 - Copyright
+ * 	5.1 - Text Colors
+ * 		5.1.1 - Text Color
+ * 		5.1.2 - Link Color
+ * 		5.1.3 - Link Hover Color
+ * 		5.1.4 - Link Visited Color
+ *	5.2 - Background Colors
+ * 		5.2.1 - Copyright Section Background Color
+ * 		5.2.2 - Copyright Section Border Color
+ * 	5.3 - Typography
+ * 	5.4 - Spacing
+ * 		5.4.1 - Copyright Padding Top
+ * 		5.4.2 - Copyright Padding Bottom
+ * 	5.5 - Copyright Text
+ * 		5.5.1 - Copyright Text
+ * 		5.5.2 - Credits
  */
 
 
@@ -823,6 +838,63 @@
     //  4.1 - Text Colors
     //  =============================
 
+        //  =============================
+        //  4.1.1 - Text Color
+        //  =============================
+
+            wp.customize( 'dt_fw_text_color', function( value ) {
+                value.bind( function( newval ) {
+                    $( '.footer-widgets' ).css('color', newval );
+                } );
+            } );
+
+        //  =============================
+        //  4.1.2 - h1 to h6 Color
+        //  =============================
+
+            wp.customize( 'dt_fw_h1toh6_color', function( value ) {
+                value.bind( function( newval ) {
+                    $( '.footer-widgets h1, .footer-widgets .h1, .footer-widgets h2, .footer-widgets .h2, .footer-widgets h3, .footer-widgets .h3, .footer-widgets h4, .footer-widgets .h4, .footer-widgets h5, .footer-widgets .h5, .footer-widgets h6, .footer-widgets .h6' ).css('color', newval );
+                } );
+            } );
+
+        //  =============================
+        //  4.1.3 - Link Color
+        //  =============================
+
+            wp.customize( 'dt_fw_link_color', function( value ) {
+                value.bind( function( newval ) {
+                    $( '.footer-widgets' ).find('a').css('color', newval );
+                } );
+            } );
+
+        //  =============================
+        //  4.1.4 - Link Hover Color
+        //  =============================
+
+            wp.customize( 'dt_fw_link_hover', function( value ) {
+                value.bind( function( newval ) {
+                    $( '.footer-widgets').find('a, a:visited').bind("mouseover", function(){
+                        var color  = $(this).css("color");
+                        $(this).css("color", newval);
+                        $(this).bind("mouseout", function(){
+                            $(this).css("color", color);
+                        })
+                    });
+                } );
+            } );
+
+        //  =============================
+        //  4.1.5 - Link Visited Color
+        //  =============================
+
+            wp.customize( 'dt_fw_link_visited', function( value ) {
+                value.bind( function( newval ) {
+                    $( '.footer-widgets' ).find('a:visited').css('color', newval );
+                } );
+            } );
+
+
     //  =============================
     //  4.2 - Background Colors
     //  =============================
@@ -861,26 +933,6 @@
         //  4.2.4 - Footer Section Box Shadow Color
         //  =============================
 
-        //  =============================
-        //  4.2.5 - Copyright Section Background Color
-        //  =============================
-
-            wp.customize( 'dt_copyright_bg', function( value ) {
-                value.bind( function( newval ) {
-                    $( '.copyright' ).css('background-color', newval );
-                } );
-            } );
-
-        //  =============================
-        //  4.2.6 - Copyright Section Border Color
-        //  =============================
-
-            wp.customize( 'dt_copyright_border_color', function( value ) {
-                value.bind( function( newval ) {
-                    $( '.copyright' ).css('border-top-color', newval );
-                } );
-            } );
-
     //  =============================
     //  4.3 - Typography
     //  =============================
@@ -889,32 +941,119 @@
     //  4.4 - Spacing
     //  =============================
 
+
+//  =============================
+//  5.0 - Copyright
+//  =============================
+
+    //  =============================
+    //  5.1 - Text Colors
+    //  =============================
+
         //  =============================
-        //  4.4.1 - Copyright Padding Top
+        //  5.1.1 - Text Color
         //  =============================
 
-            wp.customize( 'dt_copyright_padding_top', function( value ) {
+            wp.customize( 'dt_copyright_text_color', function( value ) {
                 value.bind( function( newval ) {
-                    $( '.copyright .container' ).css('padding-top', newval );
+                    $( '.copyright' ).css('color', newval );
                 } );
             } );
 
         //  =============================
-        //  4.4.2 - Copyright Padding Bottom
+        //  5.1.2 - Link Color
         //  =============================
 
-            wp.customize( 'dt_copyright_padding_bottom', function( value ) {
+            wp.customize( 'dt_copyright_link_color', function( value ) {
                 value.bind( function( newval ) {
-                    $( '.copyright .container' ).css('padding-bottom', newval );
+                    $( '.copyright' ).find('a').css('color', newval );
+                } );
+            } );
+
+        //  =============================
+        //  5.1.3 - Link Hover Color
+        //  =============================
+
+            wp.customize( 'dt_copyright_link_hover', function( value ) {
+                value.bind( function( newval ) {
+                    $( '.copyright').find('a, a:visited').bind("mouseover", function(){
+                        var color  = $(this).css("color");
+                        $(this).css("color", newval);
+                        $(this).bind("mouseout", function(){
+                            $(this).css("color", color);
+                        })
+                    });
+                } );
+            } );
+
+        //  =============================
+        //  5.1.4 - Link Visited Color
+        //  =============================
+
+            wp.customize( 'dt_copyright_link_visited', function( value ) {
+                value.bind( function( newval ) {
+                    $( '.copyright' ).find('a:visited').css('color', newval );
                 } );
             } );
 
     //  =============================
-    //  4.5 - Copyright Text
+    //  5.2 - Background Colors
     //  =============================
 
         //  =============================
-        //  4.5.1 - Copyright Text
+        //  5.2.1 - Copyright Section Background Color
+        //  =============================
+
+        wp.customize( 'dt_copyright_bg', function( value ) {
+            value.bind( function( newval ) {
+                $( '.copyright' ).css('background-color', newval );
+            } );
+        } );
+
+        //  =============================
+        //  5.2.2 - Copyright Section Border Color
+        //  =============================
+
+        wp.customize( 'dt_copyright_border_color', function( value ) {
+            value.bind( function( newval ) {
+                $( '.copyright' ).css('border-top-color', newval );
+            } );
+        } );
+
+    //  =============================
+    //  5.3 - Typography
+    //  =============================
+
+    //  =============================
+    //  5.4 - Spacing
+    //  =============================
+
+        //  =============================
+        //  5.4.1 - Copyright Padding Top
+        //  =============================
+
+        wp.customize( 'dt_copyright_padding_top', function( value ) {
+            value.bind( function( newval ) {
+                $( '.copyright .container' ).css('padding-top', newval );
+            } );
+        } );
+
+        //  =============================
+        //  5.4.2 - Copyright Padding Bottom
+        //  =============================
+
+        wp.customize( 'dt_copyright_padding_bottom', function( value ) {
+            value.bind( function( newval ) {
+                $( '.copyright .container' ).css('padding-bottom', newval );
+            } );
+        } );
+
+    //  =============================
+    //  5.5 - Copyright Text
+    //  =============================
+
+        //  =============================
+        //  5.5.1 - Copyright Text
         //  =============================
 
 } )( jQuery );

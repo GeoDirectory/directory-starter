@@ -75,6 +75,10 @@ if (!defined('DT_FW_LINK_COLOR')) define('DT_FW_LINK_COLOR', "#BBB");
 if (!defined('DT_FW_LINK_HOVER')) define('DT_FW_LINK_HOVER', '#E84739');
 if (!defined('DT_FW_LINK_VISITED')) define('DT_FW_LINK_VISITED', DT_FW_LINK_COLOR);
 //copyright
+if (!defined('DT_COPYRIGHT_TEXT_COLOR')) define('DT_COPYRIGHT_TEXT_COLOR', "#BBB");
+if (!defined('DT_COPYRIGHT_LINK_COLOR')) define('DT_COPYRIGHT_LINK_COLOR', "#757575");
+if (!defined('DT_COPYRIGHT_LINK_HOVER')) define('DT_COPYRIGHT_LINK_HOVER', '#E84739');
+if (!defined('DT_COPYRIGHT_LINK_VISITED')) define('DT_COPYRIGHT_LINK_VISITED', DT_COPYRIGHT_LINK_COLOR);
 if (!defined('DT_COPYRIGHT_BG')) define('DT_COPYRIGHT_BG', "#202020");
 if (!defined('DT_COPYRIGHT_PADDING_TOP')) define('DT_COPYRIGHT_PADDING_TOP', '20px');
 if (!defined('DT_COPYRIGHT_PADDING_BOTTOM')) define('DT_COPYRIGHT_PADDING_BOTTOM', '20px');

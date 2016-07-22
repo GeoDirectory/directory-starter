@@ -818,4 +818,39 @@ select.geodir-cat-list-tax {
   margin: 0;
   }
 }
+#geodir_post_desc_row {
+  button:hover {
+    background: transparent;
+  }
+  button.wp-switch-editor:hover {
+    background: #757575;
+  }
+  .html-active .switch-html:hover, .tmce-active .switch-tmce:hover {
+    background: #f5f5f5;
+  }
+  .wp-editor-container textarea.wp-editor-area {
+    border: 1px solid #ddd !important;
+    border-top: none !important;
+  }
+  .quicktags-toolbar {
+    border: 1px solid #ddd !important;
+  }
+  .wp-switch-editor {
+    border-color: #ddd;
+    border-bottom-color: #f5f5f5;
+  }
+
+  div.mce-edit-area {
+    border: 1px solid #ddd !important;
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+  div.mce-statusbar {
+    border: 1px solid #ddd !important;
+    border-top: 1px solid #e5e5e5;
+  }
+  div.mce-toolbar-grp {
+    border: 1px solid #ddd !important;
+  }
+}
 

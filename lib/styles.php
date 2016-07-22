@@ -99,14 +99,24 @@ function directory_theme_customize_css()
 	 * 		4.2.2 - Footer Section Border Top Color
 	 * 		4.2.3 - Footer Section Border Bottom Color
 	 * 		4.2.4 - Footer Section Box Shadow Color
-	 * 		4.2.5 - Copyright Section Background Color
-	 * 		4.2.6 - Copyright Section Border Color
 	 *   4.3 - Typography
 	 *   4.4 - Spacing
-	 * 		4.4.1 - Copyright Padding Top
-	 * 		4.4.2 - Copyright Padding Bottom
-	 *   4.5 - Copyright Text
-	 * 		4.5.1 - Copyright Text
+	 * 5.0 - Copyright
+	 * 	5.1 - Text Colors
+	 * 		5.1.1 - Text Color
+	 * 		5.1.2 - Link Color
+	 * 		5.1.3 - Link Hover Color
+	 * 		5.1.4 - Link Visited Color
+	 *	5.2 - Background Colors
+	 * 		5.2.1 - Copyright Section Background Color
+	 * 		5.2.2 - Copyright Section Border Color
+	 * 	5.3 - Typography
+	 * 	5.4 - Spacing
+	 * 		5.4.1 - Copyright Padding Top
+	 * 		5.4.2 - Copyright Padding Bottom
+	 * 	5.5 - Copyright Text
+	 * 		5.5.1 - Copyright Text
+	 * 		5.5.2 - Credits
 	 */
 
 
@@ -771,22 +781,6 @@ function directory_theme_customize_css()
 		//  =============================
 			// @see 4.2.1
 		?>
-		<?php
-		//  =============================
-		//  4.2.5 - Copyright Section Background Color
-		//  =============================
-		?>
-			.copyright {
-				background-color: <?php echo esc_attr(get_theme_mod('dt_copyright_bg', DT_COPYRIGHT_BG)); ?>;
-				border-top: 1px solid #151515;
-				border-top-color: <?php echo esc_attr(get_theme_mod('dt_copyright_border_color', DT_COPYRIGHT_BORDER_COLOR)); ?>;
-			}
-		<?php
-		//  =============================
-		//  4.2.6 - Copyright Section Border Color
-		//  =============================
-			// @see 4.2.5
-		?>
 	<?php
 	//  =============================
 	//  4.3 - Typography
@@ -797,9 +791,85 @@ function directory_theme_customize_css()
 	//  4.4 - Spacing
 	//  =============================
 	?>
+	<?php
+//  =============================
+//  5.0 - Copyright
+//  =============================
+	?>
+	<?php
+	//  =============================
+	//  5.1 - Text Colors
+	//  =============================
+	?>
 		<?php
 		//  =============================
-		//  4.4.1 - Copyright Padding Top
+		//  5.1.1 - Body Color
+		//  =============================
+		?>
+			.copyright {
+				color: <?php echo esc_attr(get_theme_mod('dt_copyright_text_color', DT_COPYRIGHT_TEXT_COLOR)); ?>;
+			}
+		<?php
+		//  =============================
+		//  5.1.2 - Link Color
+		//  =============================
+		?>
+			.copyright a {
+				color: <?php echo esc_attr(get_theme_mod('dt_copyright_link_color', DT_COPYRIGHT_LINK_COLOR)); ?>;
+			}
+		<?php
+		//  =============================
+		//  5.1.3 - Link Hover Color
+		//  =============================
+		?>
+			.copyright a:hover,
+			.copyright a:visited:hover,
+			.copyright a:focus,
+			.copyright a:active {
+				color: <?php echo esc_attr(get_theme_mod('dt_copyright_link_hover', DT_COPYRIGHT_LINK_HOVER)); ?>;
+			}
+		<?php
+		//  =============================
+		//  5.1.4 - Link Visited Color
+		//  =============================
+		?>
+			.copyright a:visited {
+				color: <?php echo esc_attr(get_theme_mod('dt_copyright_link_visited', DT_COPYRIGHT_LINK_VISITED)); ?>;
+			}
+	<?php
+	//  =============================
+	//  5.2 - Background Colors
+	//  =============================
+	?>
+		<?php
+		//  =============================
+		//  5.2.1 - Copyright Section Background Color
+		//  =============================
+		?>
+			.copyright {
+				background-color: <?php echo esc_attr(get_theme_mod('dt_copyright_bg', DT_COPYRIGHT_BG)); ?>;
+				border-top: 1px solid #151515;
+				border-top-color: <?php echo esc_attr(get_theme_mod('dt_copyright_border_color', DT_COPYRIGHT_BORDER_COLOR)); ?>;
+			}
+		<?php
+		//  =============================
+		//  5.2.2 - Copyright Section Border Color
+		//  =============================
+		// @see 5.2.1
+		?>
+	<?php
+	//  =============================
+	//  5.3 - Typography
+	//  =============================
+	?>
+	<?php
+	//  =============================
+	//  5.4 - Spacing
+	//  =============================
+	?>
+		<?php
+		//  =============================
+		//  5.4.1 - Copyright Padding Top
 		//  =============================
 		?>
 			.copyright .container {
@@ -808,18 +878,18 @@ function directory_theme_customize_css()
 			}
 		<?php
 		//  =============================
-		//  4.4.2 - Copyright Padding Bottom
+		//  5.4.2 - Copyright Padding Bottom
 		//  =============================
-			// @see 4.4.1
+		// @see 5.4.1
 		?>
 	<?php
 	//  =============================
-	//  4.5 - Copyright Text
+	//  5.5 - Copyright Text
 	//  =============================
 	?>
 		<?php
 		//  =============================
-		//  4.5.1 - Copyright Text
+		//  5.5.1 - Copyright Text
 		//  =============================
 
 }
