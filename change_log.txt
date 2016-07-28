@@ -2,7 +2,6 @@ v1.0.6
 WooCommerce compatibility - ADDED
 Separate customizer settings added for Copyright section - ADDED
 TinyMCE and WP Editor styles added - ADDED
-Responsive video shortcode - ADDED
 
 v1.0.5
 Double text in footer with some settings - FIXED
