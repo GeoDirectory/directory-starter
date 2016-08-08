@@ -1,7 +1,7 @@
 <footer id="footer" class="site-footer" role="contentinfo">
 	<div class="footer-widgets">
 		<div class="container">
-			<?php $class = apply_filters('dt_footer_widget_class', 'col-lg-3')?>
+			<?php $class = apply_filters('dt_footer_widget_class', 'col-lg-3 col-md-3 col-sm-6 col-xs-12')?>
 			<?php if(FOOTER_SIDEBAR_COUNT > 0) { ?>
 				<div class="<?php echo $class; ?>">
 					<?php dynamic_sidebar('sidebar-footer1');?>
