@@ -218,7 +218,7 @@ function directory_theme_customize_css()
 		//  1.4.2 - Alert Error Background Color
 		//  =============================
 		?>
-			.alert-error, #buddypress div#message.error p {
+			.alert-error, .error_msg_fix, #buddypress div#message.error p {
 				color: <?php echo esc_attr(get_theme_mod('dt_alert_red_text', DT_ALERT_RED_TEXT)); ?>;
 				background-color: <?php echo esc_attr(get_theme_mod('dt_alert_red', DT_ALERT_RED)); ?>;
 				border-color: <?php echo esc_attr(get_theme_mod('dt_alert_red_border', DT_ALERT_RED_BORDER)); ?>;
@@ -228,7 +228,7 @@ function directory_theme_customize_css()
 		//  1.4.3 - Alert Success Background Color
 		//  =============================
 		?>
-			.alert-success, #buddypress div#message.updated p {
+			.alert-success, .sucess_msg, #buddypress div#message.updated p {
 				color: <?php echo esc_attr(get_theme_mod('dt_alert_green_text', DT_ALERT_GREEN_TEXT)); ?>;
 				background-color: <?php echo esc_attr(get_theme_mod('dt_alert_green', DT_ALERT_GREEN)); ?>;
 				border-color: <?php echo esc_attr(get_theme_mod('dt_alert_green_border', DT_ALERT_GREEN_BORDER)); ?>;
