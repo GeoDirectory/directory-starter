@@ -1,6 +1,7 @@
 v1.0.7
 Footer widget areas now responsive as 4-2-1 - CHANGED
 bbPress compatibility - ADDED
+Alert not displayed correctly - FIXED
 
 v1.0.6
 WooCommerce compatibility - ADDED

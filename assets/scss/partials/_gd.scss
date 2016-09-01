@@ -854,3 +854,14 @@ select.geodir-cat-list-tax {
   }
 }
 
+//alerts
+.sucess_msg {
+  @extend %alert;
+  @extend .alert-success;
+}
+
+.error_msg_fix {
+  @extend %alert;
+  @extend .alert-error;
+}
+
