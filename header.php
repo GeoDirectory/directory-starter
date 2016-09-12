@@ -89,3 +89,4 @@ if ($enable_header_top == '1') {
 
 	</div>
 </header>
+<?php do_action('dt_after_header'); ?>
