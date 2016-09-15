@@ -628,7 +628,7 @@ function directory_theme_customize_css()
 		//  3.3.2 - Content Box Background Color
 		//  =============================
 		?>
-			.content-box, .content .entry, #geodir_content, .sidebar .widget, .geodir-content-right .geodir-company_info, .geodir_full_page .geodir-category-list-in, .geodir_full_page .geodir-loc-bar {
+			.content-box, .content .entry, #geodir_content, .sidebar .widget, .geodir-content-left .geodir-company_info, .geodir-content-right .geodir-company_info, .geodir_full_page .geodir-category-list-in, .geodir_full_page .geodir-loc-bar {
 				background-color: <?php echo esc_attr(get_theme_mod('dt_content_bg', DT_CONTENT_BG)); ?>;
 				border-color: <?php echo esc_attr(get_theme_mod('dt_content_border', DT_CONTENT_BORDER)); ?>;
 				box-shadow: 0 1px 1px <?php echo esc_attr(get_theme_mod('dt_content_shadow', DT_CONTENT_SHADOW)); ?>;
