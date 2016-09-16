@@ -116,9 +116,6 @@ function directory_theme_customizer( $wp_customize ) {
  * 	5.4 - Spacing
  * 		5.4.1 - Copyright Padding Top
  * 		5.4.2 - Copyright Padding Bottom
- * 	5.5 - Copyright Text
- * 		5.5.1 - Copyright Text
- * 		5.5.2 - Credits
  */
 
 
@@ -1719,48 +1716,9 @@ $wp_customize->add_panel( 'dt_footer_panel', array(
 				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_COPYRIGHT_PADDING_BOTTOM ),
 		) );
 
-	//  =============================
-	//  5.5 - Copyright Text
-	//  =============================
+	
 
-	$wp_customize->add_section( 'dt_copyright_copy_text_section', array(
-			'title'       => __( 'Copyright Text', 'directory-starter' ),
-			'priority'    => 30,
-			'description' => __( 'Copyright Text', 'directory-starter' ),
-			'panel'  => 'dt_copyright_panel',
-	) );
 
-		//  =============================
-		//  5.5.1 - Copyright Text
-		//  =============================
-
-		$wp_customize->add_setting( 'dt_copyright_text', array(
-				'default' => apply_filters('dt_copyright_text_default_value', DT_COPYRIGHT_TEXT),
-				'sanitize_callback' => 'sanitize_text_field',
-				'capability'  => 'edit_theme_options'
-		) );
-		$wp_customize->add_control( 'dt_copyright_text', array(
-				'type'        => 'text',
-				'label'   => __('Copyright Text', 'directory-starter' ),
-				'section' => 'dt_copyright_copy_text_section'
-		) );
-
-		//  =============================
-		//  5.5.2 - Credits
-		//  =============================
-
-		$wp_customize->add_setting( 'dt_disable_footer_credits', array(
-				'default' => apply_filters('dt_disable_footer_credits_default_value', DT_DISABLE_FOOTER_CREDITS),
-				'sanitize_callback' => 'sanitize_text_field',
-				'capability'  => 'edit_theme_options',
-		) );
-		$wp_customize->add_control( 'dt_disable_footer_credits', array(
-				'label'   => __('Disable Footer Credits', 'directory-starter' ),
-				'section' => 'dt_copyright_copy_text_section',
-				'type'    => 'checkbox',
-				'std'         => '0',
-				//'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_DISABLE_FOOTER_CREDITS ),
-		) );
 
 }
 
