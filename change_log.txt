@@ -1,5 +1,6 @@
 v1.0.9
 Sidebar left customizer settings not set fully - FIXED
+Copyright text is hyperlinked - FIXED
 
 v1.0.8
 is_bbpress function called without checking if installed - FIXED

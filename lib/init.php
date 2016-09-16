@@ -52,8 +52,8 @@ function dt_footer_copyright_default() {
 
 		if(is_front_page()){
 			$wp_link = '<a href="https://wordpress.org" target="_blank" title="' . esc_attr__('WordPress', 'directory-starter') . '"><span>' . __('WordPress', 'directory-starter') . '</span></a>';
-			$default_footer_value = "<a href='$theme_url' target='_blank' title='$theme_name'>";
-			$default_footer_value .= sprintf(__('Copyright &copy; %1$s %2$s Theme', 'directory-starter'),date('Y'), $theme_name);
+			$default_footer_value = "Copyright &copy; ".date('Y')." <a href='$theme_url' target='_blank' title='$theme_name'>";
+			$default_footer_value .= sprintf(__('%1$s Theme', 'directory-starter'), $theme_name);
 			$default_footer_value .= "</a>";
 			$default_footer_value .= sprintf(__(' - Powered by %s.', 'directory-starter'), $wp_link);
 		}else{
