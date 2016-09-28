@@ -147,3 +147,8 @@ function dt_add_mobile_gd_account_menu()
     </div>
 <?php
 }
+
+function sd_gdbp_display_listing_link($comment) {
+    printf( '<br/><a class="gdbp_display_listing_link" style="display: inline-block;margin-top: 12px;" href="%1$s">%2$s</a>', esc_url( get_comment_link( $comment->comment_ID )), get_the_title($comment->comment_post_ID));
+}
+add_action('gdbp_comment_meta_after', 'sd_gdbp_display_listing_link');
