@@ -115,9 +115,6 @@
  * 	5.4 - Spacing
  * 		5.4.1 - Copyright Padding Top
  * 		5.4.2 - Copyright Padding Bottom
- * 	5.5 - Copyright Text
- * 		5.5.1 - Copyright Text
- * 		5.5.2 - Credits
  */
 
 
@@ -1048,12 +1045,5 @@
             } );
         } );
 
-    //  =============================
-    //  5.5 - Copyright Text
-    //  =============================
-
-        //  =============================
-        //  5.5.1 - Copyright Text
-        //  =============================
 
 } )( jQuery );
