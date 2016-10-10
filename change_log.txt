@@ -1,5 +1,6 @@
 v1.0.9
 Sidebar left customizer settings not set fully - FIXED
+Display link back to listing page in buddypress reviews page - ADDED
 
 v1.0.8
 is_bbpress function called without checking if installed - FIXED
