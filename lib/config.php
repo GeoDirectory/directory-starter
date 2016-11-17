@@ -24,7 +24,7 @@ if (!defined('DT_LOGO_MARGIN_LEFT')) define('DT_LOGO_MARGIN_LEFT', '0px');
 if (!defined('DT_LOGO_MARGIN_TOP')) define('DT_LOGO_MARGIN_TOP', '15px');
 //typography
 if (!defined('DT_FONT_FAMILY')) define('DT_FONT_FAMILY', "'Lato','Helvetica Neue',Helvetica,Arial,sans-serif");
-if (!defined('DT_FONT_SIZE')) define('DT_FONT_SIZE', '13px');
+if (!defined('DT_FONT_SIZE')) define('DT_FONT_SIZE', '14px');
 if (!defined('DT_LINE_HEIGHT')) define('DT_LINE_HEIGHT', '20px');
 
 //colors

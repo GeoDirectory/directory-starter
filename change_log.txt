@@ -1,3 +1,9 @@
+v1.1.0
+Google maps on some mobile devices adds a new span which breaks slide out menu - FIXED
+Font-Awesome moved from CDN to local include to comply with theme review guidelines - CHANGED
+Some CSS changes and fixes to make WYSIWYG editor more representative of frontend display - CHANGED
+Layout issues with archive pages and images - FIXED
+
 v1.0.9
 Sidebar left customizer settings not set fully - FIXED
 Display link back to listing page in buddypress reviews page - ADDED
