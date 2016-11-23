@@ -20,10 +20,8 @@
 
 body {
 	font-size: $font-size;
-	line-height: $line-height;
-	margin: 20px 40px;
-	max-width: 660px;
 	vertical-align: baseline;
+	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 
@@ -80,7 +78,7 @@ h6:first-child {
 }
 
 p {
-	margin: 0 0 28px;
+	margin: 0 0 10px;
 }
 
 b,

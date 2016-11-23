@@ -219,7 +219,6 @@ h2.comments-title,
   article.hentry {
     margin: 15px 0;
     padding: 20px;
-    font-size: 14px;
     background-color: #fff;
     -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
     -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
@@ -481,5 +480,14 @@ a img.aligncenter {
     a {
       color: $body-color;
     }
+  }
+}
+
+.widget.widget_archive,
+.widget.widget_categories{
+  select{
+    margin-bottom: 20px;
+    width: 100%;
+    float: none;
   }
 }
