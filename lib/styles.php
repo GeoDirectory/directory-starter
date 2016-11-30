@@ -656,7 +656,7 @@ function directory_theme_customize_css()
 		//  =============================
 		?>
 			body {
-				font-family: <?php echo esc_attr(get_theme_mod('dt_font_family', DT_FONT_FAMILY)); ?>;
+				font-family: <?php echo sanitize_text_field(get_theme_mod('dt_font_family', DT_FONT_FAMILY)); // sanitize_text_field used as we need to keep quotes '' ?>;
 				font-size: <?php echo esc_attr(get_theme_mod('dt_font_size', DT_FONT_SIZE)); ?>;
 				line-height: <?php echo esc_attr(get_theme_mod('dt_line_height', DT_LINE_HEIGHT)); ?>;
 				color: <?php echo esc_attr(get_theme_mod('dt_body_color', DT_BODY_COLOR)); ?>;

@@ -10,7 +10,7 @@ function directory_theme_scripts() {
 	// Load main theme responsive styles.
 	wp_enqueue_style( 'directory-theme-style-responsive', get_template_directory_uri() . '/assets/css/responsive.css', array('directory-theme-style'), DIRECTORY_STARTER_VER );
 	// load font-awesome
-	wp_register_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', array(), DIRECTORY_STARTER_VER);
+	wp_register_style('font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css', array(), DIRECTORY_STARTER_VER);
 	wp_enqueue_style('font-awesome');
 
 	// Load main theme js.
