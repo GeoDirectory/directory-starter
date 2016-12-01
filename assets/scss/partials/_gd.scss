@@ -947,3 +947,31 @@ select.geodir-cat-list-tax {
   @extend .alert-error;
 }
 
+//bestof full width on sidebar
+#gd-sidebar-wrapper {
+    .geo-bestof-contentwrap {
+        article.geodir-category-listing {
+            .geodir-post-img,
+            .geodir-content,
+            .geodir-entry-meta,
+            .geodir-addinfo {
+              width: 100%;
+            }
+
+            .geodir-content,
+            .geodir-addinfo {
+              margin-top: 10px;
+            }
+        }
+    }
+}
+#primary-nav ul li:last-child .sub-menu {
+  left: auto;
+  right: 0
+}
+
+
+
+.container .content-single article footer.geodir-entry-meta {
+  clear: none;
+}
