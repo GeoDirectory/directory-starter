@@ -970,3 +970,17 @@ select.geodir-cat-list-tax {
   right: 0
 }
 
+.widget .geodir_list_heading,
+.widget .location_list_heading {
+  border: none !important;
+  border-bottom: 1px solid #eee !important;
+  margin-bottom: 10px;
+  padding-bottom: 12px;
+  background: none !important;
+}
+.widget .geodir_list_heading h3.widget-title,
+.widget .location_list_heading h3.widget-title {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
