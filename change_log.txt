@@ -1,3 +1,6 @@
+v1.1.2
+Some CSS bug fixes - CHANGED
+
 v1.1.1
 Some CSS changes - CHANGED
 
