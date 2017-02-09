@@ -1,3 +1,6 @@
+v1.1.1
+Some CSS changes - CHANGED
+
 v1.1.0
 Google maps on some mobile devices adds a new span which breaks slide out menu - FIXED
 Font-Awesome moved from CDN to local include to comply with theme review guidelines - CHANGED
