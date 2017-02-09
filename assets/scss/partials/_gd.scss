@@ -970,6 +970,7 @@ select.geodir-cat-list-tax {
   right: 0
 }
 
+
 .widget .geodir_list_heading,
 .widget .location_list_heading {
   border: none !important;
@@ -983,4 +984,9 @@ select.geodir-cat-list-tax {
   border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+
+.container .content-single article footer.geodir-entry-meta {
+  clear: none;
 }
