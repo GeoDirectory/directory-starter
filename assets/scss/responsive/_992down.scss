@@ -132,4 +132,28 @@
     text-align: center;
     clear: both
   }
+
+  html.mm-opened{
+    margin-top: 0 !important;
+    body.admin-bar {
+      .site-header {
+        .container {
+          margin-top: 32px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 782px) {
+  html.mm-opened{
+    margin-top: 0 !important;
+    body.admin-bar {
+      .site-header {
+        .container {
+          margin-top: 46px !important;
+        }
+      }
+    }
+  }
 }

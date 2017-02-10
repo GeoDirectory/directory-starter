@@ -301,7 +301,8 @@ function directory_theme_customize_css()
 		//  1.5.1 - Button Text Color
 		//  =============================
 		?>
-			.dt-btn, button, input[type=button], input[type=reset], input[type=submit], p.edit-link, #buddypress form#whats-new-form input[type=submit], #buddypress .standard-form div.submit input, #buddypress .comment-reply-link, #buddypress button, #buddypress div.generic-button a, #buddypress input[type=button], #buddypress input[type=reset], #buddypress input[type=submit], #buddypress ul.button-nav li a, #buddypress input[type=submit]#notification-bulk-manage, dl.geodir-tab-head dd.geodir-tab-active a, .reply .gd_comment_replaylink .comment-reply-link, #reviewsTab #comments .comment-reply-link {
+			.dt-btn, button, input[type=button], input[type=reset], input[type=submit], p.edit-link, #buddypress form#whats-new-form input[type=submit], #buddypress .standard-form div.submit input, #buddypress .comment-reply-link, #buddypress button, #buddypress div.generic-button a, #buddypress input[type=button], #buddypress input[type=reset], #buddypress input[type=submit], #buddypress ul.button-nav li a, #buddypress input[type=submit]#notification-bulk-manage, dl.geodir-tab-head dd.geodir-tab-active a, .reply .gd_comment_replaylink .comment-reply-link, #reviewsTab #comments .comment-reply-link, #simplemodal-container #gd-basic-modal-content4 .button,
+			.dt-btn:focus, button:focus, input[type=button]:focus, input[type=reset]:focus, input[type=submit]:focus, p.edit-link:focus, .reply .gd_comment_replaylink #gd_comment_replaylink:focus, #buddypress form#whats-new-form input[type=submit]:focus, #buddypress .standard-form div.submit input:focus, #buddypress .comment-reply-link:focus, #buddypress button:focus, #buddypress div.generic-button a:focus, #buddypress input[type=button]:focus, #buddypress input[type=reset]:focus, #buddypress input[type=submit]:focus, #buddypress ul.button-nav li a:focus, #buddypress input[type=submit]#notification-bulk-manage:focus, .reply .gd_comment_replaylink .comment-reply-link:focus, #reviewsTab #comments .comment-reply-link:focus, #simplemodal-container #gd-basic-modal-content4 .button:focus {
 				color: <?php echo esc_attr(get_theme_mod('dt_btn_text_color', DT_BTN_TEXT_COLOR)); ?>;
 				background-color: <?php echo esc_attr(get_theme_mod('dt_btn_bg_color', DT_BTN_BG_COLOR)); ?>;
 				border: 1px solid <?php echo esc_attr(get_theme_mod('dt_btn_border_color', DT_BTN_BORDER_COLOR)); ?>;
@@ -317,7 +318,7 @@ function directory_theme_customize_css()
 		//  1.5.3 - Button Hover Background Color
 		//  =============================
 		?>
-			.dt-btn:hover, button:hover, input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover, p.edit-link:hover, .reply .gd_comment_replaylink #gd_comment_replaylink:hover, #buddypress form#whats-new-form input[type=submit]:hover, #buddypress .standard-form div.submit input:hover, #buddypress .comment-reply-link:hover, #buddypress button:hover, #buddypress div.generic-button a:hover, #buddypress input[type=button]:hover, #buddypress input[type=reset]:hover, #buddypress input[type=submit]:hover, #buddypress ul.button-nav li a:hover, #buddypress input[type=submit]#notification-bulk-manage:hover, .reply .gd_comment_replaylink .comment-reply-link:hover, #reviewsTab #comments .comment-reply-link:hover {
+			.dt-btn:hover, button:hover, input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover, p.edit-link:hover, .reply .gd_comment_replaylink #gd_comment_replaylink:hover, #buddypress form#whats-new-form input[type=submit]:hover, #buddypress .standard-form div.submit input:hover, #buddypress .comment-reply-link:hover, #buddypress button:hover, #buddypress div.generic-button a:hover, #buddypress input[type=button]:hover, #buddypress input[type=reset]:hover, #buddypress input[type=submit]:hover, #buddypress ul.button-nav li a:hover, #buddypress input[type=submit]#notification-bulk-manage:hover, .reply .gd_comment_replaylink .comment-reply-link:hover, #reviewsTab #comments .comment-reply-link:hover, #simplemodal-container #gd-basic-modal-content4 .button:hover {
 				background-color: <?php echo esc_attr(get_theme_mod('dt_btn_hover_color', DT_BTN_HOVER_COLOR)); ?>;
 			}
 		<?php
@@ -583,8 +584,11 @@ function directory_theme_customize_css()
 		//  3.2.2 - h1 to h6 Color
 		//  =============================
 		?>
-			h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+			h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, #simplemodal-container h3 {
 				color: <?php echo esc_attr(get_theme_mod('dt_h1toh6_color', DT_H1TOH6_COLOR)); ?>;
+			}
+			#simplemodal-container h3 {
+				font-family: <?php echo sanitize_text_field(get_theme_mod('dt_font_family', DT_FONT_FAMILY)); ?>;
 			}
 		<?php
 		//  =============================

@@ -34,6 +34,9 @@ select {
     -moz-box-shadow: none;
     box-shadow: none;
   }
+  .fl-field &{ // fix for beaver builder widget inputs inline
+    float: none;
+  }
 }
 select {
   width: auto;
