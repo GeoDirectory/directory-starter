@@ -22,6 +22,18 @@ function directory_theme_widgets_init()
 		'after_title' => '</h4>',
 	));
 
+	if ( class_exists( 'WooCommerce' ) ) {
+		register_sidebar(array(
+			'name' => __('Sidebar WooCommerce', 'directory-starter'),
+			'id' => 'sidebar-wc',
+			'description' => __( 'Sidebar for WooCommerce.', 'directory-starter' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h4 class="widgettitle">',
+			'after_title' => '</h4>',
+		));
+	}
+
 	if (FOOTER_SIDEBAR_COUNT > 0) {
 		register_sidebar(array(
 			'name' => __('Sidebar Footer 1', 'directory-starter'),
