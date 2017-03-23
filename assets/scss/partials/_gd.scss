@@ -447,6 +447,9 @@ a.bp-title-button {
       clear: both;
     }
   }
+  div .item-list-tabs#subnav ul {
+    border-bottom: none;
+  }
   div#item-header img.avatar,
   #whats-new-avatar img {
     -webkit-border-radius: 4px;

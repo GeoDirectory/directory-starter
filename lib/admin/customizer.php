@@ -88,7 +88,8 @@ function directory_theme_customizer( $wp_customize ) {
  *   3.5 - Spacing
  *   3.6 - Sidebar
  * 		3.6.1 - Enable Blog Sidebar
- *      3.6.2 - Blog Sidebar Position
+ *      3.6.2 - Enable WooCommerce Sidebar
+ *      3.6.3 - Blog Sidebar Position
  * 4.0 - Footer
  *   4.1 - Text Colors
  * 		4.1.1 - Text Color
@@ -1308,7 +1309,26 @@ $wp_customize->add_panel( 'dt_body_panel', array(
 		) );
 
 		//  =============================
-		//  3.6.2 - Blog Sidebar Position
+		//  3.6.2 - Enable WooCommerce Sidebar
+		//  =============================
+
+		if ( class_exists( 'WooCommerce' ) ) {
+			$wp_customize->add_setting('dt_enable_woo_sidebar', array(
+				'default' => apply_filters('dt_enable_woo_sidebar_default_value', DT_ENABLE_BLOG_SIDEBAR),
+				'sanitize_callback' => 'sanitize_text_field',
+				'capability' => 'edit_theme_options',
+			));
+			$wp_customize->add_control('dt_enable_woo_sidebar', array(
+				'label' => __('Enable WooCommerce Sidebar', 'directory-starter'),
+				'section' => 'dt_body_sidebar_section',
+				'type' => 'checkbox',
+				'std' => '0',
+				'description' => sprintf(__('Default: %s', 'directory-starter'), DT_ENABLE_BLOG_SIDEBAR),
+			));
+		}
+
+		//  =============================
+		//  3.6.3 - Blog Sidebar Position
 		//  =============================
 
 		$wp_customize->add_setting( 'dt_blog_sidebar_position', array(
