@@ -104,8 +104,8 @@ function dt_geodir_insert_taxonomy($post_type, $catname, $folder_name, $last_cat
 	$attach_data = wp_generate_attachment_metadata($attach_id, $new_path);
 	wp_update_attachment_metadata($attach_id, $attach_data);
 
-	if (!get_tax_meta($last_catid['term_id'], 'ct_cat_icon', false, $post_type)) {
-		update_tax_meta($last_catid['term_id'], 'ct_cat_icon', array('id' => 'icon', 'src' => $new_url), $post_type);
+	if (!geodir_get_tax_meta($last_catid['term_id'], 'ct_cat_icon', false, $post_type)) {
+		geodir_update_tax_meta($last_catid['term_id'], 'ct_cat_icon', array('id' => 'icon', 'src' => $new_url), $post_type);
 	}
 }
 
