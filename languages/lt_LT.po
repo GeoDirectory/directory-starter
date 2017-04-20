@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Directory Starter 1.1.2\n"
+"Project-Id-Version: Directory Starter 1.1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-09 17:53+0000\n"
-"PO-Revision-Date: 2017-02-09 17:53+0000\n"
+"POT-Creation-Date: 2017-04-19 15:29+0100\n"
+"PO-Revision-Date: 2017-04-19 15:29+0100\n"
 "Last-Translator: \n"
 "Language-Team: GD Team <info@wpgeodirectory.com>\n"
 "Language: lt_LT\n"
@@ -81,379 +81,384 @@ msgstr "Puslapių:"
 msgid "Edit"
 msgstr "Redaguoti"
 
-#: lib/admin/customizer.php:130
+#: lib/admin/customizer.php:131
 msgid "General"
 msgstr "Pagrindiniai"
 
-#: lib/admin/customizer.php:161 lib/admin/customizer.php:163
-#: lib/admin/customizer.php:865 lib/admin/customizer.php:867
-#: lib/admin/customizer.php:1276 lib/admin/customizer.php:1278
-#: lib/admin/customizer.php:1526 lib/admin/customizer.php:1528
-#: lib/admin/customizer.php:1681 lib/admin/customizer.php:1683
+#: lib/admin/customizer.php:162 lib/admin/customizer.php:164
+#: lib/admin/customizer.php:866 lib/admin/customizer.php:868
+#: lib/admin/customizer.php:1277 lib/admin/customizer.php:1279
+#: lib/admin/customizer.php:1546 lib/admin/customizer.php:1548
+#: lib/admin/customizer.php:1701 lib/admin/customizer.php:1703
 msgid "Spacing"
 msgstr "Tarpai"
 
-#: lib/admin/customizer.php:179
+#: lib/admin/customizer.php:180
 msgid "Desktop Container Width"
 msgstr "Darbastalio konteinerio plotis"
 
-#: lib/admin/customizer.php:181 lib/admin/customizer.php:198
-#: lib/admin/customizer.php:215 lib/admin/customizer.php:232
-#: lib/admin/customizer.php:249 lib/admin/customizer.php:288
-#: lib/admin/customizer.php:305 lib/admin/customizer.php:322
-#: lib/admin/customizer.php:339 lib/admin/customizer.php:356
-#: lib/admin/customizer.php:373 lib/admin/customizer.php:390
-#: lib/admin/customizer.php:407 lib/admin/customizer.php:424
-#: lib/admin/customizer.php:441 lib/admin/customizer.php:458
-#: lib/admin/customizer.php:475 lib/admin/customizer.php:503
-#: lib/admin/customizer.php:520 lib/admin/customizer.php:537
-#: lib/admin/customizer.php:554 lib/admin/customizer.php:595
-#: lib/admin/customizer.php:612 lib/admin/customizer.php:629
-#: lib/admin/customizer.php:646 lib/admin/customizer.php:663
-#: lib/admin/customizer.php:733 lib/admin/customizer.php:750
-#: lib/admin/customizer.php:778 lib/admin/customizer.php:795
-#: lib/admin/customizer.php:812 lib/admin/customizer.php:829
-#: lib/admin/customizer.php:846 lib/admin/customizer.php:886
-#: lib/admin/customizer.php:903 lib/admin/customizer.php:920
-#: lib/admin/customizer.php:937 lib/admin/customizer.php:953
-#: lib/admin/customizer.php:969 lib/admin/customizer.php:985
-#: lib/admin/customizer.php:1003 lib/admin/customizer.php:1021
-#: lib/admin/customizer.php:1072 lib/admin/customizer.php:1089
-#: lib/admin/customizer.php:1105 lib/admin/customizer.php:1121
-#: lib/admin/customizer.php:1137 lib/admin/customizer.php:1172
-#: lib/admin/customizer.php:1189 lib/admin/customizer.php:1206
-#: lib/admin/customizer.php:1234 lib/admin/customizer.php:1251
-#: lib/admin/customizer.php:1268 lib/admin/customizer.php:1307
-#: lib/admin/customizer.php:1328 lib/admin/customizer.php:1367
-#: lib/admin/customizer.php:1383 lib/admin/customizer.php:1399
-#: lib/admin/customizer.php:1415 lib/admin/customizer.php:1431
-#: lib/admin/customizer.php:1458 lib/admin/customizer.php:1474
-#: lib/admin/customizer.php:1490 lib/admin/customizer.php:1506
-#: lib/admin/customizer.php:1569 lib/admin/customizer.php:1586
-#: lib/admin/customizer.php:1602 lib/admin/customizer.php:1618
-#: lib/admin/customizer.php:1645 lib/admin/customizer.php:1661
-#: lib/admin/customizer.php:1700 lib/admin/customizer.php:1716
+#: lib/admin/customizer.php:182 lib/admin/customizer.php:199
+#: lib/admin/customizer.php:216 lib/admin/customizer.php:233
+#: lib/admin/customizer.php:250 lib/admin/customizer.php:289
+#: lib/admin/customizer.php:306 lib/admin/customizer.php:323
+#: lib/admin/customizer.php:340 lib/admin/customizer.php:357
+#: lib/admin/customizer.php:374 lib/admin/customizer.php:391
+#: lib/admin/customizer.php:408 lib/admin/customizer.php:425
+#: lib/admin/customizer.php:442 lib/admin/customizer.php:459
+#: lib/admin/customizer.php:476 lib/admin/customizer.php:504
+#: lib/admin/customizer.php:521 lib/admin/customizer.php:538
+#: lib/admin/customizer.php:555 lib/admin/customizer.php:596
+#: lib/admin/customizer.php:613 lib/admin/customizer.php:630
+#: lib/admin/customizer.php:647 lib/admin/customizer.php:664
+#: lib/admin/customizer.php:734 lib/admin/customizer.php:751
+#: lib/admin/customizer.php:779 lib/admin/customizer.php:796
+#: lib/admin/customizer.php:813 lib/admin/customizer.php:830
+#: lib/admin/customizer.php:847 lib/admin/customizer.php:887
+#: lib/admin/customizer.php:904 lib/admin/customizer.php:921
+#: lib/admin/customizer.php:938 lib/admin/customizer.php:954
+#: lib/admin/customizer.php:970 lib/admin/customizer.php:986
+#: lib/admin/customizer.php:1004 lib/admin/customizer.php:1022
+#: lib/admin/customizer.php:1073 lib/admin/customizer.php:1090
+#: lib/admin/customizer.php:1106 lib/admin/customizer.php:1122
+#: lib/admin/customizer.php:1138 lib/admin/customizer.php:1173
+#: lib/admin/customizer.php:1190 lib/admin/customizer.php:1207
+#: lib/admin/customizer.php:1235 lib/admin/customizer.php:1252
+#: lib/admin/customizer.php:1269 lib/admin/customizer.php:1308
+#: lib/admin/customizer.php:1326 lib/admin/customizer.php:1348
+#: lib/admin/customizer.php:1387 lib/admin/customizer.php:1403
+#: lib/admin/customizer.php:1419 lib/admin/customizer.php:1435
+#: lib/admin/customizer.php:1451 lib/admin/customizer.php:1478
+#: lib/admin/customizer.php:1494 lib/admin/customizer.php:1510
+#: lib/admin/customizer.php:1526 lib/admin/customizer.php:1589
+#: lib/admin/customizer.php:1606 lib/admin/customizer.php:1622
+#: lib/admin/customizer.php:1638 lib/admin/customizer.php:1665
+#: lib/admin/customizer.php:1681 lib/admin/customizer.php:1720
+#: lib/admin/customizer.php:1736
 #, php-format
 msgid "Default: %s"
 msgstr "Numatytasis: %s"
 
-#: lib/admin/customizer.php:195
+#: lib/admin/customizer.php:196
 msgid "Container Padding Right"
 msgstr "Container Padding Right"
 
-#: lib/admin/customizer.php:212
+#: lib/admin/customizer.php:213
 msgid "Container Padding Left"
 msgstr "Container Padding Left"
 
-#: lib/admin/customizer.php:229
+#: lib/admin/customizer.php:230
 msgid "Container Margin Right"
 msgstr "Container Margin Right"
 
-#: lib/admin/customizer.php:246
+#: lib/admin/customizer.php:247
 msgid "Container Margin Left"
 msgstr "Container Margin Left"
 
-#: lib/admin/customizer.php:268 lib/admin/customizer.php:270
+#: lib/admin/customizer.php:269 lib/admin/customizer.php:271
 msgid "Alert Colors"
 msgstr "Pranešimų spalvos"
 
-#: lib/admin/customizer.php:285
+#: lib/admin/customizer.php:286
 msgid "Alert Warning Background Color"
 msgstr "Įspėjimo fono spalva"
 
-#: lib/admin/customizer.php:302
+#: lib/admin/customizer.php:303
 msgid "Alert Error Background Color"
 msgstr "Klaidos pranešimo fono spalva"
 
-#: lib/admin/customizer.php:319
+#: lib/admin/customizer.php:320
 msgid "Alert Success Background Color"
 msgstr "Pavykusio veiksmo pranešimo fono spalva"
 
-#: lib/admin/customizer.php:336
+#: lib/admin/customizer.php:337
 msgid "Alert Info Background Color"
 msgstr "Informacinio pranešimo fono spalva"
 
-#: lib/admin/customizer.php:353
+#: lib/admin/customizer.php:354
 msgid "Alert Warning Text Color"
 msgstr "Įspėjimo teksto spalva"
 
-#: lib/admin/customizer.php:370
+#: lib/admin/customizer.php:371
 msgid "Alert Error Text Color"
 msgstr "Klaidos pranešimo teksto spalva"
 
-#: lib/admin/customizer.php:387
+#: lib/admin/customizer.php:388
 msgid "Alert Success Text Color"
 msgstr "Pavykusio veiksmo pranešimo teksto spalva"
 
-#: lib/admin/customizer.php:404
+#: lib/admin/customizer.php:405
 msgid "Alert Info Text Color"
 msgstr "Informacinio pranešimo teksto spalva"
 
-#: lib/admin/customizer.php:421
+#: lib/admin/customizer.php:422
 msgid "Alert Warning Border Color"
 msgstr "Įspėjimo rėmelio spalva"
 
-#: lib/admin/customizer.php:438
+#: lib/admin/customizer.php:439
 msgid "Alert Error Border Color"
 msgstr "Klaidos pranešimo rėmelio spalva"
 
-#: lib/admin/customizer.php:455
+#: lib/admin/customizer.php:456
 msgid "Alert Success Border Color"
 msgstr "Pavykusio veiksmo pranešimo rėmelio spalva"
 
-#: lib/admin/customizer.php:472
+#: lib/admin/customizer.php:473
 msgid "Alert Info Border Color"
 msgstr "Informacinio pranešimo rėmelio spalva"
 
-#: lib/admin/customizer.php:483 lib/admin/customizer.php:485
+#: lib/admin/customizer.php:484 lib/admin/customizer.php:486
 msgid "Button Colors"
 msgstr "Mygtukų spalvos"
 
-#: lib/admin/customizer.php:500
+#: lib/admin/customizer.php:501
 msgid "Button Text Color"
 msgstr "Mygtukų teksto spalva"
 
-#: lib/admin/customizer.php:517
+#: lib/admin/customizer.php:518
 msgid "Button Background Color"
 msgstr "Mygtukų fono spalva"
 
-#: lib/admin/customizer.php:534
+#: lib/admin/customizer.php:535
 msgid "Button Hover Background Color"
 msgstr "Mygtuko fono spalva užvedus pelę"
 
-#: lib/admin/customizer.php:551
+#: lib/admin/customizer.php:552
 msgid "Button Border Color"
 msgstr "Mygtuko rėmelio spalva"
 
-#: lib/admin/customizer.php:566
+#: lib/admin/customizer.php:567
 msgid "Header"
 msgstr "Antraštė"
 
-#: lib/admin/customizer.php:575 lib/admin/customizer.php:577 lib/nav.php:8
+#: lib/admin/customizer.php:576 lib/admin/customizer.php:578 lib/nav.php:8
 msgid "Header Top"
 msgstr "Antraštės viršutinė skiltis"
 
-#: lib/admin/customizer.php:591
+#: lib/admin/customizer.php:592
 msgid "Enable Header Top Section"
 msgstr "Aktyvuoti viršutinę antraštės skiltį"
 
-#: lib/admin/customizer.php:609
+#: lib/admin/customizer.php:610
 msgid "Header Top Text Color"
 msgstr "Viršutinės antraštės skilties teksto spalva"
 
-#: lib/admin/customizer.php:626
+#: lib/admin/customizer.php:627
 msgid "Header Top Link Color"
 msgstr "Viršutinės antraštės skilties nuorodų spalva"
 
-#: lib/admin/customizer.php:643
+#: lib/admin/customizer.php:644
 msgid "Header Top Link Hover Color"
 msgstr "Viršutinės antraštės skilties nuorodų spalva užvedus pelę"
 
-#: lib/admin/customizer.php:660
+#: lib/admin/customizer.php:661
 msgid "Header Top Background Color"
 msgstr "Viršutinės antraštės skilties fono spalva"
 
-#: lib/admin/customizer.php:671 lib/admin/customizer.php:673
-#: lib/admin/customizer.php:686
+#: lib/admin/customizer.php:672 lib/admin/customizer.php:674
+#: lib/admin/customizer.php:687
 msgid "Logo"
 msgstr "Logotipas"
 
-#: lib/admin/customizer.php:683
+#: lib/admin/customizer.php:684
 msgid ""
 "Upload a logo to replace the default site name and description in the header"
 msgstr ""
 "Norėdami pakeisti numatytąjį svetainės vardą ir aprašymą antraštėje, "
 "įkelkite savo logotipą"
 
-#: lib/admin/customizer.php:707 lib/admin/customizer.php:709
-#: lib/admin/customizer.php:1052 lib/admin/customizer.php:1054
-#: lib/admin/customizer.php:1348 lib/admin/customizer.php:1350
-#: lib/admin/customizer.php:1550 lib/admin/customizer.php:1552
+#: lib/admin/customizer.php:708 lib/admin/customizer.php:710
+#: lib/admin/customizer.php:1053 lib/admin/customizer.php:1055
+#: lib/admin/customizer.php:1368 lib/admin/customizer.php:1370
+#: lib/admin/customizer.php:1570 lib/admin/customizer.php:1572
 msgid "Text Colors"
 msgstr "Teksto spalvos"
 
-#: lib/admin/customizer.php:730
+#: lib/admin/customizer.php:731
 msgid "Header Link Color"
 msgstr "Antraštės nuorodų spalva"
 
-#: lib/admin/customizer.php:747
+#: lib/admin/customizer.php:748
 msgid "Header Link Hover Color"
 msgstr "Antraštės nuorodų spalva užvedus pelę"
 
-#: lib/admin/customizer.php:758 lib/admin/customizer.php:760
-#: lib/admin/customizer.php:1146 lib/admin/customizer.php:1148
-#: lib/admin/customizer.php:1439 lib/admin/customizer.php:1441
-#: lib/admin/customizer.php:1626 lib/admin/customizer.php:1628
+#: lib/admin/customizer.php:759 lib/admin/customizer.php:761
+#: lib/admin/customizer.php:1147 lib/admin/customizer.php:1149
+#: lib/admin/customizer.php:1459 lib/admin/customizer.php:1461
+#: lib/admin/customizer.php:1646 lib/admin/customizer.php:1648
 msgid "Background Colors"
 msgstr "Fono spalvos"
 
-#: lib/admin/customizer.php:775
+#: lib/admin/customizer.php:776
 msgid "Header Background Color"
 msgstr "Antraštės fono spalva"
 
-#: lib/admin/customizer.php:792
+#: lib/admin/customizer.php:793
 msgid "Header Border Color"
 msgstr "Antraštės rėmelio spalva"
 
-#: lib/admin/customizer.php:808
+#: lib/admin/customizer.php:809
 msgid "Header Shadow Color"
 msgstr "Antraštės šešėlio spalva"
 
-#: lib/admin/customizer.php:826
+#: lib/admin/customizer.php:827
 msgid "Primary Menu - Sub menu Background Color"
 msgstr "Pirminis meniu - Sub meniu fono spalva"
 
-#: lib/admin/customizer.php:843
+#: lib/admin/customizer.php:844
 msgid "Primary Menu - Sub menu Background hover Color"
 msgstr "Pirminis meniu - Sub meniu fono spalva užvedus pelę"
 
-#: lib/admin/customizer.php:854 lib/admin/customizer.php:856
-#: lib/admin/customizer.php:1214 lib/admin/customizer.php:1216
-#: lib/admin/customizer.php:1515 lib/admin/customizer.php:1517
-#: lib/admin/customizer.php:1669 lib/admin/customizer.php:1671
+#: lib/admin/customizer.php:855 lib/admin/customizer.php:857
+#: lib/admin/customizer.php:1215 lib/admin/customizer.php:1217
+#: lib/admin/customizer.php:1535 lib/admin/customizer.php:1537
+#: lib/admin/customizer.php:1689 lib/admin/customizer.php:1691
 msgid "Typography"
 msgstr "Tipografija"
 
-#: lib/admin/customizer.php:882
+#: lib/admin/customizer.php:883
 msgid "Header Min Height"
 msgstr "Minimalus antraštės aukštis"
 
-#: lib/admin/customizer.php:900
+#: lib/admin/customizer.php:901
 msgid "Logo Margin Right"
 msgstr "Logotipo dešinė paraštė"
 
-#: lib/admin/customizer.php:917
+#: lib/admin/customizer.php:918
 msgid "Logo Margin Left"
 msgstr "Logotipo kairė paraštė"
 
-#: lib/admin/customizer.php:934
+#: lib/admin/customizer.php:935
 msgid "Logo Margin Top"
 msgstr "Logotipo viršus"
 
-#: lib/admin/customizer.php:950
+#: lib/admin/customizer.php:951
 msgid "Primary Menu Min Height"
 msgstr "Minimalus pirminio meniu aukštis"
 
-#: lib/admin/customizer.php:966
+#: lib/admin/customizer.php:967
 msgid "Primary Menu Line Height"
 msgstr "Minimalus pirminio meniu eilutės aukštis"
 
-#: lib/admin/customizer.php:982
+#: lib/admin/customizer.php:983
 msgid "Primary Menu Padding Left Right"
 msgstr "Pirminio meniu Padding Left Right"
 
-#: lib/admin/customizer.php:999
+#: lib/admin/customizer.php:1000
 msgid "Header Logo Width"
 msgstr "Antraštės logotipo plotis"
 
-#: lib/admin/customizer.php:1017
+#: lib/admin/customizer.php:1018
 msgid "Header Menu Width"
 msgstr "Antraštės meniu plotis"
 
-#: lib/admin/customizer.php:1032
+#: lib/admin/customizer.php:1033
 msgid "Body"
 msgstr "Body"
 
-#: lib/admin/customizer.php:1069
+#: lib/admin/customizer.php:1070
 msgid "Body Color"
 msgstr "Body spalva"
 
-#: lib/admin/customizer.php:1086 lib/admin/customizer.php:1380
+#: lib/admin/customizer.php:1087 lib/admin/customizer.php:1400
 msgid "h1 to h6 Color"
 msgstr "h1 -  h6 spalva"
 
-#: lib/admin/customizer.php:1102 lib/admin/customizer.php:1396
-#: lib/admin/customizer.php:1583
+#: lib/admin/customizer.php:1103 lib/admin/customizer.php:1416
+#: lib/admin/customizer.php:1603
 msgid "Link Color"
 msgstr "Nuorodų spalva"
 
-#: lib/admin/customizer.php:1118 lib/admin/customizer.php:1412
-#: lib/admin/customizer.php:1599
+#: lib/admin/customizer.php:1119 lib/admin/customizer.php:1432
+#: lib/admin/customizer.php:1619
 msgid "Link Hover Color"
 msgstr "Nuorodų spalva užvedus pelę"
 
-#: lib/admin/customizer.php:1134 lib/admin/customizer.php:1428
-#: lib/admin/customizer.php:1615
+#: lib/admin/customizer.php:1135 lib/admin/customizer.php:1448
+#: lib/admin/customizer.php:1635
 msgid "Link Visited Color"
 msgstr "Aplankytos nuorodos spalva"
 
-#: lib/admin/customizer.php:1169
+#: lib/admin/customizer.php:1170
 msgid "Content Box Background Color"
 msgstr "Turinio skilties fono spalva"
 
-#: lib/admin/customizer.php:1186
+#: lib/admin/customizer.php:1187
 msgid "Content Box Border Color"
 msgstr "Turinio skilties rėmelio spalva"
 
-#: lib/admin/customizer.php:1202
+#: lib/admin/customizer.php:1203
 msgid "Content Box Shadow Color"
 msgstr "Turinio skilties šešėlio spalva"
 
-#: lib/admin/customizer.php:1231
+#: lib/admin/customizer.php:1232
 msgid "Font Family"
 msgstr "Šriftų rinkinys"
 
-#: lib/admin/customizer.php:1248
+#: lib/admin/customizer.php:1249
 msgid "Font Size"
 msgstr "Šrifto dydis"
 
-#: lib/admin/customizer.php:1265
+#: lib/admin/customizer.php:1266
 msgid "Line Height"
 msgstr "Eilutės aukštis"
 
-#: lib/admin/customizer.php:1287 lib/admin/customizer.php:1289
+#: lib/admin/customizer.php:1288 lib/admin/customizer.php:1290
 msgid "Sidebar"
 msgstr "Šoninė sritis"
 
-#: lib/admin/customizer.php:1303
+#: lib/admin/customizer.php:1304
 msgid "Enable Blog Sidebar"
 msgstr "Aktyvuoti šoninę tinklaraščio sritį"
 
-#: lib/admin/customizer.php:1320
+#: lib/admin/customizer.php:1322
+msgid "Enable WooCommerce Sidebar"
+msgstr ""
+
+#: lib/admin/customizer.php:1340
 msgid "Blog Sidebar Position"
 msgstr "Šoninės tinklaraščio srities vieta"
 
-#: lib/admin/customizer.php:1339
+#: lib/admin/customizer.php:1359
 msgid "Footer"
 msgstr "Poraštė"
 
-#: lib/admin/customizer.php:1364 lib/admin/customizer.php:1566
+#: lib/admin/customizer.php:1384 lib/admin/customizer.php:1586
 msgid "Text Color"
 msgstr "Teksto spalva"
 
-#: lib/admin/customizer.php:1455
+#: lib/admin/customizer.php:1475
 msgid "Footer Section Background Color"
 msgstr "Poraštės skilties fono spalva"
 
-#: lib/admin/customizer.php:1471
+#: lib/admin/customizer.php:1491
 msgid "Footer Section Border Top Color"
 msgstr "Poraštės skilties viršutinio rėmelio spalva"
 
-#: lib/admin/customizer.php:1487
+#: lib/admin/customizer.php:1507
 msgid "Footer Section Border Bottom Color"
 msgstr "Poraštės skilties apatinio rėmelio spalva"
 
-#: lib/admin/customizer.php:1503
+#: lib/admin/customizer.php:1523
 msgid "Footer Section Box Shadow Color"
 msgstr "Poraštės skilties šešėlio spalva"
 
-#: lib/admin/customizer.php:1541
+#: lib/admin/customizer.php:1561
 msgid "Copyright"
 msgstr "Autorinės teisės"
 
-#: lib/admin/customizer.php:1642
+#: lib/admin/customizer.php:1662
 msgid "Copyright Section Background Color"
 msgstr "Autorinių teisių skilties fono spalva"
 
-#: lib/admin/customizer.php:1658
+#: lib/admin/customizer.php:1678
 msgid "Copyright Section Border Color"
 msgstr "Autorinių teisių skilties rėmelio spalva"
 
-#: lib/admin/customizer.php:1697
+#: lib/admin/customizer.php:1717
 msgid "Copyright Padding Top"
 msgstr "Autorinių teisių skilties Padding Top"
 
-#: lib/admin/customizer.php:1713
+#: lib/admin/customizer.php:1733
 msgid "Copyright Padding Bottom"
 msgstr "Autorinių teisių skilties Padding Bottom"
 
@@ -482,11 +487,11 @@ msgstr "Atsakyti"
 msgid "Your comment is awaiting moderation."
 msgstr "Komentaras laukia patikrinimo."
 
-#: lib/config.php:10
+#: lib/config.php:11
 msgid "Copyright &copy; "
 msgstr "Autorinės teisės &copy; "
 
-#: lib/config.php:10
+#: lib/config.php:11
 msgid ". All rights reserved."
 msgstr ". Visos teisės saugomos."
 
@@ -572,34 +577,42 @@ msgid "Sidebar for pages."
 msgstr "Šoninė sritis puslapiams"
 
 #: lib/sidebars.php:27
+msgid "Sidebar WooCommerce"
+msgstr ""
+
+#: lib/sidebars.php:29
+msgid "Sidebar for WooCommerce."
+msgstr ""
+
+#: lib/sidebars.php:39
 msgid "Sidebar Footer 1"
 msgstr "Šoninės srities poraštė 1"
 
-#: lib/sidebars.php:29
+#: lib/sidebars.php:41
 msgid "Sidebar Footer 1."
 msgstr "Šoninės srities poraštė 1."
 
-#: lib/sidebars.php:39
+#: lib/sidebars.php:51
 msgid "Sidebar Footer 2"
 msgstr "Šoninės srities poraštė 2"
 
-#: lib/sidebars.php:41
+#: lib/sidebars.php:53
 msgid "Sidebar Footer 2."
 msgstr "Šoninės srities poraštė 2."
 
-#: lib/sidebars.php:51
+#: lib/sidebars.php:63
 msgid "Sidebar Footer 3"
 msgstr "Šoninės srities poraštė 3"
 
-#: lib/sidebars.php:53
+#: lib/sidebars.php:65
 msgid "Sidebar Footer 3."
 msgstr "Šoninės srities poraštė 3."
 
-#: lib/sidebars.php:63
+#: lib/sidebars.php:75
 msgid "Sidebar Footer 4"
 msgstr "Šoninės srities poraštė 4"
 
-#: lib/sidebars.php:65
+#: lib/sidebars.php:77
 msgid "Sidebar Footer 4."
 msgstr "Šoninės srities poraštė 4."
 
