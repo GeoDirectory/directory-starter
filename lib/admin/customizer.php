@@ -1304,7 +1304,7 @@ $wp_customize->add_panel( 'dt_body_panel', array(
 				'label'   => __('Enable Blog Sidebar', 'directory-starter' ),
 				'section' => 'dt_body_sidebar_section',
 				'type'    => 'checkbox',
-				'std'         => '0',
+				'value'         => '1',
 				'description' => sprintf( __( 'Default: %s', 'directory-starter' ), DT_ENABLE_BLOG_SIDEBAR ),
 		) );
 
@@ -1322,7 +1322,7 @@ $wp_customize->add_panel( 'dt_body_panel', array(
 				'label' => __('Enable WooCommerce Sidebar', 'directory-starter'),
 				'section' => 'dt_body_sidebar_section',
 				'type' => 'checkbox',
-				'std' => '0',
+				'value' => '1',
 				'description' => sprintf(__('Default: %s', 'directory-starter'), DT_ENABLE_BLOG_SIDEBAR),
 			));
 		}
