@@ -3,10 +3,10 @@
 <?php do_action('dt_woo_before_main_content'); ?>
 
 <?php
-$dt_enable_blog_sidebar = esc_attr(get_theme_mod('dt_enable_blog_sidebar', DT_ENABLE_BLOG_SIDEBAR));
+$dt_enable_woo_sidebar = esc_attr(get_theme_mod('dt_enable_woo_sidebar', DT_ENABLE_WOO_SIDEBAR)) == '1' && is_active_sidebar( 'sidebar-wc' ) ? true : false;
 $dt_blog_sidebar_position = esc_attr(get_theme_mod('dt_blog_sidebar_position', DT_BLOG_SIDEBAR_POSITION));
 
-if ($dt_enable_blog_sidebar == '1') {
+if ($dt_enable_woo_sidebar) {
   $content_class = 'col-lg-8 col-md-9';
 } else {
   $content_class = 'col-lg-12';
@@ -14,10 +14,10 @@ if ($dt_enable_blog_sidebar == '1') {
 ?>
 <div class="container woo-container">
   <div class="row">
-    <?php if ($dt_enable_blog_sidebar == '1' && $dt_blog_sidebar_position == 'left') { ?>
+    <?php if ($dt_enable_woo_sidebar && $dt_blog_sidebar_position == 'left') { ?>
       <div class="col-lg-4 col-md-3">
-        <div class="sidebar blog-sidebar page-sidebar">
-          <?php get_sidebar(); ?>
+        <div class="sidebar woo-sidebar blog-sidebar page-sidebar">
+          <?php dynamic_sidebar( 'sidebar-wc' ); ?>
         </div>
       </div>
     <?php } ?>
@@ -36,16 +36,15 @@ if ($dt_enable_blog_sidebar == '1') {
         </article>
       </div>
     </div>
-    <?php if ($dt_enable_blog_sidebar == '1' && $dt_blog_sidebar_position == 'right') { ?>
+    <?php if ($dt_enable_woo_sidebar && $dt_blog_sidebar_position == 'right') { ?>
       <div class="col-lg-4 col-md-3">
-        <div class="sidebar blog-sidebar page-sidebar">
-          <?php get_sidebar(); ?>
+        <div class="sidebar woo-sidebar blog-sidebar page-sidebar">
+          <?php dynamic_sidebar( 'sidebar-wc' ); ?>
         </div>
       </div>
     <?php } ?>
   </div>
 </div>
-
 
 <?php do_action('dt_woo_after_main_content'); ?>
 
