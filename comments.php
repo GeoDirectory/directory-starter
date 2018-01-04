@@ -68,7 +68,7 @@ if ( post_password_required() ) {
 		// geodirectory plugin
 		$login_url = geodir_login_url();
 	} else {
-		$login_url = wp_login_url();
+		$login_url = wp_login_url(get_permalink());
 	}
 	/**
 	 * Filters comment form args
