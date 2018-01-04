@@ -38,6 +38,7 @@ jQuery(document).ready(function ($) {
         $dt_menuleft.mmenu({}, {});
 
         // The chosen select is broken after load so we destroy and rebuild
+        // @todo remove for testing with GD v2
         jQuery(".mm-menu .geodir-loginbox-list li select").chosen("destroy");
         jQuery(".mm-menu .geodir-loginbox-list li select").chosen({});
 

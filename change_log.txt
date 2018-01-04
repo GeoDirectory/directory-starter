@@ -1,5 +1,6 @@
 v1.1.5
-Option "Enable WooCommerce Sidebar" does not working - FIXED
+Comment form login link not redirecting to original page - FIXED
+Option "Enable WooCommerce Sidebar" not working - FIXED
 
 v1.1.4
 Mobile menu sub items now open on main text click and not just arrow click - CHANGED

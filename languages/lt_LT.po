@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Directory Starter 1.1.4\n"
+"Project-Id-Version: Directory Starter 1.1.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-13 13:03+0100\n"
-"PO-Revision-Date: 2017-06-13 13:03+0100\n"
+"POT-Creation-Date: 2018-01-04 11:51+0000\n"
+"PO-Revision-Date: 2018-01-04 11:51+0000\n"
 "Last-Translator: \n"
 "Language-Team: GD Team <info@wpgeodirectory.com>\n"
 "Language: lt_LT\n"
@@ -31,16 +31,16 @@ msgstr "Truputį nesmagu, ar ne?"
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "Čia nieko nėra. Gal išbandykite paiešką?"
 
-#: archive.php:7 index.php:28 page.php:20 page_full-width.php:18 single.php:28
+#: archive.php:28 index.php:28 page.php:20 page_full-width.php:18 single.php:28
 #: woocommerce.php:28
 msgid "Sorry, no results were found."
 msgstr "Deja, nieko nerasta."
 
-#: archive.php:22 index.php:43 single.php:48
+#: archive.php:43 index.php:43 single.php:48
 msgid "Previous"
 msgstr "Atgal"
 
-#: archive.php:23 index.php:44 single.php:45
+#: archive.php:44 index.php:44 single.php:45
 msgid "Next"
 msgstr "Pirmyn"
 
@@ -531,24 +531,19 @@ msgstr "Parašykite komentarą"
 msgid "% Comments"
 msgstr "Komentarų - %"
 
-#: lib/init.php:123 lib/init.php:127
+#: lib/init.php:120
 msgid "WordPress"
 msgstr "WordPress"
 
-#: lib/init.php:124
+#: lib/init.php:121
 #, php-format
 msgid "Copyright &copy; %1$s %2$s %3$s Theme %4$s"
 msgstr ""
 
-#: lib/init.php:125 lib/init.php:129
+#: lib/init.php:122
 #, php-format
 msgid " - Powered by %s."
 msgstr " - naudoja %s."
-
-#: lib/init.php:128
-#, php-format
-msgid "Copyright &copy; %1$s %2$s Theme"
-msgstr "Autorinės teisės &copy; %1$s %2$s tema"
 
 #: lib/nav.php:3
 msgid "Primary Menu"
@@ -623,6 +618,9 @@ msgstr "Kitas įrašas:"
 #: single.php:49
 msgid "Previous post:"
 msgstr "Ankstesnis įrašas:"
+
+#~ msgid "Copyright &copy; %1$s %2$s Theme"
+#~ msgstr "Autorinės teisės &copy; %1$s %2$s tema"
 
 #~ msgid "Copyright Text"
 #~ msgstr "Autorinių teisių skilties tekstas"
