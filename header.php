@@ -81,7 +81,7 @@ if ($enable_header_top == '1') {
              *
              * @since 1.0.2
              */
-            echo apply_filters('dt_mobile_menu_button','<div class="dt-nav-toggle  dt-mobile-nav-button-wrap"><a href="#primary-nav"><i class="fa fa-bars"></i></a></div>');
+            echo apply_filters('dt_mobile_menu_button','<div class="dt-nav-toggle  dt-mobile-nav-button-wrap"><a href="#primary-nav"><i class="fas fa-bars"></i></a></div>');
         } ?>
 
 

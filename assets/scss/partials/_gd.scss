@@ -108,7 +108,7 @@ ul#breadcrumbs {
   @extend .content-box;
 }
 
-.near-compass .fa {
+.near-compass svg {
   font-size: 30px;
 }
 
@@ -603,7 +603,7 @@ a.bp-title-button {
 }
 
 .geodir_category_list_view li.geodir-gridview .geodir-addinfo i,
-.gdbp-listings-page .geodir_category_list_view li.geodir-listview .geodir-addinfo i {
+.gdbp-listings-page .geodir_category_list_view li.geodir-listview .geodir-addinfo svg {
   margin-right: 5px;
 }
 

@@ -48,7 +48,13 @@
   .geodir-loginbox-list li {
     border-bottom: none;
   }
+  .chosen-with-drop{
+    .chosen-drop{
+      position: relative;
+    }
+  }
 }
+
 
 //footer widgets
 //.footer-widgets {
