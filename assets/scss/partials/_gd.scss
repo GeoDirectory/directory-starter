@@ -108,8 +108,10 @@ ul#breadcrumbs {
   @extend .content-box;
 }
 
-.near-compass svg {
-  font-size: 30px;
+.near-compass {
+  i,svg {
+    font-size: 30px;
+  }
 }
 
 .geodir_full_page .geodir-search {
@@ -605,6 +607,12 @@ a.bp-title-button {
 .geodir_category_list_view li.geodir-gridview .geodir-addinfo i,
 .gdbp-listings-page .geodir_category_list_view li.geodir-listview .geodir-addinfo svg {
   margin-right: 5px;
+}
+
+.gd-star-rating{
+  i,svg{
+    margin-right: 0 !important;
+  }
 }
 
 .gdbp-listings-page .geodir_category_list_view li .geodir-addinfo a.geodir-pcomments,
