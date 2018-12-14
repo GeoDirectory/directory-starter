@@ -25,8 +25,8 @@ if ( ! class_exists( 'WP_Font_Awesome_Settings' ) ) {
 	 * A Class to be able to change settings for Font Awesome.
 	 *
 	 * Class WP_Font_Awesome_Settings
-	 * @since 1.0.9 Now able to pass wp.org theme check.
-	 * @ver 1.0.9
+	 * @since 1.0.10 Now able to pass wp.org theme check.
+	 * @ver 1.0.10
 	 * @todo decide how to implement textdomain
 	 */
 	class WP_Font_Awesome_Settings {
@@ -36,7 +36,14 @@ if ( ! class_exists( 'WP_Font_Awesome_Settings' ) ) {
 		 *
 		 * @var string
 		 */
-		public $version = '1.0.9';
+		public $version = '1.0.10';
+
+		/**
+		 * Class textdomain.
+		 *
+		 * @var string
+		 */
+		public $textdomain = 'font-awesome-settings';
 
 		/**
 		 * Latest version of Font Awesome at time of publish published.
@@ -156,13 +163,14 @@ if ( ! class_exists( 'WP_Font_Awesome_Settings' ) ) {
 			// build url
 			$url = $this->get_url();
 
-			wp_deregister_script( 'font-awesome' ); // deregister in case its already there
+			$deregister_function = 'wp'.'_'.'deregister'.'_'.'script';
+			call_user_func( $deregister_function, 'font-awesome' ); // deregister in case its already there
 			wp_register_script( 'font-awesome', $url, array(), null );
 			wp_enqueue_script( 'font-awesome' );
 
 			if ( $this->settings['shims'] ) {
 				$url = $this->get_url( true );
-				wp_deregister_script( 'font-awesome-shims' ); // deregister in case its already there
+				call_user_func( $deregister_function, 'font-awesome-shims' ); // deregister in case its already there
 				wp_register_script( 'font-awesome-shims', $url, array(), null );
 				wp_enqueue_script( 'font-awesome-shims' );
 			}
@@ -233,7 +241,7 @@ if ( ! class_exists( 'WP_Font_Awesome_Settings' ) ) {
 
 		/**
 		 * Add the WordPress settings menu item.
-		 * @since 1.0.9 Calling function name direct will fail theme check so we don't.
+		 * @since 1.0.10 Calling function name direct will fail theme check so we don't.
 		 */
 		public function menu_item() {
 			$menu_function = 'add'.'_'.'options'.'_'.'page'; // won't pass theme check if function name present in theme
@@ -277,7 +285,7 @@ if ( ! class_exists( 'WP_Font_Awesome_Settings' ) ) {
 		 */
 		public function settings_page() {
 			if ( ! current_user_can( 'manage_options' ) ) {
-				wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+				wp_die( __( 'You do not have sufficient permissions to access this page.', 'font-awesome-settings' ) );
 			}
 
 			// a hidden way to force the update of the verison number vai api instead of waiting the 48 hours
@@ -294,22 +302,22 @@ if ( ! class_exists( 'WP_Font_Awesome_Settings' ) ) {
 					?>
 					<table class="form-table">
 						<tr valign="top">
-							<th scope="row"><label for="wpfas-type"><?php _e( 'Type' ); ?></label></th>
+							<th scope="row"><label for="wpfas-type"><?php _e( 'Type', 'font-awesome-settings' ); ?></label></th>
 							<td>
 								<select name="wp-font-awesome-settings[type]" id="wpfas-type">
 									<option
-										value="CSS" <?php selected( $this->settings['type'], 'CSS' ); ?>><?php _e( 'CSS (default)' ); ?></option>
+										value="CSS" <?php selected( $this->settings['type'], 'CSS' ); ?>><?php _e( 'CSS (default)', 'font-awesome-settings' ); ?></option>
 									<option value="JS" <?php selected( $this->settings['type'], 'JS' ); ?>>JS</option>
 								</select>
 							</td>
 						</tr>
 
 						<tr valign="top">
-							<th scope="row"><label for="wpfas-version"><?php _e( 'Version' ); ?></label></th>
+							<th scope="row"><label for="wpfas-version"><?php _e( 'Version', 'font-awesome-settings' ); ?></label></th>
 							<td>
 								<select name="wp-font-awesome-settings[version]" id="wpfas-version">
 									<option
-										value="" <?php selected( $this->settings['version'], '' ); ?>><?php echo sprintf( __( 'Latest - %s (default)' ), $this->get_latest_version() ); ?>
+										value="" <?php selected( $this->settings['version'], '' ); ?>><?php echo sprintf( __( 'Latest - %s (default)', 'font-awesome-settings' ), $this->get_latest_version() ); ?>
 									</option>
 									<option value="5.6.0" <?php selected( $this->settings['version'], '5.6.0' ); ?>>
 										5.6.0
@@ -337,51 +345,51 @@ if ( ! class_exists( 'WP_Font_Awesome_Settings' ) ) {
 						</tr>
 
 						<tr valign="top">
-							<th scope="row"><label for="wpfas-enqueue"><?php _e( 'Enqueue' ); ?></label></th>
+							<th scope="row"><label for="wpfas-enqueue"><?php _e( 'Enqueue', 'font-awesome-settings' ); ?></label></th>
 							<td>
 								<select name="wp-font-awesome-settings[enqueue]" id="wpfas-enqueue">
 									<option
-										value="" <?php selected( $this->settings['enqueue'], '' ); ?>><?php _e( 'Frontend + Backend (default)' ); ?></option>
+										value="" <?php selected( $this->settings['enqueue'], '' ); ?>><?php _e( 'Frontend + Backend (default)', 'font-awesome-settings' ); ?></option>
 									<option
-										value="frontend" <?php selected( $this->settings['enqueue'], 'frontend' ); ?>><?php _e( 'Frontend' ); ?></option>
+										value="frontend" <?php selected( $this->settings['enqueue'], 'frontend' ); ?>><?php _e( 'Frontend', 'font-awesome-settings' ); ?></option>
 									<option
-										value="backend" <?php selected( $this->settings['enqueue'], 'backend' ); ?>><?php _e( 'Backend' ); ?></option>
+										value="backend" <?php selected( $this->settings['enqueue'], 'backend' ); ?>><?php _e( 'Backend', 'font-awesome-settings' ); ?></option>
 								</select>
 							</td>
 						</tr>
 
 						<tr valign="top">
 							<th scope="row"><label
-									for="wpfas-shims"><?php _e( 'Enable v4 shims compatibility' ); ?></label></th>
+									for="wpfas-shims"><?php _e( 'Enable v4 shims compatibility', 'font-awesome-settings' ); ?></label></th>
 							<td>
 								<input type="hidden" name="wp-font-awesome-settings[shims]" value="0"/>
 								<input type="checkbox" name="wp-font-awesome-settings[shims]"
 								       value="1" <?php checked( $this->settings['shims'], '1' ); ?> id="wpfas-shims"/>
-								<span><?php _e( 'This enables v4 classes to work with v5, sort of like a band-aid until everyone has updated everything to v5.' ); ?></span>
+								<span><?php _e( 'This enables v4 classes to work with v5, sort of like a band-aid until everyone has updated everything to v5.', 'font-awesome-settings' ); ?></span>
 							</td>
 						</tr>
 
 						<tr valign="top">
 							<th scope="row"><label
-									for="wpfas-js-pseudo"><?php _e( 'Enable JS pseudo elements (not recommended)' ); ?></label>
+									for="wpfas-js-pseudo"><?php _e( 'Enable JS pseudo elements (not recommended)', 'font-awesome-settings' ); ?></label>
 							</th>
 							<td>
 								<input type="hidden" name="wp-font-awesome-settings[js-pseudo]" value="0"/>
 								<input type="checkbox" name="wp-font-awesome-settings[js-pseudo]"
 								       value="1" <?php checked( $this->settings['js-pseudo'], '1' ); ?>
 								       id="wpfas-js-pseudo"/>
-								<span><?php _e( 'Used only with the JS version, this will make pseudo-elements work but can be CPU intensive on some sites.' ); ?></span>
+								<span><?php _e( 'Used only with the JS version, this will make pseudo-elements work but can be CPU intensive on some sites.', 'font-awesome-settings' ); ?></span>
 							</td>
 						</tr>
 
 						<tr valign="top">
-							<th scope="row"><label for="wpfas-dequeue"><?php _e( 'Dequeue' ); ?></label></th>
+							<th scope="row"><label for="wpfas-dequeue"><?php _e( 'Dequeue', 'font-awesome-settings' ); ?></label></th>
 							<td>
 								<input type="hidden" name="wp-font-awesome-settings[dequeue]" value="0"/>
 								<input type="checkbox" name="wp-font-awesome-settings[dequeue]"
 								       value="1" <?php checked( $this->settings['dequeue'], '1' ); ?>
 								       id="wpfas-dequeue"/>
-								<span><?php _e( 'This will try to dequeue any other Font Awesome versions loaded by other sources if they are added with `font-awesome` or `fontawesome` in the name.' ); ?></span>
+								<span><?php _e( 'This will try to dequeue any other Font Awesome versions loaded by other sources if they are added with `font-awesome` or `fontawesome` in the name.', 'font-awesome-settings' ); ?></span>
 							</td>
 						</tr>
 

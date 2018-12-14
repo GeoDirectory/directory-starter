@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "ayecode/wp-font-awesome-settings",
-            "version": "1.0.9",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AyeCode/wp-font-awesome-settings.git",
-                "reference": "4e4bd1525b36532eb01cdcc9c59139967e8ae8b4"
+                "reference": "5e0c70d3081a14785f0911ba134c7068857db8d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AyeCode/wp-font-awesome-settings/zipball/4e4bd1525b36532eb01cdcc9c59139967e8ae8b4",
-                "reference": "4e4bd1525b36532eb01cdcc9c59139967e8ae8b4",
+                "url": "https://api.github.com/repos/AyeCode/wp-font-awesome-settings/zipball/5e0c70d3081a14785f0911ba134c7068857db8d9",
+                "reference": "5e0c70d3081a14785f0911ba134c7068857db8d9",
                 "shasum": ""
             },
             "require": {
@@ -54,7 +54,7 @@
                 "FontAwesome",
                 "font-awesome"
             ],
-            "time": "2018-12-14 11:55:23"
+            "time": "2018-12-14 12:33:09"
         },
         {
             "name": "composer/installers",
