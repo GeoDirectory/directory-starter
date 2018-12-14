@@ -1,5 +1,5 @@
 v1.1.7
-Added Font Awesome settings using composer - ADDED
+WP Font Awesome Settings added to support CSS and JS versions - ADDED
 
 v1.1.6
 Declare WooCommerce support in theme - FIXED

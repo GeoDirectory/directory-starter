@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Directory Starter 1.1.5\n"
+"Project-Id-Version: Directory Starter 1.1.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-04 11:51+0000\n"
-"PO-Revision-Date: 2018-01-04 11:51+0000\n"
+"POT-Creation-Date: 2018-12-14 11:14+0000\n"
+"PO-Revision-Date: 2018-12-14 11:14+0000\n"
 "Last-Translator: \n"
-"Language-Team: GD Team <info@wpgeodirectory.com>\n"
+"Language-Team: AyeCode Ltd <contact@ayecode.io>\n"
 "Language: lt_LT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -531,16 +531,16 @@ msgstr "Parašykite komentarą"
 msgid "% Comments"
 msgstr "Komentarų - %"
 
-#: lib/init.php:120
+#: lib/init.php:128
 msgid "WordPress"
 msgstr "WordPress"
 
-#: lib/init.php:121
+#: lib/init.php:129
 #, php-format
 msgid "Copyright &copy; %1$s %2$s %3$s Theme %4$s"
 msgstr ""
 
-#: lib/init.php:122
+#: lib/init.php:130
 #, php-format
 msgid " - Powered by %s."
 msgstr " - naudoja %s."
@@ -618,6 +618,73 @@ msgstr "Kitas įrašas:"
 #: single.php:49
 msgid "Previous post:"
 msgstr "Ankstesnis įrašas:"
+
+#: vendor/ayecode/wp-font-awesome-settings/wp-font-awesome-settings.php:277
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: vendor/ayecode/wp-font-awesome-settings/wp-font-awesome-settings.php:294
+msgid "Type"
+msgstr ""
+
+#: vendor/ayecode/wp-font-awesome-settings/wp-font-awesome-settings.php:298
+msgid "CSS (default)"
+msgstr ""
+
+#: vendor/ayecode/wp-font-awesome-settings/wp-font-awesome-settings.php:305
+msgid "Version"
+msgstr ""
+
+#: vendor/ayecode/wp-font-awesome-settings/wp-font-awesome-settings.php:309
+#, php-format
+msgid "Latest - %s (default)"
+msgstr ""
+
+#: vendor/ayecode/wp-font-awesome-settings/wp-font-awesome-settings.php:336
+msgid "Enqueue"
+msgstr ""
+
+#: vendor/ayecode/wp-font-awesome-settings/wp-font-awesome-settings.php:340
+msgid "Frontend + Backend (default)"
+msgstr ""
+
+#: vendor/ayecode/wp-font-awesome-settings/wp-font-awesome-settings.php:342
+msgid "Frontend"
+msgstr ""
+
+#: vendor/ayecode/wp-font-awesome-settings/wp-font-awesome-settings.php:344
+msgid "Backend"
+msgstr ""
+
+#: vendor/ayecode/wp-font-awesome-settings/wp-font-awesome-settings.php:351
+msgid "Enable v4 shims compatibility"
+msgstr ""
+
+#: vendor/ayecode/wp-font-awesome-settings/wp-font-awesome-settings.php:356
+msgid ""
+"This enables v4 classes to work with v5, sort of like a band-aid until "
+"everyone has updated everything to v5."
+msgstr ""
+
+#: vendor/ayecode/wp-font-awesome-settings/wp-font-awesome-settings.php:362
+msgid "Enable JS pseudo elements (not recommended)"
+msgstr ""
+
+#: vendor/ayecode/wp-font-awesome-settings/wp-font-awesome-settings.php:369
+msgid ""
+"Used only with the JS version, this will make pseudo-elements work but can "
+"be CPU intensive on some sites."
+msgstr ""
+
+#: vendor/ayecode/wp-font-awesome-settings/wp-font-awesome-settings.php:374
+msgid "Dequeue"
+msgstr ""
+
+#: vendor/ayecode/wp-font-awesome-settings/wp-font-awesome-settings.php:380
+msgid ""
+"This will try to dequeue any other Font Awesome versions loaded by other "
+"sources if they are added with `font-awesome` or `fontawesome` in the name."
+msgstr ""
 
 #~ msgid "Copyright &copy; %1$s %2$s Theme"
 #~ msgstr "Autorinės teisės &copy; %1$s %2$s tema"
