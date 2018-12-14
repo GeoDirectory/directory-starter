@@ -1,23 +1,24 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+    "hash": "f3ebce79e4099af60c36d97c510c731d",
     "content-hash": "0cd038c2db23ce1f4719d337ef0c5ec9",
     "packages": [
         {
             "name": "ayecode/wp-font-awesome-settings",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AyeCode/wp-font-awesome-settings.git",
-                "reference": "241e4222b3a2abf6d8272808c297eaa831e79a86"
+                "reference": "4e4bd1525b36532eb01cdcc9c59139967e8ae8b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AyeCode/wp-font-awesome-settings/zipball/241e4222b3a2abf6d8272808c297eaa831e79a86",
-                "reference": "241e4222b3a2abf6d8272808c297eaa831e79a86",
+                "url": "https://api.github.com/repos/AyeCode/wp-font-awesome-settings/zipball/4e4bd1525b36532eb01cdcc9c59139967e8ae8b4",
+                "reference": "4e4bd1525b36532eb01cdcc9c59139967e8ae8b4",
                 "shasum": ""
             },
             "require": {
@@ -53,7 +54,7 @@
                 "FontAwesome",
                 "font-awesome"
             ],
-            "time": "2018-12-12T10:35:11+00:00"
+            "time": "2018-12-14 11:55:23"
         },
         {
             "name": "composer/installers",
@@ -173,7 +174,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2018-08-27T06:10:37+00:00"
+            "time": "2018-08-27 06:10:37"
         }
     ],
     "packages-dev": [],

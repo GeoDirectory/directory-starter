@@ -1,4 +1,4 @@
-v1.1.8
+v1.1.9
 WP Font Awesome Settings added to support CSS and JS versions - ADDED
 
 v1.1.6
