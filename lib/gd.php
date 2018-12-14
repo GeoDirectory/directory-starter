@@ -137,7 +137,7 @@ function dt_geodir_add_custom_fields($fieldsets = array(), $fields = array(), $f
 
 function dt_add_mobile_gd_account_menu()
 { ?>
-    <div class="dt-mobile-account-wrap"><a href="#gd-account-nav"><i class="fa fa-user"></i></a></div>
+    <div class="dt-mobile-account-wrap"><a href="#gd-account-nav"><i class="fas fa-user"></i></a></div>
     <div id="gd-account-nav" >
         <div >
             <?php if (class_exists('geodir_loginwidget')) {

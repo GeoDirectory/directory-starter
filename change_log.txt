@@ -1,3 +1,10 @@
+v1.1.7
+Added Font Awesome settings using composer - ADDED
+
+v1.1.6
+Declare WooCommerce support in theme - FIXED
+Update Font Awesome to v5 JS version - CHANGED
+
 v1.1.5
 Comment form login link not redirecting to original page - FIXED
 Option "Enable WooCommerce Sidebar" not working - FIXED

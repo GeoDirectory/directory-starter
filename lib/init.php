@@ -41,6 +41,14 @@ function directory_theme_setup(){
 
 	add_filter('tiny_mce_before_init','dt_theme_editor_dynamic_styles',10,1);
 
+	// Add WooCommerce theme support
+	if ( dt_is_woocommerce_activated() ) {
+		add_theme_support( 'woocommerce' );
+		add_theme_support( 'wc-product-gallery-zoom' );
+		add_theme_support( 'wc-product-gallery-lightbox' );
+		add_theme_support( 'wc-product-gallery-slider' );
+	}
+
 }
 add_action('after_setup_theme', 'directory_theme_setup');
 
@@ -125,5 +133,14 @@ function dt_footer_copyright_default() {
 
 	}else{
 		echo esc_attr( get_theme_mod( 'dt_copyright_text', DT_COPYRIGHT_TEXT ) );
+	}
+}
+
+if ( ! function_exists( 'dt_is_woocommerce_activated' ) ) {
+	/**
+	 * Query WooCommerce activation
+	 */
+	function dt_is_woocommerce_activated() {
+		return class_exists( 'WooCommerce' ) ? true : false;
 	}
 }

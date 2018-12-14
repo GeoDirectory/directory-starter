@@ -36,7 +36,9 @@
 .rtl .fa-hidden { left:10000px; }
 .fa-showtext { margin-right: 5px; }
 
-.ds-top-menu-ul .fa {
-  font-size: 17px;
-  padding: 3px;
+.ds-top-menu-ul {
+  i,svg {
+    font-size: 17px;
+    padding: 3px;
+  }
 }
